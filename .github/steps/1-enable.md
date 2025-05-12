@@ -20,7 +20,7 @@ If you recently completed the [Getting Started with GitHub Copilot](/skills/gett
 | **Context Awareness** | Local files and prompting          | Broader repo-level and task context understanding   |
 | **Use Cases**         | Autocomplete code, write functions | Refactor code, generate PRs, explain logic, debug   |
 | **Activation**        | Enabled in IDE                     | Invoked via chat or task workflows                  |
-| **Customization**     | Suggestion tuning via prompt       | Persona-based behavior (e.g., “padawan”)            |
+| **Customization**     | Suggestion tuning via prompt       | Persona-based behavior (e.g., "UX designer")        |
 | **Integration**       | Integrated into VS Code only       | Works across GitHub workflows, PRs, and issues      |
 | **Skill Level**       | Ideal for individual developers    | Designed to assist across teams, especially juniors |
 | **Licensing**         | Requires Copilot subscription      | Requires Copilot for Business / Copilot Workspace   |
