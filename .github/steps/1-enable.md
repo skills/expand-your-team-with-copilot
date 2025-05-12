@@ -101,7 +101,7 @@ Several security precautions have been implemented to help reduce concerns. Here
 - Copilot cannot trigger GitHub Actions workflows.
 
 > [!IMPORTANT]
-> For the full list of mitigations and settings, please see the [Risks & Mitigations](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/project-padawan/using-project-padawan#project-padawan-risks-and-mitigations) documentation.
+> For the full list of mitigations and settings, please see the [Risks & Mitigations](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#copilot-coding-agent-risks-and-mitigations) documentation.
 
 ### ⌨️ Activity: (optional) Quick reminder of the extracurricular activities website
 
@@ -113,7 +113,7 @@ Several security precautions have been implemented to help reduce concerns. Here
 Before we can start assigning issues to Copilot agent, we need to provide access on our account.
 
 > [!NOTE]
-> These instructions are for your personal account. Please see the documentation for [enabling Copilot agent on an organization](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/project-padawan/using-project-padawan#enable-project-padawan-from-the-organizations-settings).
+> These instructions are for your personal account. Please see the documentation for [enabling Copilot agent on an organization](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#copilot-coding-agent-risks-and-mitigations).
 
 1. Navigate to the [Copilot coding agent GitHub App](https://github.com/apps/copilot-swe-agent) page.
 

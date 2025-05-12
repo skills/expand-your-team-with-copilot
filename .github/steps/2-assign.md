@@ -40,7 +40,7 @@ There are several important issues to get done before we leave, but let's do a t
 
    <img width="350" src="https://github.com/user-attachments/assets/444f9432-17c3-4466-bb8e-aa4e44238130" />
 
-1. View the session logs to understand Copilot's approach. [[ref]](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/project-padawan/using-project-padawan#understanding-copilots-approach-using-the-session-logs)
+1. View the session logs to understand Copilot's approach. [[ref]](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#understanding-copilots-approach-using-the-session-logs)
 
 1. After a moment, you will receive a notification that Copilot has begun work. Additionally, the issue log will show a pull request has been started.
 

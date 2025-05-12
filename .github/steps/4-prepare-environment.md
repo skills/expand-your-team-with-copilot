@@ -92,7 +92,7 @@ Configuring Copilots environment is very similar to [GitHub Actions]().
          pip install -r src/requirements.txt
    ```
 
-   For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/project-padawan/customizing-project-padawans-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
+   For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
 
 1. With our files committed, wait for mona to provide the next steps.
 
