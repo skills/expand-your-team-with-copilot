@@ -23,7 +23,6 @@ jobs:
       exercise-title: "Getting Started with GitHub Copilot coding agent"
       intro-message: "In this exercise, you'll unlock the NEXT level of this AI-powered coding assistant. Let's learn how to code with Copilot directly in GitHub! 💻✨"
 
-
   post_next_step_content:
     name: Post next step content
     runs-on: ubuntu-latest
@@ -68,6 +67,6 @@ jobs:
 
       - name: Enable next step workflow
         run: | 
-          gh workflow enable "Step 1"
+          gh workflow enable "Step 1" || true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
