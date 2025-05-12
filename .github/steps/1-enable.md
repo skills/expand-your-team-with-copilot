@@ -135,7 +135,7 @@ Before we can start assigning issues to Copilot agent, we need to provide access
 1. With out application installed, let's inform Mona that we are ready to continue.
 
    ```md
-   Hello @professortocat, I've installed Copilot on my account. What's next?
+   Hello @professortocat, I've installed Copilot coding agent on my account. What's next?
    ```
 
 <details>
@@ -146,3 +146,5 @@ If you don't get feedback, here are some things to check:
 - Make sure you are using your personal account, not a work account, managed user account, or organization.
 
 </details>
+
+Tip: If you can reduce the number of notifications and emails from Copilot by unwatching the repository, before continuing this exercise.
