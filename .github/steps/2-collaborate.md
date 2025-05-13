@@ -85,11 +85,3 @@ If you don't get feedback, here are some things to check:
 - If Mona found a mistake, simply make a correction and push your changes again. Mona will check your work as many times as needed.
 
 </details>
-
-### ⌨️(optional) Activity: Manually make a change
-
-Just like working with colleague, it often makes sense to push simple changes rather than explain them. Fortunately, this is still true with Copilot coding agent as well, since all work is done on a normal branch. That means we can make changes like normal. Nice!
-
-1. Ensure you are on the page for the pull request.
-
-1. In the top right, click the **Code** button
