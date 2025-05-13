@@ -14,14 +14,14 @@ If you recently completed the [Getting Started with GitHub Copilot](/skills/gett
 
 **Copilot coding agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
-| Feature             | Copilot in the editor             | Copilot coding agent           |
-| ------------------- | --------------------------------- | ------------------------------ |
-| **Interface**       | Your code editor                  | Issues and Pull Requests       |
-| **Work Scope**      | Local files                       | Repository                     |
-| **Activation**      | Inline code suggestions, chat     | Issue assignment               |
-| **Customization**   | Custom instructions               | Custom instructions            |
-| **MCP Support**     | Yes                               | Yes                            |
-| **Vibe Coding**     | 😎                                | 😎                             |
+| Feature           | Copilot in the editor         | Copilot coding agent     |
+| ----------------- | ----------------------------- | ------------------------ |
+| **Interface**     | Your code editor              | Issues and Pull Requests |
+| **Work Scope**    | Local files                   | Repository               |
+| **Activation**    | Inline code suggestions, chat | Issue assignment         |
+| **Customization** | Custom instructions           | Custom instructions      |
+| **MCP Support**   | Yes                           | Yes                      |
+| **Vibe Coding**   | 😎                            | 😎                       |
 
 ### How does it work?
 
@@ -149,6 +149,27 @@ In other exercises, we have been developing the Extracurricular Activities websi
    </details>
 
 </details>
+
+## ⌨️ Activity: Enable Copilot coding agent on your repository
+
+Before we can start delegating requests from the teachers to Copilot, we need to grant access to our repository.
+
+1. In the top right, click your **user icon** and select **settings**.
+
+   <img width="300" src="https://github.com/user-attachments/assets/7f8c3602-6de2-4c75-8047-8f4853495f46"><br/>
+   <img width="300" src="https://github.com/user-attachments/assets/2aedfd6e-8b9f-40bb-bdf9-c9fd597f94a4">
+
+1. In the left navigation, expand the **Copilot** section and select **coding agent**.
+
+   <img width="300" src="https://github.com/user-attachments/assets/79800990-6d5c-4055-acc9-b15734fe8b80">
+
+1. Change the **Repository access** field to `Only selected repositories`.
+
+   <img width="300" src="https://github.com/user-attachments/assets/7a665042-b064-4baf-a7e7-0dfc0261063e">
+
+1. Click the **Select repositories** button and ensure this exercise is select.
+
+   <img width="300" src="https://github.com/user-attachments/assets/4bec16dc-7b52-4e95-b554-47252b622adb">
 
 ## ⌨️ Activity: Assign your agent an issue
 
