@@ -22,7 +22,7 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
 1. Create a new branch with the name `prepare-environment`.
 
-   <img width="350" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
+   <img width="250" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
 
 1. Navigate to and open the `.github/copilot-instructions.md` file for editing.
 
@@ -53,61 +53,65 @@ Let's add some information about the school, roles to assume, and typical tasks 
    - Only use HTML, CSS, Javascript, and Python. No other languages.
    ```
 
-   > 💡 Tip: You can add more detail to your description. Check out the `copilot-instructions-ext.md` file.
+   > 💡 Tip: You can add more details. Check out the `copilot-instructions-ext.md` file for ideas.
 
 1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Customizing Copilot's development environment is very similar to [GitHub Actions](https://github.com/features/actions).
+Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is based on [GitHub Actions](https://github.com/features/actions). For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
 
-1. Ensure you are on still on the `prepare-environment` branch.
+1. Ensure you are still on the `prepare-environment` branch.
 
-1. Navigate to and open the `.github/workflows/copilot-setup-steps.yml` for editing.
+1. Navigate to the `.github/workflows/` directory.
 
-1. Verify the job name is `copilot-setup-steps`.
+1. In the top right, click the **Add file** button and select **Create new file**.
 
-1. Add an entry in the [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) area to grant Copilot access to read the repository content and other issues.
+   <img width="250" alt="image" src="https://github.com/user-attachments/assets/c135dd3f-72bd-4d2b-b21f-9c4968a06f5f" />
 
-   ```yml
-   permissions:
-     contents: read
-     issues: read
-   ```
+1. Set the file name to `copilot-setup-steps.yml`.
 
-1. Verify their is a to checkout the code.
+   <img width="250" alt="image" src="https://github.com/user-attachments/assets/b27a2d5a-444d-4ad4-9787-e3bf52b5f56e" />
+
+1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend.
 
    ```yml
-   steps:
-     - name: Checkout code
-       uses: actions/checkout@v4
+   name: "Copilot Setup Steps"
+
+   on: workflow_dispatch
+   jobs:
+     # This is the required job name. If different, Copilot will ignore it.
+     copilot-setup-steps:
+       runs-on: ubuntu-latest
+
+       # Grant Copilot early access to read the repository content.
+       permissions:
+         contents: read
+
+       steps:
+         - name: Checkout code
+           uses: actions/checkout@v4
+
+         - name: Set up Python
+           uses: actions/setup-python@v4
+           with:
+             python-version: "3.x"
+             cache: "pip"
+
+         - name: Install Python dependencies
+           run: |
+             python -m pip install --upgrade pip
+             pip install -r src/requirements.txt
    ```
 
-   > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This provides early access during setup to install the dependencies.
+   > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This workflow provides early access during setup to install the dependencies.
 
-1. Add a step to install the project dependencies before starting work.
-
-   ```yml
-   - name: Set up Python
-     uses: actions/setup-python@v4
-     with:
-       python-version: "3.x"
-       cache: "pip"
-
-   - name: Install Python dependencies
-     run: |
-       python -m pip install --upgrade pip
-       pip install -r src/requirements.txt
-   ```
-
-   > 🪧 **Note:** Copilot will automatically determine this is necessary later. Doing it now saves Copilot some time.
-
-   For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
+   > 🪧 **Note:** Copilot will automatically identify and install missing dependencies. Doing it now saves Copilot some time.
 
 1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
-1. Create a pull request and merge these changes into the `main` branch.
-
-1. How did the manual process compare to letting Copilot prepare most of the work? 🚀
+1. Create a pull request and merge your changes into the `main` branch.
 
 1. With our configuration files commited and the pull request merged, Mona should be busy checking your work. Give her a moment to respond with the next lesson.
+
+> 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔
