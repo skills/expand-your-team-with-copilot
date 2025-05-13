@@ -5,20 +5,22 @@ As you saw, Copilot created a Pull Request, the perfect place to work collaborat
 - **Pull Request Description** - Copilot will keep a concise overview of its goal and implementation.
 - **Timeline** - Copilot will provide high-level notes about starting working sessions and commits.
 - **Session History** - A detailed log of the steps Copilot took to implement the issue.
+
+You can provide feedback to Copilot the same way you would a colleague. Similarly, these trigger Copilot to begin another working session.
+
 - **Comments** - Add a comment on the pull request conversation.
 - **Reviews** - Combine multiple comments in a pull request review.
 - **@ mentions** - You can tag Copilot in a comment just like a coworker.
 
-Adding **comments** or a **review** will trigger Copilot to continue its work.
-
-All work created by Copilot is committed with the assignee as a co-contributor (keeping your contribution graph safe).
-
 #### Important Considerations
 
-- All of Copilot's work is done on a branch with the convention `copilot/*`
-- Push activity from Copilot doesn't trigger Actions workflows.
-- Pull requests created by Copilot do still trigger Actions workflows, but they need human approval before running.
-- Rulesets and similar protections are enforced.
+- Copilot's work is done on a branch with the convention `copilot/*` and does not have access to other branches.
+- Copilot cannot trigger Actions workflows.
+  - Workflows triggered on pull requests require human approval before running.
+- Rulesets and similar protections are still enforced.
+
+> [!TIP]
+> All work created by Copilot is committed with the assignee as a co-contributor (keeping your contribution graph safe). 💕
 
 ### ⌨️ Activity: View Copilot's progress
 
@@ -26,12 +28,13 @@ All work created by Copilot is committed with the assignee as a co-contributor (
 
    <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
 
-1. Wait a moment for Copilot to complete its work and request a review from you.
+1. Wait a moment for Copilot to finish working and request a review from you.
 
-1. Review the pull request description created by Copilot summarizing the work. Notice that it provides 3 things:
+1. Briefly look over the pull request description created by Copilot summarizing the work. Notice that it provides 4 things:
 
-   - A summary of the original request.
-   - A summary of the actions taken.
+   - A short description of the original request.
+   - A summary of the implemented actions.
+   - A summary of the changes were verified.
    - A link to the original issue.
 
    <img width="500" src="https://github.com/user-attachments/assets/acd70a53-b703-493e-9be3-ddfad9ff6d38" />
@@ -42,9 +45,9 @@ All work created by Copilot is committed with the assignee as a co-contributor (
 
 1. The new page shows a journal of Copilot's work. The left navigation is a list of each working session.
 
-   <img width="500" src="https://github.com/user-attachments/assets/e54cfaf0-fabc-4c17-b977-0a7e6dc8de85" />
+   <img width="500" src="https://github.com/user-attachments/assets/2c80fa91-1123-4813-a801-42af368240b9" />
 
-1. Return back to the pull request's convesation page when you are done.
+1. Return back to the pull request's convesation page when you are done view the session history.
 
 ### ⌨️ Activity: Provide Copilot feedback
 
@@ -52,9 +55,9 @@ All work created by Copilot is committed with the assignee as a co-contributor (
 
    <img width="350" src="https://github.com/user-attachments/assets/d71847b9-573b-451e-9c85-946a6988e3f0" />
 
-1. Find the new entry created by Copilot and click on the line to open the add comment dialog box.
+1. Find the new entry created by Copilot. Hover over a line to show the plus sign. **Click** to open the add comment dialog box.
 
-   <img width="350" src="https://github.com/user-attachments/assets/729ab9cd-83f6-400d-8ebf-d0fc7673144c" />
+   <img width="350" src="https://github.com/user-attachments/assets/fd1375a4-fbdf-453e-a457-7bcb1fbbea23" />
 
 1. Reading the description, we think it should be more interesting to match the Manga spirit.
    Let's ask Copilot to fix that. Enter the following text and click **Start a review**.
@@ -63,6 +66,8 @@ All work created by Copilot is committed with the assignee as a co-contributor (
    Please change this description to be inspired by Japanese Manga.
    It needs more personality to attract students.
    ```
+
+   <img width="350" src="https://github.com/user-attachments/assets/f37da948-2062-4f46-ba75-bcff538800e4" />
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 

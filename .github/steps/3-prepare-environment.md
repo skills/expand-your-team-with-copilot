@@ -13,11 +13,14 @@ Let's add some information about the school, roles to assume, and typical tasks 
   - Provide variables to adjust deployments for different environments.
   - Provide secrets to access additional resources.
 
-> [!TIP] You can also enable an MCP server. Check out the dedicate exercise on that, which will also make it available for Copilot coding agent.
+> [!TIP]
+> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) for Copilot to provide even more functionality!
 
 ### ⌨️ Activity: Make instructions to guide Copilot
 
-1. Open the `.github/copilot-instructions.md` file.
+1. In the top navigation, select the **Code** tab.
+
+1. Navigate to and open the `.github/copilot-instructions.md` file.
 
 1. Replace the placeholder text with a link to the development guide.
 
@@ -48,14 +51,16 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
    > 💡 Tip: You can add more detail to your description. Check out the `copilot-instructions-ext.md` file.
 
-1. Update the readme to explain that teachers can now assign issues to Copilot.
+1. In the top right, click the **Commit changes...** button and commit your changes directly to the `main` branch.
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Configuring Copilots environment is very similar to [GitHub Actions]().
+Customizing Copilot's development environment is very similar to [GitHub Actions](https://github.com/features/actions).
 
 1. Open the `.github/workflows/copilot-setup-steps.yml`
+
 1. Verify the job name is `copilot-setup-steps`.
+
 1. Add an entry in the [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) area to grant Copilot access to read the repository content and other issues.
 
    ```yml
@@ -64,9 +69,9 @@ Configuring Copilots environment is very similar to [GitHub Actions]().
      issues: read
    ```
 
-   > Note: Copilot will automatically retrieve the repository content later. This provides early access during setup to install the dependencies.
+   > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This provides early access during setup to install the dependencies.
 
-1. Add a step to checkout the code. and install our project dependencies.
+1. Add a step to checkout the code.
 
    ```yml
    steps:
@@ -74,31 +79,25 @@ Configuring Copilots environment is very similar to [GitHub Actions]().
        uses: actions/checkout@v4
    ```
 
-   > Note: Copilot will automatically determine this is necessary later. Doing it now saves Copilot some time.
-
 1. Add a step to install the project dependencies before starting work.
 
    ```yml
-   steps:
-     - name: Set up Python
-       uses: actions/setup-python@v4
-       with:
-         python-version: "3.x"
-         cache: "pip"
+   - name: Set up Python
+     uses: actions/setup-python@v4
+     with:
+       python-version: "3.x"
+       cache: "pip"
 
-     - name: Install Python dependencies
-       run: |
-         python -m pip install --upgrade pip
-         pip install -r src/requirements.txt
+   - name: Install Python dependencies
+     run: |
+       python -m pip install --upgrade pip
+       pip install -r src/requirements.txt
    ```
+
+   > 🪧 **Note:** Copilot will automatically determine this is necessary later. Doing it now saves Copilot some time.
 
    For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
 
+1. In the top right, click the **Commit changes...** button and commit your changes directly to the `main` branch.
+
 1. With our files committed, wait for mona to provide the next steps.
-
-### (optional) Activity: Provide environment variables
-
-1. Add a repository environment.
-2. Add a variable
-3. Add a secret.
-4. Modify `copilot-step-step.yml` to use the environment.

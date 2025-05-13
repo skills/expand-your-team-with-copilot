@@ -97,8 +97,7 @@ Several security precautions have been implemented to help reduce concerns. Here
 - Copilot can only make changes on the branch it created and resources provided by the repository.
 - Copilot has restricted access to the internet.
 - Only users with write access can assign Copilot an issue.
-- Copilot cannot trigger GitHub Actions workflows.
-  - Workflows triggered on pull requests require human approval before running.
+- Hidden content in issues (like commented code) is ignored.
 
 > [!IMPORTANT]
 > The full list of mitigations and configuration settings can be found in the [Risks & Mitigations](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#copilot-coding-agent-risks-and-mitigations) documentation.
@@ -106,8 +105,6 @@ Several security precautions have been implemented to help reduce concerns. Here
 ### Important considerations
 
 - Impact on GitHub Actions minutes usage.
-- Hidden content, like comments, is ignored
-
 - Free accounts have a limited amount of Actions minutes.
 
   > [!TIP]
@@ -140,11 +137,14 @@ There are several important issues to get done before we leave, but let's do a t
    Max attendance: 15 people
    ```
 
-1. In the top right, click on the **Assignees** area and select **Copilot**. The activity log for this issue will reflect the assignment.
+1. In the top right, click on the **Assignees** area and select **Copilot**.
 
    <img width="350" src="https://github.com/user-attachments/assets/444f9432-17c3-4466-bb8e-aa4e44238130" />
 
-1. View the session logs to understand Copilot's approach. [[ref]](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#understanding-copilots-approach-using-the-session-logs)
+1. At the bottom, click the **Create** button. On the new page, you will notice:
+
+   - The issue will have an `👀` reaction to show Copilot is reading the issue.
+   - The activity log shows you assigned the issue to Copilot.
 
 1. After a moment, you will receive a notification that Copilot has begun work. Additionally, the issue log will show a pull request has been started.
 

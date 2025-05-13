@@ -23,7 +23,8 @@ In this exercise, you will:
 1. Preparing our issues for better results.
 
 > [!IMPORTANT]
-> This is a public preview for an in-development product. Please expect minor differences.
+> This product is in public preview. Please expect minor differences.  
+> It is free with limits until June 1st, 2025.
 
 ### How to start this exercise
 

@@ -57,6 +57,82 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_BODY: ${{ steps.build-message-step-finish.outputs.updated-text }}
 
+  create_issues:
+    name: Create issues
+    needs: [check_step_work]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # TODO: replace with https://github.com/marketplace/actions/create-an-issue
+      - name: Create issues
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            async function createIssuesFromMarkdownFiles(dir, label) {
+              // Get list of markdown files
+              const files = fs.readdirSync(dir);
+              console.log(`Creating ${files.length} issues with '${label}' label from '${dir}' folder.`);
+
+              // Create the issue
+              for (const file of files) {
+
+                // Load the file content
+                const fullPath = path.join(dir, file);
+                const fileContent = fs.readFileSync(fullPath, 'utf8');
+
+                // Split the file content into title, body, and comments
+                const title = fileContent.split('\n')[0].replace('#', '').trim();
+                const body = fileContent.split('\n').slice(1).join('\n').split('----- COMMENTS -----')[0].trim();
+                let comments = fileContent.split('----- COMMENTS -----').slice(1).join('\n').trim().split('\n')
+                comments = comments.filter(comment => comment.trim() !== '');
+
+                // Log the content
+                if (process.env.DEBUG) {
+                  console.log(`\nFile: ${file}`);
+                  console.log(`\n\Title: ${title}`);
+                  console.log(`Body:\n${body}`);
+                  for (const comment of comments) {
+                    console.log(`Comment: '${comment.trim()}'`);
+                  }
+                  console.log(`\n`);
+                }
+
+                // Create the issue
+                const issue = await github.rest.issues.create({
+                  owner: owner,
+                  repo: repo,
+                  title: title,
+                  body: body,
+                  labels: [label],
+                });
+
+                // Add comments
+                for (const comment of comments) {
+                  await github.rest.issues.createComment({
+                    owner: owner,
+                    repo: repo,
+                    issue_number: issue.data.number,
+                    body: comment,
+                  });
+                }
+
+                console.log(`Created issue: ${title}, URL: ${issue.data.html_url} with ${comments.length} comments.`);
+              }
+            };
+
+            // Load issues from both folders
+            await createIssuesFromMarkdownFiles('.github/steps/1-step-issues/bug/', 'bug');
+            await createIssuesFromMarkdownFiles('.github/steps/1-step-issues/enhancement/', 'enhancement');
+
   post_next_step_content:
     name: Post next step content
     needs: [find_exercise, check_step_work]
