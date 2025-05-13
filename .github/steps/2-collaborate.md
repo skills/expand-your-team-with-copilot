@@ -26,16 +26,21 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
 1. In the issue, click on the reference link to the pull request. Alternately, use the **Pull Requests** tab in the top navigation.
 
-   <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
+   <img width="500" alt="image" src="https://github.com/user-attachments/assets/3cbf078e-3cd1-4071-83da-ffb2d32672eb" />
 
-1. Briefly look over the pull request description created by Copilot summarizing the work. Notice that it provides 4 things:
+1. Briefly look over the pull request description created by Copilot summarizing the work. It will go through 3 phases:
 
-   - A short description of the original request.
-   - A summary of the implemented actions.
-   - A summary of the changes were verified.
-   - A link to the original issue.
+   1. When starting, Copilot provides an initial copy of the issue.
 
-   <img width="500" src="https://github.com/user-attachments/assets/acd70a53-b703-493e-9be3-ddfad9ff6d38" />
+      <img width="400" alt="image" src="https://github.com/user-attachments/assets/967dbea0-01c2-4531-9bce-5a055d3dad25" />
+
+   1. After reviewing the issue, Copilot provides a set of action items.
+
+      <img width="400" alt="image" src="https://github.com/user-attachments/assets/acadb796-6545-4b6d-b2b3-9a00ea1744a2" />
+
+   1. After finishing the issue, Copilot provides a summary.
+
+      <img width="400" src="https://github.com/user-attachments/assets/61204574-0262-4c2f-af4b-09b284f31b90" />
 
 1. Scroll down slightly to view the timeline and high-level notes provided by Copilot. Click the **View session** button.
 

@@ -26,7 +26,7 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 
 1. Merge the results. Wow, that was easy! Right?! 🥹
 
-### ⌨️ Activity: Try running implementing 2 issues simultaneously 🤯
+### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
 
 1. In the top navigation, select the **Issues** tab.
 

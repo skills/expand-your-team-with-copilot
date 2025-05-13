@@ -154,12 +154,12 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 Before we can start delegating requests from the teachers to Copilot, we need to grant access to our repository.
 
-1. In the top right, click your **user icon** and select **settings**.
+1. In the top right, click your **user icon** and select **Settings**.
 
    <img width="300" src="https://github.com/user-attachments/assets/7f8c3602-6de2-4c75-8047-8f4853495f46"><br/>
    <img width="300" src="https://github.com/user-attachments/assets/2aedfd6e-8b9f-40bb-bdf9-c9fd597f94a4">
 
-1. In the left navigation, expand the **Copilot** section and select **coding agent**.
+1. In the left navigation, expand the **Copilot** section and select **Coding agent**.
 
    <img width="300" src="https://github.com/user-attachments/assets/79800990-6d5c-4055-acc9-b15734fe8b80">
 
@@ -178,12 +178,16 @@ There are several important issues to get done before we leave, but let's do a t
 > [!TIP]
 > Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
 
+1. If necessary, return back to your exercise repository.
+
 1. In the top navigation, click the **Issues** tab.
+
 1. Above the list, on the top right, click the **New Issue** button.
+
 1. Set the **Title** to `Missing Activity: Manga Maniacs`, enter the below text, and click the **Create** button.
 
    ```md
-   The manga club was recently announced and is naturally missing form the website. Please add it.
+   The manga club was recently announced and is naturally missing from the website. Please add it.
 
    Here are the details:
 
