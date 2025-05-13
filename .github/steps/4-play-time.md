@@ -32,9 +32,9 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 
 1. Find the the following 2 issues and open each in a new tab.
 
-   - `Prettier Interface`.
+   - `Difficulty Tracks`
 
-   - `Hard to change activities`
+   - `Outdated Docs`
 
 1. With both tabs open, assign both to Copilot simultaneously.
 

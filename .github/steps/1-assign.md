@@ -6,7 +6,7 @@ After some discussion with the principal, he has accepted that new features will
 
 Let's set our teachers up for success by configuring Copilot to handle updates while we are away.
 
-<img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/472398fd-1aa1-4084-b443-4e242deb30d9" />
+<img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/6f5c59ab-398b-4fb0-8efd-0aa7b72fef97" />
 
 ### Copilot gets a coding agent!
 
@@ -171,7 +171,7 @@ Before we can start delegating requests from the teachers to Copilot, we need to
 
    <img width="300" src="https://github.com/user-attachments/assets/4bec16dc-7b52-4e95-b554-47252b622adb">
 
-## ⌨️ Activity: Assign your agent an issue
+## ⌨️ Activity: Assign Copilot an issue
 
 There are several important issues to get done before we leave, but let's do a test run on one of the simple options first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
 
