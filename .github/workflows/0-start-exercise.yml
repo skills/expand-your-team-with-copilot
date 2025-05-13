@@ -11,7 +11,7 @@ permissions:
   issues: write
 
 env:
-  STEP_1_FILE: ".github/steps/1-enable.md"
+  STEP_1_FILE: ".github/steps/1-assign.md"
 
 jobs:
   start_exercise:
@@ -66,7 +66,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable next step workflow
-        run: | 
+        run: |
           gh workflow enable "Step 1" || true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

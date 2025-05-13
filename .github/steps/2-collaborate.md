@@ -1,4 +1,4 @@
-## Step 3: Collaborate with Copilot
+## Step 2: Collaborate with Copilot
 
 As you saw, Copilot created a Pull Request, the perfect place to work collaboratively. This pull request is very similar to your normal collaboration strategy, but Copilot provides some options to help with collaboration.
 

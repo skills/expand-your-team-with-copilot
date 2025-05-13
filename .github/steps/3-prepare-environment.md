@@ -1,4 +1,4 @@
-## Step 4: Preparing Copilot's environment
+## Step 3: Preparing Copilot's environment
 
 Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster (so Jessica in IT doesn't ask about increased Actions minutes usage).
 

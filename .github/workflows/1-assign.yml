@@ -1,19 +1,16 @@
-name: Step 5
+name: Step 1
 
 on:
-  pull_request:
-    branches:
-      - main
-    types:
-      - closed
+  issues:
+    types: [assigned]
 
 permissions:
-  contents: write
+  contents: read
   actions: write
   issues: write
 
 env:
-  REVIEW_FILE: ".github/steps/x-review.md"
+  STEP_2_FILE: ".github/steps/2-collaborate.md"
 
 jobs:
   find_exercise:
@@ -40,19 +37,28 @@ jobs:
 
       # START: Check practical exercise
 
-      # Nothing to check. Merging the pull request is enough.
+      # Nothing to verify.
 
       # END: Check practical exercise
 
-      - name: Create comment - step finished - final review next
+      - name: Build message - step finished
+        id: build-message-step-finish
+        uses: skills/action-text-variables@v2
+        with:
+          template-file: exercise-toolkit/markdown-templates/step-feedback/step-finished-prepare-next-step.md
+          template-vars: |
+            next_step_number: 2
+
+      - name: Update comment - step finished
         run: |
           gh issue comment "$ISSUE_URL" \
-            --body-file exercise-toolkit/markdown-templates/step-feedback/lesson-review.md
+            --body "$ISSUE_BODY"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_BODY: ${{ steps.build-message-step-finish.outputs.updated-text }}
 
-  post_review_content:
-    name: Post review content
+  post_next_step_content:
+    name: Post next step content
     needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
     env:
@@ -72,27 +78,20 @@ jobs:
       - name: Create comment - add step content
         run: |
           gh issue comment "$ISSUE_URL" \
-            --body-file "$REVIEW_FILE"
+            --body-file "$STEP_2_FILE"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  finish_exercise:
-    name: Finish Exercise
-    needs: [find_exercise, post_review_content]
-    uses: skills/exercise-toolkit/.github/workflows/finish-exercise.yml@v0.4.0
-    with:
-      issue-url: ${{ needs.find_exercise.outputs.issue-url }}
+      - name: Create comment - watching for progress
+        run: |
+          gh issue comment "$ISSUE_URL" \
+            --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  disable_workflow:
-    name: Disable this workflow
-    needs: [find_exercise, post_review_content]
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Disable current workflow
-        run: gh workflow disable "${{github.workflow}}" || true
+      - name: Disable current workflow and enable next one
+        run: |
+          gh workflow disable "Step 1" || true
+          gh workflow enable "Step 2" || true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

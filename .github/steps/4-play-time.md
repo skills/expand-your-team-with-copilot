@@ -1,4 +1,4 @@
-## Step 5: Play time! 🤾 🏄
+## Step 4: Play time! 🤾 🏄
 
 Now, with Copilot's workspace prepared, let's add some more complex issues and see what our new coding agent can do. Let's try the following:
 
