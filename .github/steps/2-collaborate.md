@@ -74,7 +74,9 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
    <img width="350" src="https://github.com/user-attachments/assets/a5ccd7b5-4df8-406a-b3a8-80328ba210e5" />
 
-1. Wait for Copilot to finish then merge the pull request.
+1. Wait for Copilot to finish working on the change.
+
+1. Activate the pull requests by clicking the **Ready to Review** button then click the **Merge** button.
 
 1. With our review submitted and the pull request merged, Mona should be checking our work. Give her a moment to respond with the next lesson.
 
