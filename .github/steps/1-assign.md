@@ -27,7 +27,7 @@ If you recently completed the [Getting Started with GitHub Copilot](/skills/gett
 
 From the contributor perspective, the flow is very similar to a normal workflow.
 
-1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themself).
+1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themselves).
 2. Copilot creates a branch and pull request.
 3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
 4. When Copilot finishes the issue, the assigner is requested to review.
