@@ -102,18 +102,55 @@ Several security precautions have been implemented to help reduce concerns. Here
 > [!IMPORTANT]
 > The full list of mitigations and configuration settings can be found in the [Risks & Mitigations](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#copilot-coding-agent-risks-and-mitigations) documentation.
 
-### Important considerations
+## ⌨️ Activity: (optional) Get to know our extracurricular activities site
 
-- Impact on GitHub Actions minutes usage.
-- Free accounts have a limited amount of Actions minutes.
+> [!NOTE]
+> Opening a development environment and running the application is not necessary to complete this exercise. You can skip this activity if desired.
 
-  > [!TIP]
-  > You might consider unwatching this repository. This exercise will produce several notifications and emails from Copilot.
+<details>
+<summary>Show Steps</summary>
 
-### ⌨️ Activity: (optional) Quick reminder of the extracurricular activities website
+In other exercises, we have been developing the Extracurricular Activities website. You can follow these steps to start up the development environment and try it out.
 
-1. Show how to launch the codespace.
-2. Show how to view the app running.
+1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
+
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
+
+1. Wait some time for the environment to be prepared. It will automatically install all requirements and services.
+
+1. Validate the **GitHub Copilot** and **Python** extensions are installed and enabled.
+
+   <img width="300" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" /><br/>
+   <img width="300" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
+
+1. Try running the the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
+
+   <details>
+   <summary>📸 Show screenshot</summary><br/>
+
+   <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
+
+   </details>
+
+   <details>
+   <summary>🤷 Having trouble?</summary><br/>
+
+   If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
+
+   <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
+
+   </details>
+
+1. Use the **Ports** tab to find the webpage address, open it, and verify it is running.
+
+   <details>
+   <summary>📸 Show screenshot</summary><br/>
+
+   <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
+
+   </details>
+
+</details>
 
 ### ⌨️ Activity: Assign your agent an issue
 
