@@ -21,7 +21,7 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.4.0
     with:
       exercise-title: "Getting started with GitHub Copilot coding agent"
-      intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to code with Copilot directly in GitHub! 💻✨"
+      intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to assign Copilot coding tasks directly in GitHub! 💻✨"
 
   post_next_step_content:
     name: Post next step content

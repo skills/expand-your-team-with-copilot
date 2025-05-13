@@ -8,7 +8,7 @@ Let's set our teachers up for success by configuring Copilot to handle updates w
 
 <img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/472398fd-1aa1-4084-b443-4e242deb30d9" />
 
-### Agent mode vs coding agent
+### Copilot gets a coding agent!
 
 If you recently completed the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise you learned about **chat**, **edits** and **agent** mode. These are different because they are all designed for your coding editor.
 
@@ -16,10 +16,9 @@ If you recently completed the [Getting Started with GitHub Copilot](/skills/gett
 
 | Feature             | Copilot in the editor             | Copilot coding agent           |
 | ------------------- | --------------------------------- | ------------------------------ |
-| **Interface**       | Inline suggestions in your editor | Issues and Pull Requests       |
+| **Interface**       | Your code editor                  | Issues and Pull Requests       |
 | **Work Scope**      | Local files                       | Repository                     |
 | **Activation**      | Inline code suggestions, chat     | Issue assignment               |
-| **Developer Style** | Best for individual contributors  | Anyone if issues designed well |
 | **Customization**   | Custom instructions               | Custom instructions            |
 | **MCP Support**     | Yes                               | Yes                            |
 | **Vibe Coding**     | 😎                                | 😎                             |
@@ -28,7 +27,7 @@ If you recently completed the [Getting Started with GitHub Copilot](/skills/gett
 
 From the contributor perspective, the flow is very similar to a normal workflow.
 
-1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themself).
+1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themselves).
 2. Copilot creates a branch and pull request.
 3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
 4. When Copilot finishes the issue, the assigner is requested to review.
@@ -63,7 +62,6 @@ flowchart LR
 
     %% Work
     copilot pl1@-->|Creates| branch
-    copilot pl2@-->|Creates| PR
     branch pl3@-->|Starts| review
 
     %% Review
@@ -95,7 +93,7 @@ flowchart LR
 Several security precautions have been implemented to help reduce concerns. Here are a few limitations that you might need to consider when asking Copilot to work on an issue.
 
 - Copilot can only make changes on the branch it created and resources provided by the repository.
-- Copilot has restricted access to the internet.
+- Copilot has [configurable firewall](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#customizing-or-disabling-the-agents-firewall) that restricts access to the internet.
 - Only users with write access can assign Copilot an issue.
 - Hidden content in issues (like commented code) is ignored.
 
@@ -152,7 +150,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 </details>
 
-### ⌨️ Activity: Assign your agent an issue
+## ⌨️ Activity: Assign your agent an issue
 
 There are several important issues to get done before we leave, but let's do a test run on one of the simple options first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
 
