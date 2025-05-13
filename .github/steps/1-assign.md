@@ -93,7 +93,7 @@ flowchart LR
 Several security precautions have been implemented to help reduce concerns. Here are a few limitations that you might need to consider when asking Copilot to work on an issue.
 
 - Copilot can only make changes on the branch it created and resources provided by the repository.
-- Copilot has restricted access to the internet. <!-- - TODO: Add a link to documentation what "restricted" means. I wanted to take a look myself!  -->
+- Copilot has [configurable firewall](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#customizing-or-disabling-the-agents-firewall) that restricts access to the internet.
 - Only users with write access can assign Copilot an issue.
 - Hidden content in issues (like commented code) is ignored.
 
