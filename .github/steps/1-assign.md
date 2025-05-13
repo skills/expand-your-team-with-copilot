@@ -150,7 +150,7 @@ There are several important issues to get done before we leave, but let's do a t
 
    <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
 
-1. With the issue assigned, mona should be busy checking your work. Give her a moment to provide feedback and share the next steps.
+1. With the issue assigned, Mona should be busy checking your work. Give her a moment to share the next steps.
 
 <details>
    <summary>Having trouble? 🤷</summary><br/>

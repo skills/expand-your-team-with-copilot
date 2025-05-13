@@ -44,7 +44,7 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 
 1. Change both from draft mode and then merge them. 😍
 
-1. Nice work! With at least 1 pull request merged, mona should be checking your work and preparing your final review.
+1. Nice work! With at least 1 pull request merged, Mona should be checking your work and preparing your final review.
 
 > [!IMPORTANT]
 > Working on multiple issues in parallel is an art-form. 🎨  

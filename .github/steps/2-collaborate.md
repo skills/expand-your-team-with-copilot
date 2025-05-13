@@ -28,8 +28,6 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
    <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
 
-1. Wait a moment for Copilot to finish working and request a review from you.
-
 1. Briefly look over the pull request description created by Copilot summarizing the work. Notice that it provides 4 things:
 
    - A short description of the original request.
@@ -49,6 +47,8 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
 1. Return back to the pull request's convesation page when you are done view the session history.
 
+1. If necessary, wait a moment for Copilot to finish working and request a review from you.
+
 ### ⌨️ Activity: Provide Copilot feedback
 
 1. At the top of the page, click the **Add your review** button.
@@ -59,8 +59,7 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
    <img width="350" src="https://github.com/user-attachments/assets/fd1375a4-fbdf-453e-a457-7bcb1fbbea23" />
 
-1. Reading the description, we think it should be more interesting to match the Manga spirit.
-   Let's ask Copilot to fix that. Enter the following text and click **Start a review**.
+1. Reading the description, we think it should be more interesting to match the Manga spirit. Let's ask Copilot to fix that. Enter the following text and click **Start a review**.
 
    ```md
    Please change this description to be inspired by Japanese Manga.
@@ -75,7 +74,7 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
    <img width="350" src="https://github.com/user-attachments/assets/a5ccd7b5-4df8-406a-b3a8-80328ba210e5" />
 
-1. With our review submitted, Mona should be checking our work. Wait a moment for her to share the next steps.
+1. With our review submitted, Mona should be checking our work. Give her a moment to respond with the next lesson.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

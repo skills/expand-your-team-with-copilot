@@ -23,8 +23,8 @@ In this exercise, you will:
 1. Preparing our issues for better results.
 
 > [!IMPORTANT]
-> This product is in public preview. Please expect minor differences.  
-> It is free with limits until June 1st, 2025.
+> Copilot coding agent is in **public preview** and free with limitations until June 1st, 2025.  
+> Please expect minor differences in this exercise as features change.
 
 ### How to start this exercise
 
