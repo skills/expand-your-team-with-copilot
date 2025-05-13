@@ -8,7 +8,7 @@ Let's set our teachers up for success by configuring Copilot to handle updates w
 
 <img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/472398fd-1aa1-4084-b443-4e242deb30d9" />
 
-### Agent mode vs coding agent
+### Copilot gets a coding agent!
 
 If you recently completed the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise you learned about **chat**, **edits** and **agent** mode. These are different because they are all designed for your coding editor.
 
