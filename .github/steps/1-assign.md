@@ -150,7 +150,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 </details>
 
-### ⌨️ Activity: Assign your agent an issue
+## ⌨️ Activity: Assign your agent an issue
 
 There are several important issues to get done before we leave, but let's do a test run on one of the simple options first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
 
