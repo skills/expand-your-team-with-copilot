@@ -16,10 +16,9 @@ If you recently completed the [Getting Started with GitHub Copilot](/skills/gett
 
 | Feature             | Copilot in the editor             | Copilot coding agent           |
 | ------------------- | --------------------------------- | ------------------------------ |
-| **Interface**       | Inline suggestions in your editor | Issues and Pull Requests       |
+| **Interface**       | Your code editor                  | Issues and Pull Requests       |
 | **Work Scope**      | Local files                       | Repository                     |
 | **Activation**      | Inline code suggestions, chat     | Issue assignment               |
-| **Developer Style** | Best for individual contributors  | Anyone if issues designed well |
 | **Customization**   | Custom instructions               | Custom instructions            |
 | **MCP Support**     | Yes                               | Yes                            |
 | **Vibe Coding**     | 😎                                | 😎                             |
