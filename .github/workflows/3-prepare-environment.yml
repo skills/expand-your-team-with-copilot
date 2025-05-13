@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - ".github/copilot-instructions.md"
+      # - ".github/copilot-instructions.md"
       - ".github/workflows/copilot-setup-steps.yml"
 
 permissions:
@@ -14,7 +14,7 @@ permissions:
   issues: write
 
 env:
-  STEP_5_FILE: ".github/steps/4-play-time.md"
+  STEP_4_FILE: ".github/steps/4-play-time.md"
 
 jobs:
   find_exercise:
