@@ -1,4 +1,4 @@
-# Getting Started with GitHub Copilot coding agent
+# Expand your team with Copilot coding agent
 
 _Let Copilot coding agent tackle your issues directly on GitHub. No coding environment needed._
 
