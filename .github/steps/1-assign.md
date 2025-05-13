@@ -1,18 +1,18 @@
 ## Step 1: Enable Copilot coding agent
 
-The Mergington Extracurricular Activities site 🎻 ⚽️ ♟️ has become a regular school tool. Although you like that attention, you just realized a problem! You are about to go on sabbatical next semester!
+In the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise, we learned how to use Copilot in our code editor to make major upgrades to the Mergington Extracurricular Activities site. 🎻 ⚽️ ♟️
+
+In fact, the site has become a regular school tool now. And, although you like that attention, you just realized a problem! You are about to go on sabbatical next semester!
 
 After some discussion with the principal, he has accepted that new features will be postponed, but... he is worried. They need to at least have _something_ for handling simple changes while you are away.
 
-Let's set our teachers up for success by configuring Copilot to handle updates while we are away.
+Let's set our teachers up for success by enrolling Copilot (in our school) to handle updates while we are away.
 
 <img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/6f5c59ab-398b-4fb0-8efd-0aa7b72fef97" />
 
-### Copilot gets a coding agent!
+### Copilot is now your coding agent!
 
-If you recently completed the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise you learned about **chat**, **edits** and **agent** mode. These are different because they are all designed for your coding editor.
-
-**Copilot coding agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+In previous exercises, we used Copilot **chat**, **edits** and **agent** mode. While those were super helpful, **Copilot coding agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
 | Feature           | Copilot in the editor         | Copilot coding agent     |
 | ----------------- | ----------------------------- | ------------------------ |
