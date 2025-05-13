@@ -16,11 +16,15 @@ Let's add some information about the school, roles to assume, and typical tasks 
 > [!TIP]
 > You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) for Copilot to provide even more functionality!
 
-### ⌨️ Activity: Make instructions to guide Copilot
+### ⌨️ Activity: Create instructions to guide Copilot
 
 1. In the top navigation, select the **Code** tab.
 
-1. Navigate to and open the `.github/copilot-instructions.md` file.
+1. Create a new branch with the name `prepare-environment`.
+
+   <img width="350" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
+
+1. Navigate to and open the `.github/copilot-instructions.md` file for editing.
 
 1. Replace the placeholder text with a link to the development guide.
 
@@ -51,13 +55,15 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
    > 💡 Tip: You can add more detail to your description. Check out the `copilot-instructions-ext.md` file.
 
-1. In the top right, click the **Commit changes...** button and commit your changes directly to the `main` branch.
+1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
 Customizing Copilot's development environment is very similar to [GitHub Actions](https://github.com/features/actions).
 
-1. Open the `.github/workflows/copilot-setup-steps.yml`
+1. Ensure you are on still on the `prepare-environment` branch.
+
+1. Navigate to and open the `.github/workflows/copilot-setup-steps.yml` for editing.
 
 1. Verify the job name is `copilot-setup-steps`.
 
@@ -69,15 +75,15 @@ Customizing Copilot's development environment is very similar to [GitHub Actions
      issues: read
    ```
 
-   > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This provides early access during setup to install the dependencies.
-
-1. Add a step to checkout the code.
+1. Verify their is a to checkout the code.
 
    ```yml
    steps:
      - name: Checkout code
        uses: actions/checkout@v4
    ```
+
+   > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This provides early access during setup to install the dependencies.
 
 1. Add a step to install the project dependencies before starting work.
 
@@ -98,6 +104,10 @@ Customizing Copilot's development environment is very similar to [GitHub Actions
 
    For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
 
-1. In the top right, click the **Commit changes...** button and commit your changes directly to the `main` branch.
+1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
-1. With our files committed, wait for mona to provide the next steps.
+1. Create a pull request and merge these changes into the `main` branch.
+
+1. How did the manual process compare to letting Copilot prepare most of the work? 🚀
+
+1. With our configuration files commited and the pull request merged, Mona should be busy checking your work. Give her a moment to respond with the next lesson.

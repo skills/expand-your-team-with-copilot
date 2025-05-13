@@ -10,9 +10,9 @@ jobs:
     #   contents: read
     #   issues: read
 
-    # steps:
-    # - name: Checkout code
-    #   uses: actions/checkout@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
     # - name: Set up Python
     #   uses: actions/setup-python@v4
