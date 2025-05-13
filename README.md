@@ -5,8 +5,8 @@ _Let Copilot coding agent tackle your issues directly on GitHub. No coding envir
 ## Welcome
 
 - **Who is this for**: Developers at any experience level looking to accelerate their code workflow.
-- **What you'll learn**: ???
-- **What you'll build**: You will provide GitHub Copilot coding agent access to the repository for the Mergington High School Extracurricular Activities website, enabling your fellow teachers to make changes without needing to code directly.
+- **What you'll learn**: How to assign Copilot an issue, review Copilot's work, provide feedback to Copilot, and work on multiple issues in parallel.
+- **What you'll build**: You will provide GitHub Copilot access to the repository for the Mergington High School Extracurricular Activities website, enabling your fellow teachers to make changes without needing to code directly.
 - **Prerequisites**:
 
   - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
