@@ -1,2 +1,5 @@
-fastapi
-uvicorn
+fastapi==0.115.12
+uvicorn==0.34.2
+pymongo==4.12.1
+argon2==0.1.10
+argon2-cffi==23.1.0
