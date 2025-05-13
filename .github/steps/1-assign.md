@@ -62,7 +62,6 @@ flowchart LR
 
     %% Work
     copilot pl1@-->|Creates| branch
-    copilot pl2@-->|Creates| PR
     branch pl3@-->|Starts| review
 
     %% Review
