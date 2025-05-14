@@ -32,7 +32,7 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
    1. After reviewing the issue, Copilot provides a set of action items.
    1. After finishing the issue, Copilot provides a summary.
 
-   If you are looking at the Pull Request you will see the updates in real time. You can also view the edit history of the description.
+   Watch in real-time as Copilot updates the pull request description. You can also review the full edit history to see how the description evolved.
 
    <img width="500" src="https://github.com/user-attachments/assets/cb88a67c-e42f-463c-88cd-b23a391b28a0" />
 
