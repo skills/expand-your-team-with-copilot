@@ -41,7 +41,7 @@ jobs:
 
       # START: Check practical exercise
 
-      # Nothing to check. Merging the pull request is enough.
+      # TODO: Check that the required files were updated using https://github.com/tj-actions/changed-files
 
       # END: Check practical exercise
 
