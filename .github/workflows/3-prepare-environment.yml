@@ -1,12 +1,11 @@
 name: Step 3
 
 on:
-  push:
+  pull_request:
     branches:
       - prepare-environment
     paths:
-      # - ".github/copilot-instructions.md"
-      - ".github/workflows/copilot-setup-steps.yml"
+      - ".github/**"
 
 permissions:
   contents: read
@@ -39,11 +38,87 @@ jobs:
           path: exercise-toolkit
           ref: v0.4.0
 
+      - name: Update comment - checking work
+        run: |
+          gh issue comment "$ISSUE_URL" \
+            --body-file exercise-toolkit/markdown-templates/step-feedback/checking-work.md \
+            --edit-last
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # START: Check practical exercise
 
-      # TODO: Check that the required files were updated using https://github.com/tj-actions/changed-files
+      - name: Check file changes
+        id: changed-files
+        uses: tj-actions/changed-files@v46.0.5
+
+      - name: Check copilot-instructions.md
+        id: check-instructions
+        uses: actions/github-script@v6
+        continue-on-error: true
+        with:
+          script: |
+            const changedFiles = '${{ steps.changed-files.outputs.all_changed_files }}'.split(' ');
+            let message = '';
+
+            if (!changedFiles.includes('.github/copilot-instructions.md')) {
+              message = 'You need to provide instructions in .github/copilot-instructions.md file';
+              core.setOutput('STEP_MESSAGE', message);
+              core.setFailed('The .github/copilot-instructions.md file was not modified');
+              return;
+            }
+
+            message = 'Provided instructions in .github/copilot-instructions.md';
+            core.setOutput('STEP_MESSAGE', message);
+
+      - name: Check copilot-setup-steps.yml
+        id: check-setup-steps
+        uses: actions/github-script@v6
+        continue-on-error: true
+        with:
+          script: |
+            const changedFiles = '${{ steps.changed-files.outputs.all_changed_files }}'.split(' ');
+            let message = '';
+
+            if (!changedFiles.includes('.github/workflows/copilot-setup-steps.yml')) {
+              message = 'You need to setup copilot-setup-steps.yml workflow';
+              core.setOutput('STEP_MESSAGE', message);
+              core.setFailed('The copilot-setup-steps.yml file was not modified');
+              return;
+            }
+
+            message = 'You setup the copilot-setup-steps.yml workflow';
+            core.setOutput('STEP_MESSAGE', message);
+
+
+
+      - name: Build message - step results
+        id: build-message-step-results
+        uses: skills/action-text-variables@v2
+        with:
+          template-file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
+          template-vars: |
+            step_number: 3
+            passed: ${{ !contains(steps.*.outcome, 'failure') }}
+            results_table:
+              - description: ${{ steps.check-instructions.outputs.STEP_MESSAGE }}
+                passed: ${{ steps.check-instructions.outcome == 'success' }}
+              - description: ${{ steps.check-setup-steps.outputs.STEP_MESSAGE }}
+                passed: ${{ steps.check-setup-steps.outcome == 'success' }}
+
+      - name: Create comment - step results
+        run: |
+          gh issue comment "$ISSUE_URL" \
+            --body "$COMMENT_BODY" \
+            --edit-last
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_BODY: ${{ steps.build-message-step-results.outputs.updated-text }}
 
       # END: Check practical exercise
+
+      - name: Fail job if not all checks passed
+        if: contains(steps.*.outcome, 'failure')
+        run: exit 1
 
       - name: Build message - step finished
         id: build-message-step-finish
@@ -53,7 +128,7 @@ jobs:
           template-vars: |
             next_step_number: 4
 
-      - name: Update comment - step finished
+      - name: Add comment - step finished
         run: |
           gh issue comment "$ISSUE_URL" \
             --body "$ISSUE_BODY"
