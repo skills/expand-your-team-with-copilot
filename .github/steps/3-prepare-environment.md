@@ -106,7 +106,7 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
    > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This workflow provides early access during setup to install the dependencies.
 
-   > 🪧 **Note:** Copilot will automatically identify and install missing dependencies. Doing it now saves Copilot time and ensu
+   > 🪧 **Note:** Copilot will automatically identify and install missing dependencies. Doing it now saves Copilot time and ensures proper environment setup
 
 1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
