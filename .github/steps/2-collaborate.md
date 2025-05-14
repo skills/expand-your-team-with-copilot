@@ -26,16 +26,22 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 
 1. In the issue, click on the reference link to the pull request. Alternately, use the **Pull Requests** tab in the top navigation.
 
-1. Briefly look over the pull request description created by Copilot summarizing the work. The description will be updated through different phases:
+1. Watch in real-time as Copilot updates the pull request description. It will be progresses through 3 phases:
 
-   1. When starting, Copilot provides an initial copy of the issue.
-   1. After reviewing the issue, Copilot provides a set of action items.
-   1. After finishing the issue, Copilot provides a summary.
+   <details>
+      <summary>1. When starting, Copilot provides an initial copy of the issue. <b>[show image]</b></summary>
+      <img width="500" alt="image" src="https://github.com/user-attachments/assets/967dbea0-01c2-4531-9bce-5a055d3dad25" />
+   </details>
 
-   Watch in real-time as Copilot updates the pull request description. You can also review the full edit history to see how the description evolved.
+   <details>
+      <summary>2. After planning, Copilot provides a set of action items. <b>[show image]</b></summary>
+      <img width="500" alt="image" src="https://github.com/user-attachments/assets/acadb796-6545-4b6d-b2b3-9a00ea1744a2" />
+   </details>
 
-   <img width="500" src="https://github.com/user-attachments/assets/cb88a67c-e42f-463c-88cd-b23a391b28a0" />
-
+   <details>
+      <summary>3. After finishing, Copilot provides a summary. <b>[show image]</b></summary>
+      <img width="500" alt="image" src="https://github.com/user-attachments/assets/61204574-0262-4c2f-af4b-09b284f31b90" />
+   </details>
 
 1. Scroll down slightly to view the timeline and high-level notes provided by Copilot. Click the **View session** button.
 
@@ -45,7 +51,15 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 
    <img width="500" src="https://github.com/user-attachments/assets/2c80fa91-1123-4813-a801-42af368240b9" />
 
-1. Wait for Copilot to finish working on the change if not already finished. Take a moment to see how Copilot approached solving the issue.
+1. If necessary, wait for Copilot to finish working on the changes.
+
+> [!TIP]
+> You can use the **edited** dropdown to view the pull request description change history.
+>
+> <details>
+> <summary>Show image</summary>
+> <img width="500" alt="image" src="https://github.com/user-attachments/assets/cb88a67c-e42f-463c-88cd-b23a391b28a0" />
+> </details>
 
 ### ⌨️ Activity: Provide Copilot feedback
 

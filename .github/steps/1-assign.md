@@ -178,7 +178,9 @@ There are several important issues to get done before we leave, but let's do a t
 > [!TIP]
 > Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
 
-1. Go to the [**Issues**](https://github.com/{{full_repo_name}}/issues) tab of this exercise repository.
+1. Return to your [exercise repository](<(https://github.com/{{full_repo_name}})>).
+
+1. In the top navigation, select the **Issues** tab.
 
 1. Above the list, on the top right, click the **New Issue** button.
 
@@ -205,12 +207,11 @@ There are several important issues to get done before we leave, but let's do a t
 
    <img width="350" src="https://github.com/user-attachments/assets/444f9432-17c3-4466-bb8e-aa4e44238130" />
 
-1. You will notice:
+1. At the bottom, click the **Create** button. After a moment, you will notice:
 
    - The issue will have an `👀` reaction to show Copilot is reading the issue.
    - The activity log shows you assigned the issue to Copilot.
-
-1. After a moment, you will receive a notification that Copilot has begun work. Additionally, the issue log will show a pull request has been started.
+   - The issue log includes a linked pull request.
 
    <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
 

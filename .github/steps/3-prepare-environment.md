@@ -55,7 +55,7 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
    > 💡 Tip: You can add more details. Check out the `copilot-instructions-ext.md` file for ideas.
 
-1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
+1. When finished, **commit your changes** to the `prepare-environment` branch.
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
@@ -110,7 +110,8 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
 1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
-1. Create a pull request and wait for give Mona a second to check your work!
-1. Merge the pull request if and only if Mona says you passed the checks!
+1. Create a **pull request** and **wait for feedback** from Mona.
+
+1. After Mona shares the next steps, merge the pull request.
 
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔

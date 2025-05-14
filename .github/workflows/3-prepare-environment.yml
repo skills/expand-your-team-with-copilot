@@ -67,7 +67,7 @@ jobs:
               return;
             }
 
-            message = 'Provided instructions in .github/copilot-instructions.md';
+            message = 'Provided instructions in `.github/copilot-instructions.md`';
             core.setOutput('STEP_MESSAGE', message);
 
       - name: Check copilot-setup-steps.yml
@@ -82,7 +82,7 @@ jobs:
             if (!changedFiles.includes('.github/workflows/copilot-setup-steps.yml')) {
               message = 'You need to setup copilot-setup-steps.yml workflow';
               core.setOutput('STEP_MESSAGE', message);
-              core.setFailed('The copilot-setup-steps.yml file was not modified');
+              core.setFailed('The `copilot-setup-steps.yml` file was not modified');
               return;
             }
 
