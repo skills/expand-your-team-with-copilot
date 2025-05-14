@@ -182,7 +182,13 @@ There are several important issues to get done before we leave, but let's do a t
 
 1. Above the list, on the top right, click the **New Issue** button.
 
-1. Set the **Title** to `Missing Activity: Manga Maniacs`, enter the below text, and click the **Create** button.
+1. Set the **Title** to:
+
+   ```md
+   Missing Activity: Manga Maniacs
+   ```
+
+   Enter the below text as description, and click the **Create** button.
 
    ```md
    The manga club was recently announced and is naturally missing from the website. Please add it.
