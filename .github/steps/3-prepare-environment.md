@@ -1,6 +1,6 @@
 ## Step 3: Preparing Copilot's environment
 
-Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster (so Jessica in IT doesn't ask about increased Actions minutes usage).
+Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster and more reliable (so Jessica in IT doesn't ask about increased Actions minutes usage).
 
 - **copilot instructions** - Provide project specific context for copilot before considering the issue.
   - Provide business considerations for developing the project.
@@ -112,5 +112,5 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
 1. Create a pull request and wait for give Mona a second to check your work!
 1. Merge the pull request if and only if Mona says you passed the checks!
-   
+
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔
