@@ -1,6 +1,6 @@
 ## Step 3: Preparing Copilot's environment
 
-Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster (so Jessica in IT doesn't ask about increased Actions minutes usage).
+Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster and more reliable (so Jessica in IT doesn't ask about increased Actions minutes usage).
 
 - **copilot instructions** - Provide project specific context for copilot before considering the issue.
   - Provide business considerations for developing the project.
@@ -59,7 +59,7 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is based on [GitHub Actions](https://github.com/features/actions). For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
+Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
 
 1. Ensure you are still on the `prepare-environment` branch.
 
@@ -106,12 +106,11 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
    > 🪧 **Note:** Copilot will automatically retrieve the repository contents later. This workflow provides early access during setup to install the dependencies.
 
-   > 🪧 **Note:** Copilot will automatically identify and install missing dependencies. Doing it now saves Copilot some time.
+   > 🪧 **Note:** Copilot will automatically identify and install missing dependencies. Doing it now saves Copilot time and ensures proper environment setup
 
 1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
-1. Create a pull request and merge your changes into the `main` branch.
-
-1. With our configuration files commited and the pull request merged, Mona should be busy checking your work. Give her a moment to respond with the next lesson.
+1. Create a pull request and wait for give Mona a second to check your work!
+1. Merge the pull request if and only if Mona says you passed the checks!
 
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔

@@ -16,13 +16,13 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 
 1. Find and open issue titled `Simplify Change requests for teachers`.
 
-1. Assign it to Copilot and switch to the created pull request.
+1. Familiarize yourself with the issue, **Assign it to Copilot** and switch to the created pull request.
 
 1. Scroll down and click the **View Session** button to watch Copilot's live progress. Alternately, go take a quick break. ☕️
 
 1. (optional) Modify the templates Copilot provided.
 
-1. Click the **Ready for Review** button to activate Copilot's draft pull request.
+1. When Copilot session is finished, click the **Ready for Review** button to change the Copilot's pull request draft status.
 
 1. Merge the results. Wow, that was easy! Right?! 🥹
 
@@ -47,7 +47,7 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 1. Nice work! With at least 1 pull request merged, Mona should be checking your work and preparing your final review.
 
 > [!IMPORTANT]
-> Working on multiple issues in parallel is an art-form. 🎨  
+> Working on multiple issues in parallel is an art-form. 🎨
 > Make sure you keep them independant to avoid merge conflicts! 😱
 
 ### ⌨️ (optional) Activity: Try using the issue templates

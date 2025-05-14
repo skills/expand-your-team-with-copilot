@@ -178,13 +178,17 @@ There are several important issues to get done before we leave, but let's do a t
 > [!TIP]
 > Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
 
-1. If necessary, return back to your exercise repository.
-
-1. In the top navigation, click the **Issues** tab.
+1. Go to the [**Issues**](https://github.com/{{full_repo_name}}/issues) tab of this exercise repository.
 
 1. Above the list, on the top right, click the **New Issue** button.
 
-1. Set the **Title** to `Missing Activity: Manga Maniacs`, enter the below text, and click the **Create** button.
+1. Set the **Title** to:
+
+   ```md
+   Missing Activity: Manga Maniacs
+   ```
+
+   Enter the below text as description, and click the **Create** button.
 
    ```md
    The manga club was recently announced and is naturally missing from the website. Please add it.
@@ -201,7 +205,7 @@ There are several important issues to get done before we leave, but let's do a t
 
    <img width="350" src="https://github.com/user-attachments/assets/444f9432-17c3-4466-bb8e-aa4e44238130" />
 
-1. At the bottom, click the **Create** button. On the new page, you will notice:
+1. You will notice:
 
    - The issue will have an `👀` reaction to show Copilot is reading the issue.
    - The activity log shows you assigned the issue to Copilot.

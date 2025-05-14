@@ -14,8 +14,9 @@ Here's a recap of your accomplishments:
 
 ### What's next?
 
-- Learn some [best practices with Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/best-practices-for-using-copilot-coding-agent) for defining good issues.
-- Adjust Copilots environment to [enable Model Context Protocal](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) to give Copilot more tools. 
+- Learn about the [best practices with Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/best-practices-for-using-copilot-coding-agent) for defining good issues.
+- Adjust Copilots environment to [enable Model Context Protocal](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) to give Copilot more tools.
+  - Never used Model Context Protocol? Try the [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) GitHub Skills Exercise
 
 Check out these resources to learn more about GitHub Copilot coding agent :
 
