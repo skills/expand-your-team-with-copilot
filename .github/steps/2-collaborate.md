@@ -1,12 +1,12 @@
 ## Step 2: Collaborate with Copilot
 
-As you saw, Copilot created a Pull Request, the perfect place to work collaboratively. This pull request is very similar to your normal collaboration strategy, but Copilot provides some options to help with collaboration.
+When Copilot creates a pull request in which you'll find:
 
 - **Pull Request Description** - Copilot will keep a concise overview of its goal and implementation.
 - **Timeline** - Copilot will provide high-level notes about starting working sessions and commits.
 - **Session History** - A detailed log of the steps Copilot took to implement the issue.
 
-You can provide feedback to Copilot the same way you would a colleague. Similarly, these trigger Copilot to begin another working session.
+You can provide feedback to Copilot the same way you would a colleague. These actions trigger Copilot to begin another working session.
 
 - **Comments** - Add a comment on the pull request conversation.
 - **Reviews** - Combine multiple comments in a pull request review.
@@ -26,21 +26,16 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
 1. In the issue, click on the reference link to the pull request. Alternately, use the **Pull Requests** tab in the top navigation.
 
-   <img width="500" alt="image" src="https://github.com/user-attachments/assets/3cbf078e-3cd1-4071-83da-ffb2d32672eb" />
-
-1. Briefly look over the pull request description created by Copilot summarizing the work. It will go through 3 phases:
+1. Briefly look over the pull request description created by Copilot summarizing the work. The description will be updated through different phases:
 
    1. When starting, Copilot provides an initial copy of the issue.
-
-      <img width="400" alt="image" src="https://github.com/user-attachments/assets/967dbea0-01c2-4531-9bce-5a055d3dad25" />
-
    1. After reviewing the issue, Copilot provides a set of action items.
-
-      <img width="400" alt="image" src="https://github.com/user-attachments/assets/acadb796-6545-4b6d-b2b3-9a00ea1744a2" />
-
    1. After finishing the issue, Copilot provides a summary.
 
-      <img width="400" src="https://github.com/user-attachments/assets/61204574-0262-4c2f-af4b-09b284f31b90" />
+   If you are looking at the Pull Request you will see the updates in real time. You can also view the edit history of the description.
+
+   <!-- TODO: ADD SCREENSHOT -->
+
 
 1. Scroll down slightly to view the timeline and high-level notes provided by Copilot. Click the **View session** button.
 
@@ -50,13 +45,11 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
    <img width="500" src="https://github.com/user-attachments/assets/2c80fa91-1123-4813-a801-42af368240b9" />
 
-1. Return back to the pull request's convesation page when you are done view the session history.
-
-1. If necessary, wait a moment for Copilot to finish working and request a review from you.
+1. Wait for Copilot to finish working on the change if not already finished. Take a moment to see how Copilot approached solving the issue.
 
 ### ⌨️ Activity: Provide Copilot feedback
 
-1. At the top of the page, click the **Add your review** button.
+1. Back in the pull request, click the **Add your review** button.
 
    <img width="350" src="https://github.com/user-attachments/assets/d71847b9-573b-451e-9c85-946a6988e3f0" />
 
@@ -75,11 +68,11 @@ You can provide feedback to Copilot the same way you would a colleague. Similarl
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
-1. After a moment, Copilot will add a session entry and indicate progress on the timeline. Click the **View changes** button to see the updated description.
+1. After a moment, Copilot will add a new session entry and indicate progress on the timeline.
+
+1. Wait for Copilot to finish working on the change and then click the **View changes** button to see the updated activity description.
 
    <img width="350" src="https://github.com/user-attachments/assets/a5ccd7b5-4df8-406a-b3a8-80328ba210e5" />
-
-1. Wait for Copilot to finish working on the change.
 
 1. Activate the pull requests by clicking the **Ready to Review** button then click the **Merge** button.
 
