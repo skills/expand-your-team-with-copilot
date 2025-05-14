@@ -3,7 +3,7 @@ name: Step 3
 on:
   pull_request:
     branches:
-      - prepare-environment
+      - main
     paths:
       - ".github/**"
 
@@ -88,8 +88,6 @@ jobs:
 
             message = 'You setup the copilot-setup-steps.yml workflow';
             core.setOutput('STEP_MESSAGE', message);
-
-
 
       - name: Build message - step results
         id: build-message-step-results
