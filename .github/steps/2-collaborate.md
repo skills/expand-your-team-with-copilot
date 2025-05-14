@@ -34,7 +34,7 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 
    If you are looking at the Pull Request you will see the updates in real time. You can also view the edit history of the description.
 
-   <!-- TODO: ADD SCREENSHOT -->
+   <img width="500" src="https://github.com/user-attachments/assets/cb88a67c-e42f-463c-88cd-b23a391b28a0" />
 
 
 1. Scroll down slightly to view the timeline and high-level notes provided by Copilot. Click the **View session** button.
