@@ -71,7 +71,7 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
 1. Set the file name to `copilot-setup-steps.yml`.
 
-   <img width="250" alt="image" src="https://github.com/user-attachments/assets/b27a2d5a-444d-4ad4-9787-e3bf52b5f56e" />
+   <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
 
 1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend.
 
