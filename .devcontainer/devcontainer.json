@@ -2,7 +2,7 @@
   "name": "Python 3",
   "image": "mcr.microsoft.com/vscode/devcontainers/python:3.13",
   "forwardPorts": [8000],
-  "postCreateCommand": "sudo chmod +x ./.devcontainer/postCreate.sh && sudo ./.devcontainer/postCreate.sh",
+  "postCreateCommand": "sudo chmod +x ./.devcontainer/*.sh && sudo ./.devcontainer/postCreate.sh",
   "customizations": {
     "vscode": {
       "extensions": [
