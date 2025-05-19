@@ -110,8 +110,16 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
 1. In the top right, click the **Commit changes...** button and commit your changes to the `prepare-environment` branch.
 
-1. Create a **pull request** and **wait for feedback** from Mona.
+1. Create a **pull request**, but do **NOT** merge it yet. Mona will check your files to confirm they are correct.
 
-1. After Mona shares the next steps, merge the pull request.
+1. After Mona shares the next steps, you can merge the pull request.
 
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔
+
+
+<details>
+<summary>🤷 Having trouble?</summary><br/>
+
+If you accidentally merged the pull request before Mona shared feedback about mistakes, that is ok. Just recreate the branch and try again with a new pull request.
+
+</details>
