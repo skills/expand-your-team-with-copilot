@@ -36,7 +36,7 @@ jobs:
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.4.0
+          ref: v0.6.0
 
       - name: Update comment - checking work
         run: |
@@ -150,7 +150,7 @@ jobs:
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.4.0
+          ref: v0.6.0
 
       - name: Create comment - add step content
         run: |
