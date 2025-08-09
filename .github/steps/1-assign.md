@@ -32,7 +32,7 @@ From the contributor perspective, the flow is very similar to a normal workflow.
 3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
 4. When Copilot finishes the issue, the assigner is requested to review.
 5. Assigner submits a review, adds comments, or approves.
-6. If feedback is provide, Copilot continues working to implement it.
+6. If feedback is provided, Copilot continues working to implement it.
 7. The requester repeats above steps until satisfied and then merges.
 
 ```mermaid
