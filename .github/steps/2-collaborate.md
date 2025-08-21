@@ -74,7 +74,7 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 1. Reading the description, we think it should be more interesting to match the Manga spirit. Let's ask Copilot to fix that. Enter the following text and click **Start a review**.
 
    ```md
-   Please change this description to be inspired by Japanese Manga.
+   @copilot Please change this description to be inspired by Japanese Manga.
    It needs more personality to attract students.
    ```
 
