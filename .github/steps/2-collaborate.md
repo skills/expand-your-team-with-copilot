@@ -81,7 +81,6 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
    It needs more personality to attract students.
    ```
 
-   <img width="350" src="https://github.com/user-attachments/assets/f37da948-2062-4f46-ba75-bcff538800e4" />
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
