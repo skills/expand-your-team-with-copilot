@@ -394,7 +394,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const queryString =
         queryParams.length > 0 ? `?${queryParams.join("&")}` : "";
-      const response = await fetch(`/activities${queryString}`);
+      const response = await fetch(`/activities/${queryString}`);
       const activities = await response.json();
 
       // Save the activities data
