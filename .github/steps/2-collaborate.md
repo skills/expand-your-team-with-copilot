@@ -12,6 +12,9 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 - **Reviews** - Combine multiple comments in a pull request review.
 - **@ mentions** - You can tag Copilot in a comment just like a coworker.
 
+> [!IMPORTANT]
+> Copilot only acts on review comments when explicitly tagged with `@copilot`. Without this mention, your review feedback will not trigger Copilot to respond or make changes. This applies specifically to pull request review comments as described in the [GitHub Blog](https://github.blog/changelog/2025-08-05-copilot-coding-agent-improved-pull-request-review-experience/).
+
 #### Important Considerations
 
 - Copilot's work is done on a branch with the convention `copilot/*` and does not have access to other branches.
