@@ -46,7 +46,7 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 
 > [!IMPORTANT]
 > Working on multiple issues in parallel is an art-form. 🎨
-> Make sure you keep them independant to avoid merge conflicts! 😱
+> Make sure you keep them independent to avoid merge conflicts! 😱
 
 ### ⌨️ (optional) Activity: Try using the issue templates
 
