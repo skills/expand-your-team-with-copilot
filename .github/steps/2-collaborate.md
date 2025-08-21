@@ -13,7 +13,7 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 - **@ mentions** - You can tag Copilot in a comment just like a coworker.
 
 > [!IMPORTANT]
-> Copilot only acts on review comments when explicitly tagged with `@copilot`. Without this mention, your review feedback will not trigger Copilot to respond or make changes. This applies specifically to pull request review comments as described in the [GitHub Blog](https://github.blog/changelog/2025-08-05-copilot-coding-agent-improved-pull-request-review-experience/).
+> Copilot only acts on review comments when explicitly tagged with `@copilot`. Without this mention, your review feedback will not trigger Copilot to respond or make changes. 
 
 #### Important Considerations
 
