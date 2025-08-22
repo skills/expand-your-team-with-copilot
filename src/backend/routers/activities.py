@@ -13,6 +13,7 @@ router = APIRouter(
     tags=["activities"]
 )
 
+@router.get("", response_model=Dict[str, Any])
 @router.get("/", response_model=Dict[str, Any])
 def get_activities(
     day: Optional[str] = None,
