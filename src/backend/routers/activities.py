@@ -13,8 +13,8 @@ router = APIRouter(
     tags=["activities"]
 )
 
-@router.get("/", response_model=Dict[str, Any])
-def get_activities(
+# Define the main get_activities function that will be used by both routes
+def _get_activities_impl(
     day: Optional[str] = None,
     start_time: Optional[str] = None,
     end_time: Optional[str] = None
@@ -45,6 +45,26 @@ def get_activities(
         activities[name] = activity
     
     return activities
+
+# Add both routes - one with trailing slash and one without
+@router.get("/", response_model=Dict[str, Any])
+def get_activities_with_slash(
+    day: Optional[str] = None,
+    start_time: Optional[str] = None,
+    end_time: Optional[str] = None
+) -> Dict[str, Any]:
+    """Get all activities with their details, with optional filtering by day and time"""
+    return _get_activities_impl(day, start_time, end_time)
+
+# Add explicit route for requests without trailing slash to avoid redirects
+@router.get("", response_model=Dict[str, Any])
+def get_activities_without_slash(
+    day: Optional[str] = None,
+    start_time: Optional[str] = None,
+    end_time: Optional[str] = None
+) -> Dict[str, Any]:
+    """Get all activities with their details, with optional filtering by day and time"""
+    return _get_activities_impl(day, start_time, end_time)
 
 @router.get("/days", response_model=List[str])
 def get_available_days() -> List[str]:
