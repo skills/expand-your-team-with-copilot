@@ -12,6 +12,9 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 - **Reviews** - Combine multiple comments in a pull request review.
 - **@ mentions** - You can tag Copilot in a comment just like a coworker.
 
+> [!IMPORTANT]
+> Copilot only acts on review comments when explicitly tagged with `@copilot`. Without this mention, your review feedback will not trigger Copilot to respond or make changes. 
+
 #### Important Considerations
 
 - Copilot's work is done on a branch with the convention `copilot/*` and does not have access to other branches.
@@ -74,11 +77,10 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 1. Reading the description, we think it should be more interesting to match the Manga spirit. Let's ask Copilot to fix that. Enter the following text and click **Start a review**.
 
    ```md
-   Please change this description to be inspired by Japanese Manga.
+   @copilot Please change this description to be inspired by Japanese Manga.
    It needs more personality to attract students.
    ```
 
-   <img width="350" src="https://github.com/user-attachments/assets/f37da948-2062-4f46-ba75-bcff538800e4" />
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
