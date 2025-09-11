@@ -16,11 +16,11 @@ _Let Copilot coding agent tackle your issues directly on GitHub. No coding envir
 
 In this exercise, you will:
 
-1. How to enable Copilot coding agent on your repository.
+1. Learn how to enable Copilot coding agent on your repository.
 1. Assign an issue and understand your agent's progress.
 1. Collaborate with your agent on code changes.
 1. Customize and optimize your agent's workspace.
-1. Preparing our issues for better results.
+1. Prepare issues for better results.
 
 > [!IMPORTANT]
 > Copilot coding agent is in **public preview** and free with limitations until June 1st, 2025.  
