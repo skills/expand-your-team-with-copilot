@@ -10,7 +10,6 @@ _Let Copilot coding agent tackle your issues directly on GitHub. No coding envir
 - **Prerequisites**:
 
   - GitHub Copilot subscription (Pro or higher) is required to use Copilot coding agent.  
-  - Optional: You can complete this exercise manually to practice the GitHub workflow without Copilot coding agent.
   - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
   - Skills exercise: [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot)
 
