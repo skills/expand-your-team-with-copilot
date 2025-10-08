@@ -9,6 +9,7 @@ _Let Copilot coding agent tackle your issues directly on GitHub. No coding envir
 - **What you'll build**: You will provide GitHub Copilot access to the repository for the Mergington High School Extracurricular Activities website, enabling your fellow teachers to make changes without needing to code directly.
 - **Prerequisites**:
 
+  - GitHub Copilot subscription (Pro or higher) is required to use Copilot coding agent.  
   - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
   - Skills exercise: [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot)
 
