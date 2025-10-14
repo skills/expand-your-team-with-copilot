@@ -80,7 +80,7 @@ flowchart LR
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
-1. When Copilot completes its work and requests you as a reviewer proceed to the next activity!
+1. When Copilot completes its work and requests you as a reviewer, you can proceed to the next activity!
 
 > [!TIP]
 > You can use the **edited** dropdown to view the pull request description change history.
