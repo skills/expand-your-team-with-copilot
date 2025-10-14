@@ -111,7 +111,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
-1. After a moment, Copilot will add a new session entry and indicate progress on the timeline. Wait for Copilot to finish working on the change
+1. After a moment, Copilot will add a new session entry and indicate progress on the timeline. Wait for Copilot to finish working on the change.
 
    > 🪧 **Note:** This can take some time! You can monitor the new session or take a break.
 
