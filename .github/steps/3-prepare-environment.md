@@ -1,22 +1,26 @@
 ## Step 3: Preparing Copilot's environment
 
-Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster and more reliable (so Jessica in IT doesn't ask about increased Actions minutes usage).
+In this step, you'll customize Copilot's environment so it can work effectively for your school's project.
 
-- **copilot instructions** - Provide project specific context for copilot before considering the issue.
-  - Provide business considerations for developing the project.
-  - Provide roles to guide Copilot.
-  - Provide useful commands for common tasks.
-- **copilot setup steps** - Customize the development environment in advance to make sessions faster.
-  - Pre-install useful tools for Copilot.
-  - Reducing errors from Copilot installing incorrect versions.
-- **environment** - Use repository environments for configurations.
-  - Provide variables to adjust deployments for different environments.
-  - Provide secrets to access additional resources.
+Let's learn what are the different ways you can customize the Copilot Coding Agent's behaviour so it makes future development smoother for everyone! :rocket:
 
-> [!TIP]
-> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) for Copilot to provide even more functionality!
+### 📖 Theory: Customizing Copilot's development environment
+
+Copilot's environment can be customized in several ways, each serving a different purpose:
+
+| Option                      | What it does                                                                    | How to provide this customization                                     |
+| --------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 📝 **Copilot Instructions** | Provide project-specific context and guidance for Copilot for it's session      | Add details to `.github/copilot-instructions.md`                      |
+| ⚙️ **Copilot Setup Steps**  | Pre-configure the coding agent session with all required tools and dependencies | Configure `.github/workflows/copilot-setup-steps.yml` workflow file                   |
+| 🌎 **Environment**          | Provide configuration and secret values that the Agent might need               | This is available in **Repository settings → Environments → copilot** |
+| 🧩 **MCP Servers**          | Extend Copilot's capabilities with custom Model Context Protocol servers.       | This is available in **Repository settings → Copilot → Coding Agent** |
+
+> [!NOTE]
+> The Copilot Coding Agent comes with [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers preinstalled. By default Coding Agent sessions only have access to read only action of the GitHub MCP server. This can be customized ([read more](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#customizing-the-built-in-github-mcp-server))
 
 ### ⌨️ Activity: Create instructions to guide Copilot
+
+You'll write Copilot instructions that include details about your school, the roles Copilot should assume, and the common tasks teachers request. This will help Copilot interact more naturally and support your team effectively.
 
 1. In the top navigation, select the **Code** tab.
 
@@ -59,7 +63,7 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
+Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment#preinstalling-tools-or-dependencies-in-copilots-environment) documentation.
 
 1. Ensure you are still on the `prepare-environment` branch.
 
@@ -90,12 +94,12 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
        steps:
          - name: Checkout code
-           uses: actions/checkout@v4
+           uses: actions/checkout@v5
 
          - name: Set up Python
-           uses: actions/setup-python@v4
+           uses: actions/setup-python@v6
            with:
-             python-version: "3.x"
+             python-version: "3.13"
              cache: "pip"
 
          - name: Install Python dependencies
@@ -115,7 +119,6 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 1. After Mona shares the next steps, you can merge the pull request.
 
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔
-
 
 <details>
 <summary>🤷 Having trouble?</summary><br/>

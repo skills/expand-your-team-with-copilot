@@ -1,26 +1,50 @@
 ## Step 2: Collaborate with Copilot
 
-When Copilot creates a pull request in which you'll find:
+Now that you've assigned the Copilot Coding Agent to your Issue - you can see that Copilot opened up a Pull Request and linked it to your issue!
 
-- **Pull Request Description** - Copilot will keep a concise overview of its goal and implementation.
-- **Timeline** - Copilot will provide high-level notes about starting working sessions and commits.
-- **Session History** - A detailed log of the steps Copilot took to implement the issue.
+Let's learn how to review Copilot's work and provide feedback, just like you would with any team member.
 
-You can provide feedback to Copilot the same way you would a colleague. These actions trigger Copilot to begin another working session.
+### 📖 Theory: Understanding Copilot's collaboration workflow
 
-- **Comments** - Add a comment on the pull request conversation.
-- **Reviews** - Combine multiple comments in a pull request review.
-- **@ mentions** - You can tag Copilot in a comment just like a coworker.
+Copilot provides transparency into its work through multiple channels on the pull request - let's look into those!
 
-> [!IMPORTANT]
-> Copilot only acts on review comments when explicitly tagged with `@copilot`. Without this mention, your review feedback will not trigger Copilot to respond or make changes. 
+#### 📝 Pull request description
 
-#### Important Considerations
+The description will be continuously updated as Copilot progresses through its work. You can watch the description updates in real time!
 
-- Copilot's work is done on a branch with the convention `copilot/*` and does not have access to other branches.
-- Copilot cannot trigger Actions workflows.
-  - Workflows triggered on pull requests require human approval before running.
-- Rulesets and similar protections are still enforced.
+#### 🤖 Coding Agent Sessions
+
+Copilot works in **sessions** - where it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
+
+In the pull request timeline, you will be able to see progress indicators showing when Copilot starts and completes work
+
+You can access the Coding Session logs in two ways:
+
+- **🔴 Live**: Watch the logs in real-time to see all the steps and logic Copilot Coding Agent session is taking to solve the task
+- **📋 Review**: View the session logs after Copilot has completed its work to review the decisions made
+
+<!-- TODO: SCREENSHOT of coding agent session journal -->
+
+#### 💬 Providing feedback to Copilot
+
+Once Copilot completes its work, you can collaborate with it just like any team member. The key to effective collaboration is understanding how to trigger new coding sessions:
+
+Copilot will only act on comments or pull request reviews when they include a `@copilot` mention.
+
+This means you can also leave regular comments for your other, human team members and Copilot won't start unnecessary sessions!
+
+```mermaid
+flowchart LR
+    A[Leave PR Comment/Review] --> B{Contains @copilot?}
+    B -->|Yes| C[🤖 New Coding Agent Session]
+    B -->|No| D[💬 Regular Comment Only]
+```
+
+#### ⚙️ Important considerations
+
+- Copilot's work is done on a branch with the convention `copilot/*` and does not have access to other branches
+- Copilot cannot trigger Actions workflows - workflows triggered on pull requests require human approval before running
+- Rulesets and similar protections are still enforced
 
 > [!TIP]
 > All work created by Copilot is committed with the assignee as a co-contributor (keeping your contribution graph safe). 💕
@@ -54,7 +78,9 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 
    <img width="500" src="https://github.com/user-attachments/assets/2c80fa91-1123-4813-a801-42af368240b9" />
 
-1. If necessary, wait for Copilot to finish working on the changes.
+1. If the Copilot session is still ongoing, monitor the session journal.
+
+1. When Copilot completes its work and requests you as a reviewer proceed to the next activity!
 
 > [!TIP]
 > You can use the **edited** dropdown to view the pull request description change history.
@@ -66,7 +92,9 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
 
 ### ⌨️ Activity: Provide Copilot feedback
 
-1. Back in the pull request, click the **Add your review** button.
+Now that Copilot finished it's working session, let's review it's work and provide some feedback!
+
+1. Click the **Add your review** button in the pull request
 
    <img width="350" src="https://github.com/user-attachments/assets/d71847b9-573b-451e-9c85-946a6988e3f0" />
 
@@ -81,25 +109,24 @@ You can provide feedback to Copilot the same way you would a colleague. These ac
    It needs more personality to attract students.
    ```
 
-
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
-1. After a moment, Copilot will add a new session entry and indicate progress on the timeline.
+1. After a moment, Copilot will add a new session entry and indicate progress on the timeline. Wait for Copilot to finish working on the change
 
-1. Wait for Copilot to finish working on the change and then click the **View changes** button to see the updated activity description.
+   > 🪧 **Note:** This can take some time! You can monitor the new session or take a break.
 
-   <img width="350" src="https://github.com/user-attachments/assets/a5ccd7b5-4df8-406a-b3a8-80328ba210e5" />
+1. Once Copilot is finished, you will get requested as a reviewer again!
 
 1. Activate the pull requests by clicking the **Ready to Review** button then click the **Merge** button.
 
-1. With our review submitted and the pull request merged, Mona should be checking our work. Give her a moment to respond with the next lesson.
+1. With the pull request merged, Mona should be checking our work. Give her a moment to respond with the next lesson.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
 If you don't get feedback, here are some things to check:
 
-- Make sure your commit the changes in the `src/static/` directory to the branch `accelerate-with-copilot` and pushed/synchronized to GitHub.
-- If Mona found a mistake, simply make a correction and push your changes again. Mona will check your work as many times as needed.
+- Make sure your reviews include `@copilot` mention
+- To progress to the next step in this lab you need to merge the pull request!
 
 </details>
