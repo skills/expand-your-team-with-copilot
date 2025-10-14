@@ -94,7 +94,7 @@ flowchart LR
 
 Now that Copilot has finished its working session, let's review its work and provide some feedback!
 
-1. Click the **Add your review** button in the pull request
+1. In the pull request, click the **Add your review** button.
 
    <img width="350" src="https://github.com/user-attachments/assets/d71847b9-573b-451e-9c85-946a6988e3f0" />
 
