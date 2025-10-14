@@ -92,7 +92,7 @@ flowchart LR
 
 ### ⌨️ Activity: Provide Copilot feedback
 
-Now that Copilot finished it's working session, let's review it's work and provide some feedback!
+Now that Copilot has finished its working session, let's review its work and provide some feedback!
 
 1. Click the **Add your review** button in the pull request
 
