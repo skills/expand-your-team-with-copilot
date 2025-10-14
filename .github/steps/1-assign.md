@@ -170,7 +170,7 @@ Before we can start delegating requests from the teachers to Copilot, we need to
 
 1. Check that the **Repository access** field is set to `All repositories`.
 
-   Alternatively, if you prefer to enable it only for this exercise, select `Only selected repositories` and select this exercise repository ({{ full_repo_name }}).
+   Alternatively, if you prefer to enable it only for this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
 
 
    <img width="300" src="https://github.com/user-attachments/assets/4bec16dc-7b52-4e95-b554-47252b622adb">

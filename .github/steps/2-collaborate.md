@@ -51,9 +51,9 @@ flowchart LR
 
 ### ⌨️ Activity: View Copilot's progress
 
-1. In the issue, click on the reference link to the pull request. Alternately, use the **Pull Requests** tab in the top navigation.
+1. Navigate to the **Pull Request** that Copilot referenced in your issue
 
-1. Watch in real-time as Copilot updates the pull request description. It will be progresses through 3 phases:
+1. Watch in real-time as Copilot updates the pull request description. It will be progress through 3 phases:
 
    <details>
       <summary>1. When starting, Copilot provides an initial copy of the issue. <b>[show image]</b></summary>

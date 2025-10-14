@@ -24,7 +24,12 @@ You'll write Copilot instructions that include details about your school, the ro
 
 1. In the top navigation, select the **Code** tab.
 
-1. Create a new branch with the name `prepare-environment`.
+1. Create a new branch with the following name:
+
+   ```txt
+   prepare-environment
+   ```
+   
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
 
@@ -73,7 +78,11 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/c135dd3f-72bd-4d2b-b21f-9c4968a06f5f" />
 
-1. Set the file name to `copilot-setup-steps.yml`.
+1. Set the file name to:
+
+   ```txt
+   copilot-setup-steps.yml
+   ```
 
    <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
 
