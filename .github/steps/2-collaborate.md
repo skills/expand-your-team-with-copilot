@@ -6,7 +6,7 @@ Let's learn how to review Copilot's work and provide feedback, just like you wou
 
 ### 📖 Theory: Understanding Copilot's collaboration workflow
 
-Copilot provides transparency into its work through multiple channels on the pull request - let's look into those!
+Copilot provides transparency into its work through multiple channels on the pull request. Let's look into those!
 
 #### 📝 Pull request description
 
