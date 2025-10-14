@@ -14,7 +14,7 @@ The description will be continuously updated as Copilot progresses through its w
 
 #### 🤖 Coding Agent Sessions
 
-Copilot works in **sessions** - where it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
+Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
 
 In the pull request timeline, you will be able to see progress indicators showing when Copilot starts and completes work
 
