@@ -115,7 +115,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
    > 🪧 **Note:** This can take some time! You can monitor the new session or take a break.
 
-1. Once Copilot is finished, you will get requested as a reviewer again!
+1. Once Copilot is finished, you will get requested as a reviewer again.
 
 1. Activate the pull requests by clicking the **Ready to Review** button then click the **Merge** button.
 
