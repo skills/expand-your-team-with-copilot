@@ -1,6 +1,6 @@
 ## Step 2: Collaborate with Copilot
 
-Now that you've assigned the Copilot Coding Agent to your Issue - you can see that Copilot opened up a Pull Request and linked it to your issue!
+Now that you've assigned Copilot to your Issue, you can see Copilot also started a Pull Request and linked it to your issue!
 
 Let's learn how to review Copilot's work and provide feedback, just like you would with any team member.
 
