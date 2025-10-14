@@ -51,7 +51,7 @@ flowchart LR
 
 ### ⌨️ Activity: View Copilot's progress
 
-1. Navigate to the **Pull Request** that Copilot referenced in your issue
+1. Navigate to the **Pull Request** that Copilot referenced in your issue.
 
 1. Watch in real-time as Copilot updates the pull request description. It will be progress through 3 phases:
 
