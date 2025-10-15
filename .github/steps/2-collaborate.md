@@ -23,7 +23,13 @@ You can access the Coding Session logs in two ways:
 - **🔴 Live**: Watch the logs in real-time to see all the steps and logic Copilot Coding Agent session is taking to solve the task
 - **📋 Review**: View the session logs after Copilot has completed its work to review the decisions made
 
-<!-- TODO: SCREENSHOT of coding agent session journal -->
+<details>
+<summary>📸 Copilot Session Logs </summary><br/>
+
+<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/1deb7182-27d2-48b4-9631-e6edb5199b98" />
+
+</details>
+
 
 #### 💬 Providing feedback to Copilot
 
