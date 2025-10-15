@@ -1,22 +1,22 @@
 ## Step 3: Preparing Copilot's environment
 
-In this step, you'll customize Copilot's environment so it can work effectively for your school's project.
+Let's provide Copilot some additional information about the school and typical tasks the teachers request.
 
-Let's learn what are the different ways you can customize the Copilot Coding Agent's behaviour so it makes future development smoother for everyone! :rocket:
+To ensure future development is both smooth and reliable for everyone, Copilot should also start its sessions with all the tools and dependencies already installed. :rocket:
 
 ### 📖 Theory: Customizing Copilot's development environment
 
-Copilot's environment can be customized in several ways, each serving a different purpose:
+Copilot's environment can be customized in several ways. Below, we'll explore some of the most useful customization options:
 
-| Option                      | What it does                                                                    | How to provide this customization                                     |
-| --------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| 📝 **Copilot Instructions** | Provide project-specific context and guidance for Copilot for it's session      | Add details to `.github/copilot-instructions.md`                      |
-| ⚙️ **Copilot Setup Steps**  | Pre-configure the coding agent session with all required tools and dependencies | Configure `.github/workflows/copilot-setup-steps.yml` workflow file                   |
-| 🌎 **Environment**          | Provide configuration and secret values that the Agent might need               | This is available in **Repository settings → Environments → copilot** |
-| 🧩 **MCP Servers**          | Extend Copilot's capabilities with custom Model Context Protocol servers.       | This is available in **Repository settings → Copilot → Coding Agent** |
+| Option                      | What it does                                                                    |
+| --------------------------- | ------------------------------------------------------------------------------- |
+| 📝 **Copilot Instructions** | Provide project-specific context and guidance for Copilot for it's session      |
+| ⚙️ **Copilot Setup Steps**  | Pre-configure the coding agent session with all required tools and dependencies |
 
 > [!NOTE]
-> The Copilot Coding Agent comes with [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers preinstalled. By default Coding Agent sessions only have access to read only action of the GitHub MCP server. This can be customized ([read more](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#customizing-the-built-in-github-mcp-server))
+> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
+>
+> > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default :rocket:
 
 ### ⌨️ Activity: Create instructions to guide Copilot
 
@@ -29,7 +29,6 @@ Let's write Copilot instructions that include details about the school, the role
    ```txt
    prepare-environment
    ```
-   
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
 
