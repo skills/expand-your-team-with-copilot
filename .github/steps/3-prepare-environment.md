@@ -8,10 +8,22 @@ To ensure future development is both smooth and reliable for everyone, Copilot s
 
 Copilot's environment can be customized in several ways. Below, we'll explore some of the most useful customization options:
 
-| Option                      | What it does                                                                    |
-| --------------------------- | ------------------------------------------------------------------------------- |
-| 📝 **Copilot Instructions** | Provide project-specific context and guidance for Copilot for it's session      |
-| ⚙️ **Copilot Setup Steps**  | Pre-configure the coding agent session with all required tools and dependencies |
+📝 **Copilot Instructions**
+
+The Copilot instructions file should provide repository‑specific guidance, preferences, and context before Copilot starts reasoning about an issue. Include:
+
+- Project overview, including it's purpose, goals, and any relevant background information.
+- Program architecture, standards and conventions that should be followed,
+- Useful commands or scripts for common tasks
+
+⚙️ **Copilot Setup Steps**
+
+Pre‑configure the coding agent session with all required tools and dependency versions to ensure fast, consistent, and reproducible help. This typically means:
+
+- Configuring required tools like Python, Node with desired versions
+- Pre-installing project dependencies, libraries and running setup scripts
+
+This greatly helps in avoiding delays or errors from Copilot attempting ad‑hoc installs
 
 > [!NOTE]
 > You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
