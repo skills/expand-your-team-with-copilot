@@ -20,7 +20,7 @@ Copilot's environment can be customized in several ways, each serving a differen
 
 ### ⌨️ Activity: Create instructions to guide Copilot
 
-You'll write Copilot instructions that include details about your school, the roles Copilot should assume, and the common tasks teachers request. This will help Copilot interact more naturally and support your team effectively.
+Let's write Copilot instructions that include details about the school, the roles Copilot should assume, and the common tasks teachers request. This will help Copilot interact more naturally with the teachers.
 
 1. In the top navigation, select the **Code** tab.
 
