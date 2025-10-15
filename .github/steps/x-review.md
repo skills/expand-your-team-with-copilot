@@ -14,13 +14,12 @@ Here's a recap of your accomplishments:
 
 ### What's next?
 
-- Learn about the [best practices with Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/best-practices-for-using-copilot-coding-agent) for defining good issues.
-- Adjust Copilots environment to [enable Model Context Protocal](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) to give Copilot more tools.
-  - Never used Model Context Protocol? Try the [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) GitHub Skills Exercise
+- Check out the other GitHub Skills exercises.
+  - Dive deeper into customizing Copilot’s environment with the [Customize your GitHub Copilot experience](https://github.com/skills/customize-your-github-copilot-experience) exercise.
+  - Learn more about using Model Context Protocol in Copilot's environment with the [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) exercise.
 
 Check out these resources to learn more about GitHub Copilot coding agent :
 
-- Are you not getting the responses you want from Copilot? [Learn prompt engineering](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/prompt-engineering-for-copilot-chat)
+- Learn about the [best practices with Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/best-practices-for-using-copilot-coding-agent) for defining good issues.
+- Read on how to [extend GitHub Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp) with additional Model Context Protocol servers
 - Read practices to for [responsible use of Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/responsible-use-of-copilot-coding-agent).
-- See what other features are available [GitHub Copilot Features](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features).
-- Take a look at the [GitHub Copilot Documentation](https://docs.github.com/en/copilot).
