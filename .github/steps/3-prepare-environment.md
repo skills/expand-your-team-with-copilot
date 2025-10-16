@@ -1,26 +1,46 @@
 ## Step 3: Preparing Copilot's environment
 
-Let's add some information about the school, roles to assume, and typical tasks the teachers request and a pre-configured development environment to make it faster and more reliable (so Jessica in IT doesn't ask about increased Actions minutes usage).
+Let's provide Copilot some additional information about the school and typical tasks the teachers request.
 
-- **copilot instructions** - Provide project specific context for copilot before considering the issue.
-  - Provide business considerations for developing the project.
-  - Provide roles to guide Copilot.
-  - Provide useful commands for common tasks.
-- **copilot setup steps** - Customize the development environment in advance to make sessions faster.
-  - Pre-install useful tools for Copilot.
-  - Reducing errors from Copilot installing incorrect versions.
-- **environment** - Use repository environments for configurations.
-  - Provide variables to adjust deployments for different environments.
-  - Provide secrets to access additional resources.
+To ensure future development is both smooth and reliable for everyone, Copilot should also start its sessions with all the tools and dependencies already installed. :rocket:
 
-> [!TIP]
-> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/extending-copilot-coding-agent-with-model-context-protocol) for Copilot to provide even more functionality!
+### 📖 Theory: Customizing Copilot's development environment
+
+Copilot's environment can be customized in several ways. Below, we'll explore some of the most useful customization options:
+
+📝 **Copilot Instructions**
+
+The Copilot instructions file should provide repository‑specific guidance, preferences, and context before Copilot starts reasoning about an issue. Include:
+
+- Project overview, including it's purpose, goals, and any relevant background information.
+- Program architecture, standards and conventions that should be followed,
+- Useful commands or scripts for common tasks
+
+⚙️ **Copilot Setup Steps**
+
+Pre‑configure the coding agent session with all required tools and dependency versions to ensure fast, consistent, and reproducible help. This typically means:
+
+- Configuring required tools like Python, Node with desired versions
+- Pre-installing project dependencies, libraries and running setup scripts
+
+This greatly helps in avoiding delays or errors from Copilot attempting ad‑hoc installs
+
+> [!NOTE]
+> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
+>
+> > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default :rocket:
 
 ### ⌨️ Activity: Create instructions to guide Copilot
 
+Let's write Copilot instructions that include details about the school, the roles Copilot should assume, and the common tasks teachers request. This will help Copilot interact more naturally with the teachers.
+
 1. In the top navigation, select the **Code** tab.
 
-1. Create a new branch with the name `prepare-environment`.
+1. Create a new branch with the following name:
+
+   ```txt
+   prepare-environment
+   ```
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
 
@@ -59,7 +79,7 @@ Let's add some information about the school, roles to assume, and typical tasks 
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#pre-installing-tools-or-dependencies-in-copilots-environment) documentation.
+Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment#preinstalling-tools-or-dependencies-in-copilots-environment) documentation.
 
 1. Ensure you are still on the `prepare-environment` branch.
 
@@ -69,7 +89,11 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
    <img width="250" alt="image" src="https://github.com/user-attachments/assets/c135dd3f-72bd-4d2b-b21f-9c4968a06f5f" />
 
-1. Set the file name to `copilot-setup-steps.yml`.
+1. Set the file name to:
+
+   ```txt
+   copilot-setup-steps.yml
+   ```
 
    <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
 
@@ -90,12 +114,12 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
        steps:
          - name: Checkout code
-           uses: actions/checkout@v4
+           uses: actions/checkout@v5
 
          - name: Set up Python
-           uses: actions/setup-python@v4
+           uses: actions/setup-python@v6
            with:
-             python-version: "3.x"
+             python-version: "3.13"
              cache: "pip"
 
          - name: Install Python dependencies
@@ -115,7 +139,6 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 1. After Mona shares the next steps, you can merge the pull request.
 
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔
-
 
 <details>
 <summary>🤷 Having trouble?</summary><br/>

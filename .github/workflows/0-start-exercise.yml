@@ -18,7 +18,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.6.0
+    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.7.3
     with:
       exercise-title: "Expand your team with Copilot coding agent"
       intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to assign Copilot coding tasks directly in GitHub! 💻✨"
@@ -28,45 +28,40 @@ jobs:
     runs-on: ubuntu-latest
     needs: [start_exercise]
     env:
-      ISSUE_URL: ${{ needs.start_exercise.outputs.issue-url }}
+      ISSUE_NUMBER: ${{ needs.start_exercise.outputs.issue-number }}
+      ISSUE_REPOSITORY: ${{ github.repository }}
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Get response templates
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.6.0
+          ref: v0.7.0
 
-      - name: Build comment - add step content
-        id: build-comment
-        uses: skills/action-text-variables@v2
+      - name: Create comment - add step content
+        uses: GrantBirki/comment@v2.1.1
         with:
-          template-file: ${{ env.STEP_1_FILE }}
-          template-vars: |
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          file: ${{ env.STEP_1_FILE }}
+          vars: |
             login: ${{ github.actor }}
             full_repo_name: ${{ github.repository }}
 
-      - name: Create comment - add step content
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body "$ISSUE_BODY"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_BODY: ${{ steps.build-comment.outputs.updated-text }}
-
       - name: Create comment - watching for progress
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file "exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: GrantBirki/comment@v2.1.1
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          file: exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
 
       - name: Enable next step workflow
         run: |
-          gh workflow enable "Step 1" || true
+          gh workflow enable "Step 1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

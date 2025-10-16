@@ -23,10 +23,6 @@ In this exercise, you will:
 1. Customize and optimize your agent's workspace.
 1. Prepare issues for better results.
 
-> [!IMPORTANT]
-> Copilot coding agent is in **public preview** and free with limitations until June 1st, 2025.  
-> Please expect minor differences in this exercise as features change.
-
 ### How to start this exercise
 
 Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
