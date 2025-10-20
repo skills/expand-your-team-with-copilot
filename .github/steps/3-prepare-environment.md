@@ -113,7 +113,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
      # Starts a MongoDB service for Copilot to use during its session.
        services:
         mongo:
-          image: mongo:8
+          image: mongo:7
           ports:
             - 27017:27017
 
