@@ -99,7 +99,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
 
    <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
 
-1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend.
+1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend and setup a MongoDB service.
 
    ```yml
    name: "Copilot Setup Steps"
