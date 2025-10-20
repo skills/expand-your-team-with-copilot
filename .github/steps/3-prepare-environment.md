@@ -107,6 +107,13 @@ Customizing Copilot's development environment and adjusting [permissions](https:
      # This is the required job name. If different, Copilot will ignore it.
      copilot-setup-steps:
        runs-on: ubuntu-latest
+    
+     # Starts a MongoDB service for Copilot to use during its session.
+       services:
+        mongo:
+          image: mongo:8
+          ports:
+            - 27017:27017
 
        # Grant Copilot early access to read the repository content.
        permissions:
