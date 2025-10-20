@@ -79,7 +79,9 @@ Let's write Copilot instructions that include details about the school, the role
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment#preinstalling-tools-or-dependencies-in-copilots-environment) documentation.
+Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow called `copilot-setup-steps.yml`.
+
+For this project, we will pre-install the Python backend dependencies and ensure a MongoDB database is available for the backend to use.
 
 1. Ensure you are still on the `prepare-environment` branch.
 
