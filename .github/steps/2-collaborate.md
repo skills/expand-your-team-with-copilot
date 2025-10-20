@@ -82,7 +82,7 @@ flowchart LR
 
 1. The new page shows a journal of Copilot's work. The left navigation is a list of each working session.
 
-   <img width="500" src="https://github.com/user-attachments/assets/2c80fa91-1123-4813-a801-42af368240b9" />
+   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/1deb7182-27d2-48b4-9631-e6edb5199b98" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 

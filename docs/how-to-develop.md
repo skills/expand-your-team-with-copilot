@@ -11,7 +11,7 @@ This project is best developed using GitHub Codespaces, which provides a consist
 3. Install Python dependencies by running:
 
    ```bash
-   python -m pip install -r requirements.txt
+   pip install -r src/requirements.txt
    ```
 
 ### Dependencies
@@ -21,7 +21,7 @@ The project requires the following Python packages:
 - FastAPI - Modern web framework for building APIs
 - Uvicorn - ASGI server implementation for running the FastAPI application
 
-These dependencies will be installed when you run `pip install -r requirements.txt`
+These dependencies will be installed when you run `pip install -r src/requirements.txt`
 
 ## Debugging
 
@@ -37,25 +37,25 @@ These dependencies will be installed when you run `pip install -r requirements.t
 - FastAPI's auto-reload feature will automatically restart the server when you make code changes
 - Use the interactive API documentation at `/docs` to test your endpoints
 
-## Getting Started
+## Usage
+
+### Running the application
 
 1. Install the dependencies:
 
    ```bash
-   pip install fastapi uvicorn
+   pip install -r src/requirements.txt
    ```
 
 2. Run the application:
 
    ```bash
-   python app.py
+   python -m uvicorn src.app:app --host 0.0.0.0 --port 8000
    ```
 
 3. Open your browser and go to:
    - API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
-
-## Usage
 
 ### API Endpoints
 

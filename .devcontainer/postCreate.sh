@@ -1,6 +1,6 @@
 # Prepare python environment
 pip install -r src/requirements.txt
 
-# Prepare MongoDB Dev DB
-chmod +x ./.devcontainer/installMongoDB.sh
+# Prepare MongoDB Development DB
 ./.devcontainer/installMongoDB.sh
+./.devcontainer/startMongoDB.sh

@@ -79,7 +79,9 @@ Let's write Copilot instructions that include details about the school, the role
 
 ### ⌨️ Activity: Prepare the coding environment for copilot
 
-Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow. For all configuration options, see the [pre-installing dependencies for Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment#preinstalling-tools-or-dependencies-in-copilots-environment) documentation.
+Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow called `copilot-setup-steps.yml`.
+
+For this project, we will pre-install the Python backend dependencies and ensure a MongoDB database is available for the backend to use.
 
 1. Ensure you are still on the `prepare-environment` branch.
 
@@ -97,7 +99,7 @@ Customizing Copilot's development environment and adjusting [permissions](https:
 
    <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
 
-1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend.
+1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend and setup a MongoDB service.
 
    ```yml
    name: "Copilot Setup Steps"
@@ -107,6 +109,13 @@ Customizing Copilot's development environment and adjusting [permissions](https:
      # This is the required job name. If different, Copilot will ignore it.
      copilot-setup-steps:
        runs-on: ubuntu-latest
+    
+     # Starts a MongoDB service for Copilot to use during its session.
+       services:
+        mongo:
+          image: mongo:7
+          ports:
+            - 27017:27017
 
        # Grant Copilot early access to read the repository content.
        permissions:
