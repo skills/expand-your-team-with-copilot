@@ -1,4 +1,4 @@
-## Step 4: Play time! 🤾 🏄
+## Step 4: Manage multiple tasks with Agents Panel 🎛️
 
 Now, with Copilot's workspace prepared, let's work on some more complex issues to make the Extra curricular Activities website even more amazing! ✨🚀
 
