@@ -8,21 +8,22 @@ But what if you could skip the extra steps and jump straight into task mode? Wha
 
 Let's see how that's done! 👀
 
-### 📖 Theory: Delegate from anywhere
+### 📖 Theory: Delegate from anywhere with Agents Panel
 
 The agents panel is your mission control center for agentic workflows on GitHub.
 
 It’s a lightweight overlay that allows you to hand new tasks to Copilot and track existing tasks without navigating away from your current work. Just click the new Agents button in the navigation bar to get started.
 
+<!-- video source: https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/ -->
+
 <video src="https://github.blog/wp-content/uploads/2025/08/CleanShot-2025-08-18-at-20.47.13.mp4" controls width="400"></video>
+
 
 From the agents panel, you can:
 
 - 🛠️ Assign background tasks without switching pages.
 - 👀 Monitor running tasks with real-time status.
 - 🔗 Jump into pull requests when you’re ready to review.
-
-> [Copilot Agents panel launch: assign coding agent tasks anywhere on GitHub](https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/)
 
 With the Agents panel, you can quickly assign multiple issues, track their progress, and review results—all in one place.
 
@@ -50,7 +51,7 @@ Let's get you familiarized with the Agents panel!
 
 ### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
 
-We still have multiple issues opened on the repository, let's see how Copilot can handle working on multiple at the same time!
+You still have some issues opened on the repository, let's see how Copilot can handle working on multiple issues at the same time!
 
 1. In the top navigation, select the **Issues** tab.
 
@@ -62,15 +63,17 @@ We still have multiple issues opened on the repository, let's see how Copilot ca
 
 1. With both tabs open, assign both to Copilot simultaneously.
 
-1. Open the **Copilot Agents** panel again and notice that the issues you assign also appear here! It truly is a control center for your Copilot Agent tasks 🚀
+1. Open the **Copilot Agents** panel again and notice that the issues you assign also appear here!
    <!-- TODO: ADD SCREENSHOT -->
 
-1. In both tasks, navigate to the created pull requests, scroll down, and click the **View Session** button to watch Copilot's live progress. Alternately, go take a quick break (again!). ☕️
+   > 🪧 **Note:** Agents panel truly is a control center for your Copilot Agent tasks 🚀
 
-1. When they are done, change both from draft mode and then merge them. 😍
+1. In both tasks, navigate to the created pull requests and monitor the progress. Remember you can click the **View Session** button to see what Copilot is doing in real time.
+   > 💡 **Tip:**  You can also check the status of the task you assigned in the previous activity.
 
-1. Nice work! With at least 1 pull request merged, Mona should be checking your work and preparing your final review.
-   > 💡 **Tip:** If you haven't already, you can also look back at the task you assigned in the previous activity through the Agents panel.
+1. When Copilot is finished on any of the tasks, review the PR description, the changes made and merge the pull request!
+
+1. With at least 1 pull request merged, Mona should be checking your work and preparing your final review.
 
 > [!IMPORTANT]
 > Working on multiple issues in parallel is an art-form. 🎨
