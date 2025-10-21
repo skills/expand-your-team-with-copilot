@@ -21,7 +21,7 @@ In this exercise, you will:
 1. Assign an issue and understand your agent's progress.
 1. Collaborate with your agent on code changes.
 1. Customize and optimize your agent's workspace.
-1. Prepare issues for better results.
+1. Delegate and track multiple tasks in parallel.
 
 ### How to start this exercise
 
