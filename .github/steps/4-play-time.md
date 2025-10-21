@@ -57,6 +57,11 @@ Let's get you familiarized with the Agents panel!
    <!-- TODO ADD SCREENSHOT -->
 1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
 
+> [!TIP]
+> You can also access the Agents Panel in full screen mode at https://github.com/copilot/agents
+
+
+
 ### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
 
 You still have some issues opened on the repository, let's see how Copilot can handle working on multiple issues at the same time!
