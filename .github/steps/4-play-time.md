@@ -1,30 +1,46 @@
 ## Step 4: Play time! 🤾 🏄
 
-Now, with Copilot's workspace prepared, let's work on some more complex issues to make the Extra curricular Activities website even better! Let's see what our new coding agent can do!
 
-Let's try the following:
+Now, with Copilot's workspace prepared, let's work on some more complex issues to make the Extra curricular Activities website even more amazing! ✨🚀
 
-1. Add issue templates
-1. Make the interface prettier.
-1. Add filters.
+Until now, we've been teaming up with Copilot by assigning issues one at a time. 📝🤝
 
-### ⌨️ Activity: Add issue templates for repeating tasks
+But what if you could skip the extra steps and jump straight into task mode? What if Copilot could juggle several jobs at once, keeping you in the loop as they progress? 🤹‍♂️
 
-Adding some templates should allow any teacher to easily ask Copilot to handle common tasks. In fact, let's have Copilot suggest the templates, making sure to use best practices about collecting the right amount of context. We can always adjust them later if needed!
+Let's see how that's done! 👀
 
-1. In the top navigation, select the **Issues** tab.
+### 📖 Theory: Delegate from anywhere!
 
-1. Find the open issue titled `Simplify Change requests for teachers`.
+The agents panel is your mission control center for agentic workflows on GitHub.
 
-1. Familiarize yourself with the issue, **Assign it to Copilot**, and switch to the created pull request.
+It’s a lightweight overlay that allows you to hand new tasks to Copilot and track existing tasks without navigating away from your current work. Just click the new Agents button in the navigation bar to get started.
 
-1. Scroll down and click the **View Session** button to watch Copilot's live progress. Alternately, go take a quick break. ☕️
+From the agents panel, you can:
 
-1. (optional) Modify the templates Copilot provided.
+- 🛠️ Assign background tasks without switching pages.
+- 👀 Monitor running tasks with real-time status.
+- 🔗 Jump into pull requests when you’re ready to review.
 
-1. When Copilot session is finished, click the **Ready for Review** button to change the Copilot's pull request draft status.
+> [Copilot Agents panel launch: assign coding agent tasks anywhere on GitHub](https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/)
 
-1. Merge the results. Wow, that was easy! Right?! 🥹
+With the Agents panel, you can quickly assign multiple issues, track their progress, and review results—all in one place.
+
+### ⌨️ Activity: Try the Copilot Agents panel
+
+1. Open the **Copilot Agents** panel from the GitHub sidebar.
+1. Locate the issues you want to assign (for example, `Difficulty Tracks` and `Outdated Docs`).
+1. Assign both issues to Copilot using the panel controls.
+1. Monitor the status and progress of each assigned issue directly in the panel.
+1. When the pull requests are ready, review and merge them as needed.
+
+<details>
+<summary>Having trouble? 🤷</summary><br/>
+
+- If you don't see the Copilot Agents panel, make sure you have the latest version of GitHub and Copilot enabled.
+- Try refreshing the page or sidebar if issues do not appear.
+- For more help, check the [blog post](https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/) or GitHub documentation.
+
+</details>
 
 ### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
 
@@ -48,12 +64,3 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 > Working on multiple issues in parallel is an art-form. 🎨
 > Make sure you keep them independent to avoid merge conflicts! 😱
 
-### ⌨️ (optional) Activity: Try using the issue templates
-
-1. In the top navigation, select the **Issues** tab.
-
-1. In the top right, click the **New issue** button to show the templates.
-
-   <img width="400" src="https://github.com/user-attachments/assets/a4864ccf-79f1-4990-991c-acc6088fded6"/>
-
-1. Role play as a teacher. Describe a potential new feature, bug, or activity.
