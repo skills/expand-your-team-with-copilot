@@ -23,6 +23,6 @@ Check out these resources to learn more about GitHub Copilot coding agent:
 
 - Learn about the [best practices with Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/coding-agent/get-the-best-results) to get the best results
 - Read on how to [extend GitHub Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp) with additional Model Context Protocol servers
-- Read practices to for [responsible use of Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/responsible-use/copilot-coding-agent).
+- Read practices for [responsible use of Copilot coding agent](https://docs.github.com/en/enterprise-cloud@latest/copilot/responsible-use/copilot-coding-agent).
 - Check out different ways to [assign work to Copilot Coding Agent in VSCode](https://code.visualstudio.com/docs/copilot/copilot-coding-agent#_assign-work-to-copilot-coding-agent-in-vs-code)
 - Start and track Agent tasks in [GitHub Mobile](https://github.blog/changelog/2025-09-24-start-and-track-copilot-coding-agent-tasks-in-github-mobile/)
