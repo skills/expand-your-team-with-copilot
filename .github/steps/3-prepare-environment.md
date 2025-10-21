@@ -145,7 +145,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
 
 1. Create a **pull request**, but do **NOT** merge it yet. Mona will check your files to confirm they are correct.
 
-1. After Mona shares the next steps, you can merge the pull request.
+1. After Mona shares the next steps, you **should merge** the pull request.
 
 > 🙋 **Question:** How did the manual process feel compared to letting Copilot do most of the work? 🤔
 
