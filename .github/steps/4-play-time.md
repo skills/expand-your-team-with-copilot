@@ -47,10 +47,14 @@ Let's get you familiarized with the Agents panel!
    > ✨ **Bonus:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
 
 1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
-   
+
    <img width="400" alt="Agents Panel task in progress view" src="https://github.com/user-attachments/assets/0fc53085-d68d-496e-a81b-1ab78014db63" />
 
-1. You can click on the task to open it in a new tab and track how Copilot is working on it in real time - just like you did in the first step.
+1. Click on the task to open the pull request in a new tab and track how Copilot is working on it in real time - just like you did in the first step.
+
+1. Scroll down and click the **View Session** button.
+1. In the session logs, you'll notice Copilot begins by running the customization steps you've setup in the previous step!
+   <!-- TODO ADD SCREENSHOT -->
 1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
 
 ### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
