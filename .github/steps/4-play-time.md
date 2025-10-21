@@ -18,8 +18,6 @@ It’s a lightweight overlay that allows you to hand new tasks to Copilot and tr
 
    <img width="400" alt="Agents Panel view" src="https://github.blog/wp-content/uploads/2025/08/Agents-panel-with-callout-2.png" />
 
-
-
 From the agents panel, you can:
 
 - 🛠️ Assign background tasks without switching pages.
@@ -30,9 +28,12 @@ With the Agents panel, you can quickly assign multiple issues, track their progr
 
 ### ⌨️ Activity: Assign tasks through the Agents Panel :robot:
 
+> [!IMPORTANT]
+> Make sure you merged the `prepare-environment` branch from the previous step before proceeding.
+
 Let's get you familiarized with the Agents panel!
 
-1. Open the **Copilot Agents** panel from the top navigation bar
+1. In a new tab, open the **Copilot Agents** panel from the top navigation bar
    <img width="600" alt="Agents panel view" src="https://github.com/user-attachments/assets/d0eba779-ab37-4cf9-9229-dca8a64c119c" />
 
 1. Make sure the `{{ full_repo_name }}` repository is selected in the panel and the branch is set to `main`.
