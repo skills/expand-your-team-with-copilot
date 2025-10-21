@@ -66,7 +66,7 @@ Let's get you familiarized with the Agents panel!
 
 
 
-### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
+### ⌨️ Activity: Try implementing 2 issues simultaneously
 
 You still have some issues opened on the repository, let's see how Copilot can handle working on multiple issues at the same time!
 
