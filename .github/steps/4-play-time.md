@@ -42,7 +42,8 @@ Let's get you familiarized with the Agents panel!
    > ![Static Badge](https://img.shields.io/badge/-Task%201-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Integrate social sharing buttons so users can easily share activities with their friends
+   > Integrate social sharing buttons so
+   > users can easily share activities with their friends
    > ```
 
    > ✨ **Bonus:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
