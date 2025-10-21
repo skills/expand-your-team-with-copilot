@@ -12,11 +12,12 @@ Let's see how that's done! 👀
 
 The agents panel is your mission control center for agentic workflows on GitHub.
 
-It’s a lightweight overlay that allows you to hand new tasks to Copilot and track existing tasks without navigating away from your current work. Just click the new Agents button in the navigation bar to get started.
+It’s a lightweight overlay that allows you to hand new tasks to Copilot and track existing tasks without navigating away from your current work.
 
-<!-- video source: https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/ -->
+<!-- image source: https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/ -->
 
-<video src="https://github.blog/wp-content/uploads/2025/08/CleanShot-2025-08-18-at-20.47.13.mp4" controls width="400"></video>
+   <img width="400" alt="Agents Panel view" src="https://github.blog/wp-content/uploads/2025/08/Agents-panel-with-callout-2.png" />
+
 
 
 From the agents panel, you can:
@@ -32,7 +33,8 @@ With the Agents panel, you can quickly assign multiple issues, track their progr
 Let's get you familiarized with the Agents panel!
 
 1. Open the **Copilot Agents** panel from the top navigation bar
-   <!-- todo: add screenshot -->
+   <img width="600" alt="Agents panel view" src="https://github.com/user-attachments/assets/d0eba779-ab37-4cf9-9229-dca8a64c119c" />
+
 1. Make sure the `{{ full_repo_name }}` repository is selected in the panel and the branch is set to `main`.
 1. Assign Copilot to work on the following task:
 
@@ -45,8 +47,10 @@ Let's get you familiarized with the Agents panel!
    > ✨ **Bonus:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
 
 1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
-   <!-- TODO: ADD SCREENSHOT -->
-1. You can open the task in a new tab and track how Copilot is working on it in real time - just like you did in the first step.
+   
+   <img width="400" alt="Agents Panel task in progress view" src="https://github.com/user-attachments/assets/0fc53085-d68d-496e-a81b-1ab78014db63" />
+
+1. You can click on the task to open it in a new tab and track how Copilot is working on it in real time - just like you did in the first step.
 1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
 
 ### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
