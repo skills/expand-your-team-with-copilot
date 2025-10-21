@@ -55,7 +55,9 @@ Let's get you familiarized with the Agents panel!
 
 1. Scroll down and click the **View Session** button.
 1. In the session logs, you'll notice Copilot begins by running the customization steps you've setup in the previous step!
-   <!-- TODO ADD SCREENSHOT -->
+   <img width="900" alt="Copilot session logs with copilot setup steps" src="https://github.com/user-attachments/assets/72c282f6-7780-4c8f-ad0b-ac8d21c4661c" />
+
+   
 1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
 
 > [!TIP]
