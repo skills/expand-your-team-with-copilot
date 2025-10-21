@@ -1,32 +1,74 @@
-## Step 4: Play time! 🤾 🏄
+## Step 4: Manage multiple tasks with Agents Panel 🎛️
 
-Now, with Copilot's workspace prepared, let's work on some more complex issues to make the Extra curricular Activities website even better! Let's see what our new coding agent can do!
+Now, with Copilot's workspace prepared, let's work on some more complex issues to make the Extra curricular Activities website even more amazing! ✨🚀
 
-Let's try the following:
+Until now, we've been teaming up with Copilot by assigning issues one at a time. 📝🤝
 
-1. Add issue templates
-1. Make the interface prettier.
-1. Add filters.
+But what if you could skip the extra steps and jump straight into task mode? What if Copilot could juggle several jobs at once, keeping you in the loop as they progress? 🤹‍♂️
 
-### ⌨️ Activity: Add issue templates for repeating tasks
+Let's see how that's done! 👀
 
-Adding some templates should allow any teacher to easily ask Copilot to handle common tasks. In fact, let's have Copilot suggest the templates, making sure to use best practices about collecting the right amount of context. We can always adjust them later if needed!
+### 📖 Theory: Delegate from anywhere with Agents Panel
 
-1. In the top navigation, select the **Issues** tab.
+The agents panel is your mission control center for agentic workflows on GitHub.
 
-1. Find the open issue titled `Simplify Change requests for teachers`.
+It’s a lightweight overlay that allows you to hand new tasks to Copilot and track existing tasks without navigating away from your current work.
 
-1. Familiarize yourself with the issue, **Assign it to Copilot**, and switch to the created pull request.
+<!-- image source: https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/ -->
 
-1. Scroll down and click the **View Session** button to watch Copilot's live progress. Alternately, go take a quick break. ☕️
+   <img width="400" alt="Agents Panel view" src="https://github.blog/wp-content/uploads/2025/08/Agents-panel-with-callout-2.png" />
 
-1. (optional) Modify the templates Copilot provided.
+From the agents panel, you can:
 
-1. When Copilot session is finished, click the **Ready for Review** button to change the Copilot's pull request draft status.
+- 🛠️ Assign background tasks without switching pages.
+- 👀 Monitor running tasks with real-time status.
+- 🔗 Jump into pull requests when you’re ready to review.
 
-1. Merge the results. Wow, that was easy! Right?! 🥹
+With the Agents panel, you can quickly assign multiple issues, track their progress, and review results—all in one place.
 
-### ⌨️ Activity: Try implementing 2 issues simultaneously 🤯
+### ⌨️ Activity: Assign tasks through the Agents Panel :robot:
+
+> [!IMPORTANT]
+> Make sure you merged the `prepare-environment` branch from the previous step before proceeding.
+
+Let's get you familiarized with the Agents panel!
+
+1. In a new tab, open the **Copilot Agents** panel from the top navigation bar
+   <img width="600" alt="Agents panel view" src="https://github.com/user-attachments/assets/d0eba779-ab37-4cf9-9229-dca8a64c119c" />
+
+1. Make sure the `{{ full_repo_name }}` repository is selected in the panel and the branch is set to `main`.
+1. Assign Copilot to work on the following task:
+
+   > ![Static Badge](https://img.shields.io/badge/-Task%201-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Integrate social sharing buttons so
+   > users can easily share activities with their friends
+   > ```
+
+   > ✨ **Bonus:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
+
+1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
+
+   <img width="400" alt="Agents Panel task in progress view" src="https://github.com/user-attachments/assets/0fc53085-d68d-496e-a81b-1ab78014db63" />
+
+1. Click on the task to open the pull request in a new tab and track how Copilot is working on it in real time - just like you did in the first step.
+
+1. Scroll down and click the **View Session** button.
+1. In the session logs, you'll notice Copilot begins by running the customization steps you've setup in the previous step!
+   <img width="900" alt="Copilot session logs with copilot setup steps" src="https://github.com/user-attachments/assets/72c282f6-7780-4c8f-ad0b-ac8d21c4661c" />
+
+   
+1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
+
+> [!TIP]
+> You can also access the Agents Panel in full screen mode at https://github.com/copilot/agents
+
+
+
+### ⌨️ Activity: Try implementing 2 issues simultaneously
+
+You still have some issues opened on the repository, let's see how Copilot can handle working on multiple issues at the same time!
 
 1. In the top navigation, select the **Issues** tab.
 
@@ -34,26 +76,22 @@ Adding some templates should allow any teacher to easily ask Copilot to handle c
 
    - `Difficulty Tracks`
 
-   - `Outdated Docs`
+   - `Dark Mode`
 
 1. With both tabs open, assign both to Copilot simultaneously.
 
-1. In both, navigate to the created pull request, scroll down, and click the **View Session** button to watch Copilot's live progress. Alternately, go take a quick break (again!). ☕️
+1. Open the **Copilot Agents** panel again and notice that the issues you assign also appear here!
+   
+   <img width="300"  alt="Copilot Agents Panel with three tasks running in parallel" src="https://github.com/user-attachments/assets/dfd77721-c736-470d-89d6-e4cad31edbd5" />
 
-1. When they are done, change both from draft mode and then merge them. 😍
 
-1. Nice work! With at least 1 pull request merged, Mona should be checking your work and preparing your final review.
+1. In both tasks, navigate to the created pull requests and monitor the progress. Remember you can click the **View Session** button to see what Copilot is doing in real time.
+   > 💡 **Tip:**  You can also check the status of the task you assigned in the previous activity.
+
+1. When Copilot is finished on any of the tasks, review the PR description, the changes made and merge the pull request!
+
+1. With at least 1 pull request merged, Mona should be checking your work and preparing your final review.
 
 > [!IMPORTANT]
 > Working on multiple issues in parallel is an art-form. 🎨
 > Make sure you keep them independent to avoid merge conflicts! 😱
-
-### ⌨️ (optional) Activity: Try using the issue templates
-
-1. In the top navigation, select the **Issues** tab.
-
-1. In the top right, click the **New issue** button to show the templates.
-
-   <img width="400" src="https://github.com/user-attachments/assets/a4864ccf-79f1-4990-991c-acc6088fded6"/>
-
-1. Role play as a teacher. Describe a potential new feature, bug, or activity.
