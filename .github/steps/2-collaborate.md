@@ -26,7 +26,7 @@ You can access the Coding Session logs in two ways:
 <details>
 <summary>📸 Copilot Session Logs </summary><br/>
 
-<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/1deb7182-27d2-48b4-9631-e6edb5199b98" />
+<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/bded5d4c-e9f3-417c-ad95-30b9e13dbf3f" />
 
 </details>
 
@@ -80,13 +80,13 @@ flowchart LR
 
    <img width="500" src="https://github.com/user-attachments/assets/088260e6-bae0-40af-8186-864eb3e7b8a2" />
 
-1. The new page shows a journal of Copilot's work. The left navigation is a list of each working session.
+1. The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
 
-   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/1deb7182-27d2-48b4-9631-e6edb5199b98" />
+   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/bded5d4c-e9f3-417c-ad95-30b9e13dbf3f" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
-1. When Copilot completes its work and requests you as a reviewer, you can proceed to the next activity!
+1. When Copilot completes its work and requests you as a reviewer of the pull request, you can proceed to the next activity!
 
 > [!TIP]
 > You can use the **edited** dropdown to view the pull request description change history.
@@ -117,7 +117,28 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
-1. After a moment, Copilot will add a new session entry and indicate progress on the timeline. Wait for Copilot to finish working on the change.
+1. After a moment, Copilot will add a new session entry and indicate progress on the timeline. Click the **View Session** button
+   
+    <img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/1b83b278-e00c-4242-b315-58d226a8fcfc" />
+
+1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
+
+   <img width="800"  alt="Copilot session journal with multiple sessions" src="https://github.com/user-attachments/assets/43a3325e-5f4d-48a5-a1b7-b024378596e6" />
+
+1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
+
+   > 🪧 **Note:** This step is optional - if the coding agent session for the requested changes is already finished, don't worry - you can skip this step!
+
+   Using the bottom chat panel, right below the session logs - provide this new information that just came up!
+   
+   ```md
+   There is a slight change of plans - we got a bigger classroom assignment for this class
+   
+   Let's move the schedule to 5PM tuesday and change the maximum allowed participants to 25.
+   ```
+
+
+1. Wait for Copilot to finish working on the changes.
 
    > 🪧 **Note:** This can take some time! You can monitor the new session or take a break.
 

@@ -52,19 +52,16 @@ Let's get you familiarized with the Agents panel!
 
    <img width="400" alt="Agents Panel task in progress view" src="https://github.com/user-attachments/assets/0fc53085-d68d-496e-a81b-1ab78014db63" />
 
-1. Click on the task to open the pull request in a new tab and track how Copilot is working on it in real time - just like you did in the first step.
+1. Click on the task to jump straight into the session logs in a new tab and track how Copilot is working on it in real time.
 
-1. Scroll down and click the **View Session** button.
-1. In the session logs, you'll notice Copilot begins by running the customization steps you've setup in the previous step!
-   <img width="900" alt="Copilot session logs with copilot setup steps" src="https://github.com/user-attachments/assets/72c282f6-7780-4c8f-ad0b-ac8d21c4661c" />
+1. You will notice Copilot begins by running the customization steps you've set up in the previous step!
 
-   
+   <img width="600" alt="Copilot session logs with copilot setup steps" src="https://github.com/user-attachments/assets/18b6814a-c1ee-4126-a0a2-e8e82f5da424" />
+
 1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
 
 > [!TIP]
 > You can also access the Agents Panel in full screen mode at https://github.com/copilot/agents
-
-
 
 ### ⌨️ Activity: Try implementing 2 issues simultaneously
 
@@ -81,12 +78,11 @@ You still have some issues opened on the repository, let's see how Copilot can h
 1. With both tabs open, assign both to Copilot simultaneously.
 
 1. Open the **Copilot Agents** panel again and notice that the issues you assign also appear here!
-   
+
    <img width="300"  alt="Copilot Agents Panel with three tasks running in parallel" src="https://github.com/user-attachments/assets/dfd77721-c736-470d-89d6-e4cad31edbd5" />
 
-
-1. In both tasks, navigate to the created pull requests and monitor the progress. Remember you can click the **View Session** button to see what Copilot is doing in real time.
-   > 💡 **Tip:**  You can also check the status of the task you assigned in the previous activity.
+1. For both tasks, monitor the progress in separate browser tabs. Remember you can click the **View Pull Request** button in the top right to navigate to the pull request for each task.
+   > 💡 **Tip:**  You can also check the status of the task you assigned in the previous activity. Maybe Copilot is done by now?
 
 1. When Copilot is finished on any of the tasks, review the PR description, the changes made and merge the pull request!
 
