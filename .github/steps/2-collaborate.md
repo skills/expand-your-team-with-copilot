@@ -30,7 +30,6 @@ You can access the Coding Session logs in two ways:
 
 </details>
 
-
 #### 💬 Providing feedback to Copilot
 
 Once Copilot completes its work, you can collaborate with it just like any team member. The key to effective collaboration is understanding how to trigger new coding sessions:
@@ -117,9 +116,9 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
 
-1. After a moment, Copilot will add a new session entry and indicate progress on the timeline. Click the **View Session** button
-   
-    <img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/1b83b278-e00c-4242-b315-58d226a8fcfc" />
+1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
+
+<img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/1b83b278-e00c-4242-b315-58d226a8fcfc" />
 
 1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
 
@@ -130,13 +129,12 @@ Now that Copilot has finished its working session, let's review its work and pro
    > 🪧 **Note:** This step is optional - if the coding agent session for the requested changes is already finished, don't worry - you can skip this step!
 
    Using the bottom chat panel, right below the session logs - provide this new information that just came up!
-   
+
    ```md
    There is a slight change of plans - we got a bigger classroom assignment for this class
-   
+
    Let's move the schedule to 5PM tuesday and change the maximum allowed participants to 25.
    ```
-
 
 1. Wait for Copilot to finish working on the changes.
 
