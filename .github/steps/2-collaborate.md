@@ -12,6 +12,7 @@ Copilot provides transparency into its work through multiple channels on the pul
 
 The description will be continuously updated as Copilot progresses through its work. You can watch the description updates in real time!
 
+
 #### 🤖 Coding Agent Sessions
 
 Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
@@ -26,7 +27,7 @@ You can access the Coding Session logs in two ways:
 <details>
 <summary>📸 Copilot Session Logs </summary><br/>
 
-<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/bded5d4c-e9f3-417c-ad95-30b9e13dbf3f" />
+<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
 
 </details>
 
@@ -81,7 +82,7 @@ flowchart LR
 
 1. The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
 
-   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/bded5d4c-e9f3-417c-ad95-30b9e13dbf3f" />
+   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
