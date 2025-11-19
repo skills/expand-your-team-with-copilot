@@ -12,6 +12,7 @@ Copilot provides transparency into its work through multiple channels on the pul
 
 The description will be continuously updated as Copilot progresses through its work. You can watch the description updates in real time!
 
+
 #### 🤖 Coding Agent Sessions
 
 Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
@@ -26,7 +27,7 @@ You can access the Coding Session logs in two ways:
 <details>
 <summary>📸 Copilot Session Logs </summary><br/>
 
-<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/bded5d4c-e9f3-417c-ad95-30b9e13dbf3f" />
+<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
 
 </details>
 
@@ -81,7 +82,7 @@ flowchart LR
 
 1. The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
 
-   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/bded5d4c-e9f3-417c-ad95-30b9e13dbf3f" />
+   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
@@ -118,11 +119,11 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
 
-<img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/1b83b278-e00c-4242-b315-58d226a8fcfc" />
+    <img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/076c2546-2eed-48c9-adbc-6a4edceba762" />
 
 1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
 
-   <img width="800"  alt="Copilot session journal with multiple sessions" src="https://github.com/user-attachments/assets/43a3325e-5f4d-48a5-a1b7-b024378596e6" />
+   <img width="800"  alt="Copilot session journal with multiple sessions" src="https://github.com/user-attachments/assets/b2debaed-65e2-4afe-9e63-e0b2ecbbb81e" />
 
 1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
 
