@@ -119,11 +119,11 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
 
-<img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/1b83b278-e00c-4242-b315-58d226a8fcfc" />
+    <img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/076c2546-2eed-48c9-adbc-6a4edceba762" />
 
 1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
 
-   <img width="800"  alt="Copilot session journal with multiple sessions" src="https://github.com/user-attachments/assets/43a3325e-5f4d-48a5-a1b7-b024378596e6" />
+   <img width="800"  alt="Copilot session journal with multiple sessions" src="https://github.com/user-attachments/assets/b2debaed-65e2-4afe-9e63-e0b2ecbbb81e" />
 
 1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
 
