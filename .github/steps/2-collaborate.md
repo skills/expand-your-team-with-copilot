@@ -13,27 +13,27 @@ Copilot provides transparency into its work through multiple channels on the pul
 The description will be continuously updated as Copilot progresses through its work. You can watch the description updates in real time!
 
 
-#### 🤖 Coding Agent Sessions
+#### 🤖 Cloud Agent Sessions
 
-Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
+Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Cloud Agent gets assigned.
 
 In the pull request timeline, you will be able to see progress indicators showing when Copilot starts and completes work
 
-You can access the Coding Session logs in two ways:
+You can access the session logs in two ways:
 
-- **🔴 Live**: Watch the logs in real-time to see all the steps and logic Copilot Coding Agent session is taking to solve the task
+- **🔴 Live**: Watch the logs in real-time to see all the steps and logic Copilot cloud agent session is taking to solve the task
 - **📋 Review**: View the session logs after Copilot has completed its work to review the decisions made
 
 <details>
 <summary>📸 Copilot Session Logs </summary><br/>
 
-<img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
+<img width="800" alt="screenshot of copilot cloud agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
 
 </details>
 
 #### 💬 Providing feedback to Copilot
 
-Once Copilot completes its work, you can collaborate with it just like any team member. The key to effective collaboration is understanding how to trigger new coding sessions:
+Once Copilot completes its work, you can collaborate with it just like any team member. The key to effective collaboration is understanding how to trigger new sessions:
 
 Copilot will only act on comments or pull request reviews when they include a `@copilot` mention.
 
@@ -42,7 +42,7 @@ This means you can also leave regular comments for your other, human team member
 ```mermaid
 flowchart LR
     A[Leave PR Comment/Review] --> B{Contains @copilot?}
-    B -->|Yes| C[🤖 New Coding Agent Session]
+    B -->|Yes| C[🤖 New Cloud Agent Session]
     B -->|No| D[💬 Regular Comment Only]
 ```
 
@@ -82,7 +82,7 @@ flowchart LR
 
 1. The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
 
-   <img width="800" alt="screenshot of copilot coding agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
+   <img width="800" alt="screenshot of copilot cloud agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
@@ -127,7 +127,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
 
-   > 🪧 **Note:** This step is optional - if the coding agent session for the requested changes is already finished, don't worry - you can skip this step!
+   > 🪧 **Note:** This step is optional - if the cloud agent session for the requested changes is already finished, don't worry - you can skip this step!
 
    Using the bottom chat panel, right below the session logs - provide this new information that just came up!
 

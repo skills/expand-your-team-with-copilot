@@ -20,8 +20,8 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.7.3
     with:
-      exercise-title: "Expand your team with Copilot coding agent"
-      intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to assign Copilot coding tasks directly in GitHub! 💻✨"
+      exercise-title: "Expand your team with Copilot cloud agent"
+      intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to delegate tasks to Copilot cloud agent directly in GitHub! 💻✨"
 
   post_next_step_content:
     name: Post next step content

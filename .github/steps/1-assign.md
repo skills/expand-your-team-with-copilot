@@ -1,4 +1,4 @@
-## Step 1: Enable Copilot coding agent
+## Step 1: Enable Copilot cloud agent
 
 In the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise, we learned how to use Copilot in our code editor to make major upgrades to the Mergington Extracurricular Activities site. 🎻 ⚽️ ♟️
 
@@ -15,25 +15,25 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 
 </details>
 
-### 📖 Theory: Copilot is now your coding agent
+### 📖 Theory: Copilot is now your cloud agent
 
-In previous exercises, we used Copilot **chat**, **edits** and **agent** mode. While those were super helpful, **Copilot coding agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+In previous exercises, we used Copilot **chat**, **edits** and **agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
-| Feature           | Copilot in the editor         | Copilot coding agent     |
-| ----------------- | ----------------------------- | ------------------------ |
-| **Interface**     | Your code editor              | Issues and Pull Requests |
-| **Work Scope**    | Local files                   | Repository               |
-| **Activation**    | Inline code suggestions, chat | Issue assignment         |
-| **Customization** | Custom instructions           | Custom instructions      |
-| **MCP Support**   | Yes                           | Yes                      |
-| **Vibe Coding**   | 😎                            | 😎                       |
+| Feature           | Copilot in the editor         | Copilot cloud agent                          |
+| ----------------- | ----------------------------- | --------------------------------------------- |
+| **Interface**     | Your code editor              | Issues, Pull Requests, and Agents Panel       |
+| **Work Scope**    | Local files                   | Repository                                    |
+| **Activation**    | Inline code suggestions, chat | Issue assignment, Agents panel, Copilot Chat  |
+| **Customization** | Custom instructions           | Custom instructions, custom agents, hooks     |
+| **MCP Support**   | Yes                           | Yes                                           |
+| **Vibe Coding**   | 😎                            | 😎                                            |
 
 #### How does it work?
 
 From the contributor perspective, the flow is very similar to a normal workflow.
 
 1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themselves).
-2. Copilot creates a branch and pull request.
+2. Copilot creates a branch and works on the changes. When assigned via an issue, Copilot also creates a pull request.
 3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
 4. When Copilot finishes the issue, the assigner is requested to review.
 5. Assigner submits a review, adds comments, or approves.
@@ -98,12 +98,12 @@ flowchart LR
 Several security precautions have been implemented to help reduce concerns. Here are a few limitations that you might need to consider when asking Copilot to work on an issue.
 
 - Copilot can only make changes on the branch it created and resources provided by the repository.
-- Copilot has [configurable firewall](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#customizing-or-disabling-the-agents-firewall) that restricts access to the internet.
+- Copilot has [configurable firewall](https://docs.github.com/en/copilot/customizing-copilot/customizing-or-disabling-the-firewall-for-copilot-coding-agent) that restricts access to the internet.
 - Only users with write access can assign Copilot an issue.
 - Hidden content in issues (like commented code) is ignored.
 
 > [!IMPORTANT]
-> The full list of mitigations and configuration settings can be found in the [Risks & Mitigations](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#copilot-coding-agent-risks-and-mitigations) documentation.
+> The full list of mitigations and configuration settings can be found in the [Responsible use of Copilot cloud agent](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-copilot-coding-agent-on-githubcom) documentation.
 
 ## ⌨️ Activity: (optional) Get to know our extracurricular activities site
 
@@ -155,7 +155,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 </details>
 
-## ⌨️ Activity: Enable Copilot coding agent on your repository
+## ⌨️ Activity: Enable Copilot cloud agent on your repository
 
 Before we can start delegating requests from the teachers to Copilot, we need to grant access to our repository.
 
@@ -164,7 +164,7 @@ Before we can start delegating requests from the teachers to Copilot, we need to
    <img width="300" src="https://github.com/user-attachments/assets/7f8c3602-6de2-4c75-8047-8f4853495f46"><br/>
    <img width="300" src="https://github.com/user-attachments/assets/2aedfd6e-8b9f-40bb-bdf9-c9fd597f94a4">
 
-1. In the left navigation, expand the **Copilot** section and select **Coding agent**.
+1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
 
    <img width="300" src="https://github.com/user-attachments/assets/79800990-6d5c-4055-acc9-b15734fe8b80">
 

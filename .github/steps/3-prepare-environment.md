@@ -18,7 +18,7 @@ The Copilot instructions file should provide repository‑specific guidance, pre
 
 ⚙️ **Copilot Setup Steps**
 
-Pre‑configure the coding agent session with all required tools and dependency versions to ensure fast, consistent, and reproducible help. This typically means:
+Pre‑configure the cloud agent session with all required tools and dependency versions to ensure fast, consistent, and reproducible help. This typically means:
 
 - Configuring required tools like Python, Node with desired versions
 - Pre-installing project dependencies, libraries and running setup scripts
@@ -26,9 +26,12 @@ Pre‑configure the coding agent session with all required tools and dependency 
 This greatly helps in avoiding delays or errors from Copilot attempting ad‑hoc installs
 
 > [!NOTE]
-> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
+> You can also [enable a Model Context Protocol (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
 >
 > > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default :rocket:
+
+> [!TIP]
+> You can further customize Copilot cloud agent with [custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents) for specialized tasks and [hooks](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks) for validation and automation.
 
 ### ⌨️ Activity: Create instructions to guide Copilot
 
@@ -77,7 +80,7 @@ Let's write Copilot instructions that include details about the school, the role
 
 1. When finished, **commit your changes** to the `prepare-environment` branch.
 
-### ⌨️ Activity: Prepare the coding environment for copilot
+### ⌨️ Activity: Prepare the environment for Copilot cloud agent
 
 Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow called `copilot-setup-steps.yml`.
 
