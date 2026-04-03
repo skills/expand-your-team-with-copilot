@@ -30,8 +30,61 @@ In previous exercises, we used Copilot **chat** in the editor with **Plan** and 
 | **MCP Support**         | ✅                    | ✅                                      |
 | **Vibe Coding**         | 😎                    | 😎                                      |
 
+### How does it work?
 
-From the contributor perspective, the flow is very similar to a normal workflow.
+While Copilot cloud agent can be activated in many ways, let's look at 2 common flows you might use
+
+#### Repository Chat
+
+Every repository has a dedicated area for managing tasks assigned to Agents (the **Agents** tab). This area provides a more direct approach to assigning work, that allows you to get started working immediately. A common flow might look like this:
+
+1. A contributor with **write access** navigates to the Agents tab on the repository.
+2. The contributor describes a task, optionally asking Copilot to make a plan (it might be complex).
+3. Copilot reviews the task and collects feedback as needed.
+4. Copilot works on a branch in an Actions workflow and provides updates via the session page's conversation interface.
+5. When Copilot finishes the task, the contributor has the option to continue prompting for more changes, building on the same branch.
+6. The contributor decides how to handle the resulting branch, for example deleting it or creating a pull request.
+
+```mermaid
+flowchart LR
+
+   contributor((Contributor))
+   copilot((Copilot))
+   branch@{ shape: subproc, label: "Branch" }
+   start-over@{ shape: subproc, label: "Delete branch" }
+   continue-working@{ shape: subproc, label: "Continue working" }
+
+   %% Ask Copilot to do work and create branch
+   contributor gl1@-->|Describes task| copilot
+   copilot pl1@-->|Asks clarifying questions| contributor
+   contributor gl2@-->|Provides feedback| copilot
+   copilot pl2@-->|Shares progress updates| contributor
+   copilot pl3@-->|Creates| branch
+   copilot pl4@-->|Implements feedback| branch
+
+   %% Delete branch
+   branch --> acceptable-results@{ shape: diamond, label: "Acceptable\nresults?" }
+   acceptable-results gl3@-->|No| start-over
+   acceptable-results gl4@-->|Yes| continue-working
+
+   %% Styling
+   classDef users fill:#08872B,stroke:#5FED83,color:#fff
+   classDef agent fill:#501DAF,stroke:#C06EFF,color:#fff
+   classDef user-work fill:#08872B,stroke:#5FED83,color:#fff
+
+   classDef green-line stroke:#08872B, stroke-width:4px;
+   classDef purple-line stroke:#501DAF, stroke-width:4px;
+
+   class contributor,acceptable-results,start-over,continue-working users
+   class copilot agent
+
+   class gl1,gl2,gl3,gl4 green-line
+   class pl1,pl2,pl3,pl4,pl5 purple-line
+```
+
+#### Assigning Issues
+
+From the contributor perspective, the flow is very similar to a task-tracking style workflow.
 
 1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themselves).
 2. Copilot creates a branch and works on the changes. When assigned via an issue, Copilot also creates a pull request.
