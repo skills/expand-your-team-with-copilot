@@ -48,8 +48,8 @@ flowchart LR
 #### ⚙️ Important considerations
 
 - Copilot's work is done on a branch with the convention `copilot/*` and does not have access to other branches
-- Copilot cannot trigger Actions workflows. Workflows triggered on pull requests require human approval before running
-- Rulesets and similar protections are still enforced
+- By default, Copilot does not trigger Actions workflows. Unless enabled in the repository settings, workflows triggered on pull requests require human approval before running.
+- Rulesets and similar protections are still enforced.
 
 > [!TIP]
 > All work created by Copilot is committed with the assignee as a co-contributor (keeping your contribution graph safe). 💕
