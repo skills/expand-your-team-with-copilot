@@ -1,4 +1,4 @@
-## Step 1: Enable Copilot coding agent
+## Step 1: Enable Copilot cloud agent
 
 In the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise, we learned how to use Copilot in our code editor to make major upgrades to the Mergington Extracurricular Activities site. 🎻 ⚽️ ♟️
 
@@ -11,29 +11,83 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 <details>
 <summary>📸 Website screenshot</summary><br/>
 
-<img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/6f5c59ab-398b-4fb0-8efd-0aa7b72fef97" />
+<img width="600" alt="screenshot of Mergington High School WebApp" src="../images/mergington-webapp-screenshot.png" />
 
 </details>
 
-### 📖 Theory: Copilot is now your coding agent
+### 📖 Theory: Copilot is now your cloud agent
 
-In previous exercises, we used Copilot **chat**, **edits** and **agent** mode. While those were super helpful, **Copilot coding agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+In previous exercises, we used Copilot **chat** in the editor with **Plan** and **Agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
-| Feature           | Copilot in the editor         | Copilot coding agent     |
-| ----------------- | ----------------------------- | ------------------------ |
-| **Interface**     | Your code editor              | Issues and Pull Requests |
-| **Work Scope**    | Local files                   | Repository               |
-| **Activation**    | Inline code suggestions, chat | Issue assignment         |
-| **Customization** | Custom instructions           | Custom instructions      |
-| **MCP Support**   | Yes                           | Yes                      |
-| **Vibe Coding**   | 😎                            | 😎                       |
+| Feature                 | Copilot in the editor | Copilot cloud agent                     |
+| ----------------------- | --------------------- | --------------------------------------- |
+| **Interface**           | Your code editor      | Issues, Pull Requests, and Agents Panel |
+| **Work Scope**          | Local files           | Repository                              |
+| **Custom Instructions** | ✅                    | ✅                                      |
+| **Custom Agents**       | ✅                    | ✅                                      |
+| **Skills**              | ✅                    | ✅                                      |
+| **Hooks**               | ✅                    | ✅                                      |
+| **MCP Support**         | ✅                    | ✅                                      |
+| **Vibe Coding**         | 😎                    | 😎                                      |
 
-#### How does it work?
+### How does it work?
 
-From the contributor perspective, the flow is very similar to a normal workflow.
+While Copilot cloud agent can be activated in many ways, let's look at 2 common flows you might use
+
+#### Agents Panel
+
+Every repository has a dedicated area for managing tasks assigned to Agents (the **Agents** tab). This area provides a more direct approach to assigning work, that allows you to get started working immediately. A common flow might look like this:
+
+1. A contributor with **write access** navigates to the Agents tab on the repository.
+2. The contributor describes a task, optionally asking Copilot to make a plan (it might be complex).
+3. Copilot reviews the task and collects feedback as needed.
+4. Copilot works on a branch in an Actions workflow and provides updates via the session page's conversation interface.
+5. When Copilot finishes the task, the contributor has the option to continue prompting for more changes, building on the same branch.
+6. The contributor decides how to handle the resulting branch, for example deleting it or creating a pull request.
+
+```mermaid
+flowchart LR
+
+   contributor((Contributor))
+   copilot((Copilot))
+   branch@{ shape: subproc, label: "Branch" }
+   start-over@{ shape: subproc, label: "Delete branch" }
+   continue-working@{ shape: subproc, label: "Continue working" }
+
+   %% Ask Copilot to do work and create branch
+   contributor gl1@-->|Describes task| copilot
+   copilot pl1@-->|Asks clarifying questions| contributor
+   contributor gl2@-->|Provides feedback| copilot
+   copilot pl2@-->|Shares progress updates| contributor
+   copilot pl3@-->|Creates| branch
+   copilot pl4@-->|Implements feedback| branch
+
+   %% Delete branch
+   branch --> acceptable-results@{ shape: diamond, label: "Acceptable\nresults?" }
+   acceptable-results gl3@-->|No| start-over
+   acceptable-results gl4@-->|Yes| continue-working
+
+   %% Styling
+   classDef users fill:#08872B,stroke:#5FED83,color:#fff
+   classDef agent fill:#501DAF,stroke:#C06EFF,color:#fff
+   classDef user-work fill:#08872B,stroke:#5FED83,color:#fff
+
+   classDef green-line stroke:#08872B, stroke-width:4px;
+   classDef purple-line stroke:#501DAF, stroke-width:4px;
+
+   class contributor,acceptable-results,start-over,continue-working users
+   class copilot agent
+
+   class gl1,gl2,gl3,gl4 green-line
+   class pl1,pl2,pl3,pl4,pl5 purple-line
+```
+
+#### Assigning Issues
+
+From the contributor perspective, the flow is very similar to a task-tracking style workflow.
 
 1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themselves).
-2. Copilot creates a branch and pull request.
+2. Copilot creates a branch and works on the changes. When assigned via an issue, Copilot also creates a pull request.
 3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
 4. When Copilot finishes the issue, the assigner is requested to review.
 5. Assigner submits a review, adds comments, or approves.
@@ -98,12 +152,12 @@ flowchart LR
 Several security precautions have been implemented to help reduce concerns. Here are a few limitations that you might need to consider when asking Copilot to work on an issue.
 
 - Copilot can only make changes on the branch it created and resources provided by the repository.
-- Copilot has [configurable firewall](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/customizing-copilot-coding-agents-development-environment#customizing-or-disabling-the-agents-firewall) that restricts access to the internet.
+- Copilot has [configurable firewall](https://docs.github.com/en/copilot/customizing-copilot/customizing-or-disabling-the-firewall-for-copilot-coding-agent) that restricts access to the internet.
 - Only users with write access can assign Copilot an issue.
 - Hidden content in issues (like commented code) is ignored.
 
 > [!IMPORTANT]
-> The full list of mitigations and configuration settings can be found in the [Risks & Mitigations](https://docs.github.com/en/enterprise-cloud@latest/early-access/copilot/coding-agent/using-copilot-coding-agent#copilot-coding-agent-risks-and-mitigations) documentation.
+> The full list of mitigations and configuration settings can be found in the [Responsible use of Copilot cloud agent](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-copilot-coding-agent-on-githubcom) documentation.
 
 ## ⌨️ Activity: (optional) Get to know our extracurricular activities site
 
@@ -123,15 +177,15 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 1. Validate the **GitHub Copilot** and **Python** extensions are installed and enabled.
 
-   <img width="300" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" /><br/>
-   <img width="300" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
+   <img width="300" alt="copilot extension for VS Code" src="../images/copilot-vscode-extension.png" /><br/>
+   <img width="300" alt="python extension for VS Code" src="../images/python-vscode-extension.png" />
 
 1. Try running the the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
 
    <details>
    <summary>📸 Show screenshot</summary><br/>
 
-   <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
+   <img width="300" alt="run and debug" src="../images/run-and-debug.png" />
 
    </details>
 
@@ -140,7 +194,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
    If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
 
-   <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
+   <img width="300" alt="empty run and debug panel" src="../images/empty-run-and-debug-panel.png" />
 
    </details>
 
@@ -149,35 +203,34 @@ In other exercises, we have been developing the Extracurricular Activities websi
    <details>
    <summary>📸 Show screenshot</summary><br/>
 
-   <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
+   <img width="350" alt="ports tab" src="../images/ports-tab.png" />
 
    </details>
 
 </details>
 
-## ⌨️ Activity: Enable Copilot coding agent on your repository
+## ⌨️ Activity: Enable Copilot cloud agent on your repository
 
-Before we can start delegating requests from the teachers to Copilot, we need to grant access to our repository.
+Before we can start giving requests from teachers to Copilot, we need to grant access to our repository.
 
 1. In the top right, click your **user icon** and select **Settings**.
 
-   <img width="300" src="https://github.com/user-attachments/assets/7f8c3602-6de2-4c75-8047-8f4853495f46"><br/>
-   <img width="300" src="https://github.com/user-attachments/assets/2aedfd6e-8b9f-40bb-bdf9-c9fd597f94a4">
+   <img width="200" src="../images/user-icon-menu.png"><br/>
+   <img width="200" src="../images/settings-copilot-menu.png">
 
-1. In the left navigation, expand the **Copilot** section and select **Coding agent**.
+1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
 
-   <img width="300" src="https://github.com/user-attachments/assets/79800990-6d5c-4055-acc9-b15734fe8b80">
+   <img width="200" src="../images/copilot-cloud-agent-settings.png">
 
 1. Check that the **Repository access** field is set to `All repositories`.
 
-   Alternatively, if you prefer to enable it only for this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
+   Alternatively, if you prefer to enable it for only this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
 
-
-   <img width="300" src="https://github.com/user-attachments/assets/4bec16dc-7b52-4e95-b554-47252b622adb">
+   <img width="300" src="../images/copilot-repository-access.png">
 
 ## ⌨️ Activity: Assign Copilot an issue
 
-There are several important issues to get done before we leave, but let's do a test run on one of the simple options first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
+There are several important issues to get done before we leave, but let's do a test run of something simple first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
 
 > [!TIP]
 > Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
@@ -205,15 +258,18 @@ There are several important issues to get done before we leave, but let's do a t
 
 1. In the top right, click on the **Assignees** area and select **Copilot**.
 
-   <img width="350" src="https://github.com/user-attachments/assets/444f9432-17c3-4466-bb8e-aa4e44238130" />
+   <img width="350" src="../images/issue-assignees-copilot.png" />
 
-1. As you assign the issue to Copilot - after a moment, you will notice:
+1. A dialog **might** appear describing that Copilot will begin work. Click the **Assign** button, ignoring the option to provide additional details.
 
+   <img width="350" src="../images/assign-copilot-window.png" />
+
+1. After you assign the issue to Copilot, in a moment, you will notice:
    - The issue will have an `👀` reaction to show Copilot is reading the issue.
    - The activity log shows you assigned the issue to Copilot.
    - The issue log includes a linked pull request.
 
-   <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
+   <img width="400" src="../images/issue-copilot-assigned.png" />
 
 1. With the issue assigned, Mona should be busy checking your work. Give her a moment to share the next steps.
 

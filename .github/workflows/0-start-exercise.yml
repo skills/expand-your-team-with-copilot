@@ -18,10 +18,10 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.7.3
+    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
     with:
-      exercise-title: "Expand your team with Copilot coding agent"
-      intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to assign Copilot coding tasks directly in GitHub! 💻✨"
+      exercise-title: "Expand your team with Copilot cloud agent"
+      intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to delegate tasks to Copilot cloud agent directly in GitHub! 💻✨"
 
   post_next_step_content:
     name: Post next step content
@@ -34,6 +34,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          ref: main
 
       - name: Get response templates
         uses: actions/checkout@v5
