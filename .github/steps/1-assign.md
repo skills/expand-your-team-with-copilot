@@ -19,16 +19,17 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 
 In previous exercises, we used Copilot **chat** in the editor with **Plan** and **Agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
-| Feature           | Copilot in the editor         | Copilot cloud agent                          |
-| ----------------- | ----------------------------- | --------------------------------------------- |
-| **Interface**     | Your code editor              | Issues, Pull Requests, and Agents Panel       |
-| **Work Scope**    | Local files                   | Repository                                    |
-| **Activation**    | Inline code suggestions, chat | Issue assignment, Agents panel, Copilot Chat  |
-| **Customization** | Custom instructions           | Custom instructions, custom agents, hooks     |
-| **MCP Support**   | Yes                           | Yes                                           |
-| **Vibe Coding**   | 😎                            | 😎                                            |
+| Feature                 | Copilot in the editor | Copilot cloud agent                     |
+| ----------------------- | --------------------- | --------------------------------------- |
+| **Interface**           | Your code editor      | Issues, Pull Requests, and Agents Panel |
+| **Work Scope**          | Local files           | Repository                              |
+| **Custom Instructions** | ✅                    | ✅                                      |
+| **Custom Agents**       | ✅                    | ✅                                      |
+| **Skills**              | ✅                    | ✅                                      |
+| **Hooks**               | ✅                    | ✅                                      |
+| **MCP Support**         | ✅                    | ✅                                      |
+| **Vibe Coding**         | 😎                    | 😎                                      |
 
-#### How does it work?
 
 From the contributor perspective, the flow is very similar to a normal workflow.
 
