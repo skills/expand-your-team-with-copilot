@@ -17,7 +17,7 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 
 ### 📖 Theory: Copilot is now your cloud agent
 
-In previous exercises, we used Copilot **chat**, **edits** and **agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+In previous exercises, we used Copilot **chat** in the editor with **Plan** and **Agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
 | Feature           | Copilot in the editor         | Copilot cloud agent                          |
 | ----------------- | ----------------------------- | --------------------------------------------- |
