@@ -15,9 +15,10 @@ Here's a recap of your accomplishments:
 
 ### What's next?
 
-- Check out the other GitHub Skills exercises.
-  - Dive deeper into customizing Copilot’s environment with the [Customize your GitHub Copilot experience](https://github.com/skills/customize-your-github-copilot-experience) exercise.
-  - Learn more about using Model Context Protocol in Copilot's environment with the [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) exercise.
+Check out other [GitHub Skills](https://learn.github.com/skills) exercises:
+
+- Dive deeper into customizing Copilot’s environment with the [Customize your GitHub Copilot experience](https://github.com/skills/customize-your-github-copilot-experience) exercise.
+- Learn more about using Model Context Protocol in Copilot's environment with the [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) exercise.
 
 Check out these resources to learn more about GitHub Copilot cloud agent:
 
