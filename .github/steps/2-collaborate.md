@@ -116,6 +116,8 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. Above the changes list, click the **Submit review** button to open the review panel. At the bottom of the panel, select **Submit Review**.
 
+   <img width="300" alt="submit-pr-review" src="../images/submit-pr-review.png" />
+
 1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
 
     <img width="800" alt="copilot-working-on-review" src="../images/copilot-working-on-review.png" />
