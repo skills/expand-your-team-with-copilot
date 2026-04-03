@@ -2,7 +2,7 @@
 
 Let's provide Copilot some additional information about the school and typical tasks the teachers request.
 
-To ensure future development is both smooth and reliable for everyone, Copilot should also start its sessions with all the tools and dependencies already installed. :rocket:
+To ensure future development is both smooth and reliable for everyone, Copilot should also start its sessions with all the tools and dependencies already installed. 🚀
 
 ### 📖 Theory: Customizing Copilot's development environment
 
@@ -28,7 +28,7 @@ This greatly helps in avoiding delays or errors from Copilot attempting ad‑hoc
 > [!NOTE]
 > You can also [enable a Model Context Protocol (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
 >
-> > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default :rocket:
+> > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default! 🚀
 
 > [!TIP]
 > You can further customize Copilot cloud agent with [custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents) for specialized tasks and [hooks](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks) for validation and automation.
@@ -112,13 +112,13 @@ For this project, we will pre-install the Python backend dependencies and ensure
      # This is the required job name. If different, Copilot will ignore it.
      copilot-setup-steps:
        runs-on: ubuntu-latest
-    
-     # Starts a MongoDB service for Copilot to use during its session.
+
+       # Starts a MongoDB service for Copilot to use during its session.
        services:
-        mongo:
-          image: mongo:7
-          ports:
-            - 27017:27017
+         mongo:
+           image: mongo:7
+           ports:
+             - 27017:27017
 
        # Grant Copilot early access to read the repository content.
        permissions:
