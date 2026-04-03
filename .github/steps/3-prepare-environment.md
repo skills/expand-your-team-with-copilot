@@ -45,7 +45,7 @@ Let's write Copilot instructions that include details about the school, the role
    prepare-environment
    ```
 
-   <img width="250" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
+   <img width="250" alt="image" src="../images/create-branch.png" />
 
 1. Navigate to and open the `.github/copilot-instructions.md` file for editing.
 
@@ -92,7 +92,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
 
 1. In the top right, click the **Add file** button and select **Create new file**.
 
-   <img width="250" alt="image" src="https://github.com/user-attachments/assets/c135dd3f-72bd-4d2b-b21f-9c4968a06f5f" />
+   <img width="250" alt="image" src="../images/add-file-button.png" />
 
 1. Set the file name to:
 
@@ -100,7 +100,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
    copilot-setup-steps.yml
    ```
 
-   <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
+   <img width="650" alt="image" src="../images/new-file-name.png" />
 
 1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend and setup a MongoDB service.
 

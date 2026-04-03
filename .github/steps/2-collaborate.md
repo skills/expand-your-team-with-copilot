@@ -27,7 +27,7 @@ You can access the session logs in two ways:
 <details>
 <summary>📸 Copilot Session Logs </summary><br/>
 
-<img width="800" alt="screenshot of copilot cloud agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
+<img width="800" alt="screenshot of copilot cloud agent session logs" src="../images/copilot-session-logs.png" />
 
 </details>
 
@@ -63,26 +63,26 @@ flowchart LR
 
    <details>
       <summary>1. When starting, Copilot provides an initial copy of the issue. <b>[show image]</b></summary>
-      <img width="500" alt="image" src="https://github.com/user-attachments/assets/967dbea0-01c2-4531-9bce-5a055d3dad25" />
+      <img width="500" alt="image" src="../images/pr-initial-description.png" />
    </details>
 
    <details>
       <summary>2. After planning, Copilot provides a set of action items. <b>[show image]</b></summary>
-      <img width="500" alt="image" src="https://github.com/user-attachments/assets/acadb796-6545-4b6d-b2b3-9a00ea1744a2" />
+      <img width="500" alt="image" src="../images/pr-planning-description.png" />
    </details>
 
    <details>
       <summary>3. After finishing, Copilot provides a summary. <b>[show image]</b></summary>
-      <img width="500" alt="image" src="https://github.com/user-attachments/assets/61204574-0262-4c2f-af4b-09b284f31b90" />
+      <img width="500" alt="image" src="../images/pr-final-description.png" />
    </details>
 
 1. Scroll down slightly to view the timeline and high-level notes provided by Copilot. Click the **View session** button.
 
-   <img width="500" src="https://github.com/user-attachments/assets/088260e6-bae0-40af-8186-864eb3e7b8a2" />
+   <img width="500" src="../images/pr-view-session-button.png" />
 
 1. The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
 
-   <img width="800" alt="screenshot of copilot cloud agent session logs" src="https://github.com/user-attachments/assets/2cc89771-0886-409e-a94e-6d76b07100a0" />
+   <img width="800" alt="screenshot of copilot cloud agent session logs" src="../images/copilot-session-logs.png" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
@@ -93,7 +93,7 @@ flowchart LR
 >
 > <details>
 > <summary>Show image</summary>
-> <img width="500" alt="image" src="https://github.com/user-attachments/assets/cb88a67c-e42f-463c-88cd-b23a391b28a0" />
+> <img width="500" alt="image" src="../images/pr-description-history.png" />
 > </details>
 
 ### ⌨️ Activity: Provide Copilot feedback
@@ -102,11 +102,11 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. In the pull request, click the **Add your review** button.
 
-   <img width="350" src="https://github.com/user-attachments/assets/d71847b9-573b-451e-9c85-946a6988e3f0" />
+   <img width="350" src="../images/pr-add-review-button.png" />
 
 1. Find the new entry created by Copilot. Hover over a line to show the plus sign. **Click** to open the add comment dialog box.
 
-   <img width="350" src="https://github.com/user-attachments/assets/fd1375a4-fbdf-453e-a457-7bcb1fbbea23" />
+   <img width="350" src="../images/pr-add-comment.png" />
 
 1. Reading the description, we think it should be more interesting to match the Manga spirit. Let's ask Copilot to fix that. Enter the following text and click **Start a review**.
 
@@ -119,11 +119,11 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
 
-    <img width="800" alt="copilot-working-on-review" src="https://github.com/user-attachments/assets/076c2546-2eed-48c9-adbc-6a4edceba762" />
+    <img width="800" alt="copilot-working-on-review" src="../images/copilot-working-on-review.png" />
 
 1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
 
-   <img width="800"  alt="Copilot session journal with multiple sessions" src="https://github.com/user-attachments/assets/b2debaed-65e2-4afe-9e63-e0b2ecbbb81e" />
+   <img width="800"  alt="Copilot session journal with multiple sessions" src="../images/copilot-session-journal-multiple.png" />
 
 1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
 

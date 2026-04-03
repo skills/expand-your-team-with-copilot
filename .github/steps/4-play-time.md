@@ -35,7 +35,7 @@ Let's get you familiarized with the Agents panel!
 
 1. In a new tab, open the **Copilot Agents** panel from the top navigation bar
 
-   <img width="600" alt="Agents panel view" src="https://github.com/user-attachments/assets/c95a5558-a78d-41fe-bf26-25fb1d8aad52" />
+   <img width="600" alt="Agents panel view" src="../images/agents-panel-view.png" />
 
 1. Make sure the `{{ full_repo_name }}` repository is selected in the panel and the branch is set to `main`.
 1. Assign Copilot to work on the following task:
@@ -51,13 +51,13 @@ Let's get you familiarized with the Agents panel!
 
 1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
 
-   <img width="400" alt="Agents Panel task in progress view" src="https://github.com/user-attachments/assets/e80c2e39-6b2b-4d0b-9f1e-f02f41495241" />
+   <img width="400" alt="Agents Panel task in progress view" src="../images/agents-panel-task-progress.png" />
 
 1. Click on the task to jump straight into the session logs in a new tab and track how Copilot is working on it in real time.
 
 1. You will notice Copilot begins by running the customization steps you've set up in the previous step!
 
-   <img width="600" alt="Copilot session logs with copilot setup steps" src="https://github.com/user-attachments/assets/4d93e2f1-9086-486d-b674-98478e16dbdf" />
+   <img width="600" alt="Copilot session logs with copilot setup steps" src="../images/copilot-session-setup-steps.png" />
 
 1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
 
@@ -80,7 +80,7 @@ You still have some issues opened on the repository, let's see how Copilot can h
 
 1. Open the **Copilot Agents** panel again and notice that the issues you assign also appear here!
 
-   <img width="300"  alt="Copilot Agents Panel with three tasks running in parallel" src="https://github.com/user-attachments/assets/551a26c5-ed07-478a-9937-f1f66babd0b5" />
+   <img width="300"  alt="Copilot Agents Panel with three tasks running in parallel" src="../images/agents-panel-parallel-tasks.png" />
 
 1. For both tasks, monitor the progress in separate browser tabs. Remember you can click the **View Pull Request** button in the top right to navigate to the pull request for each task.
    > 💡 **Tip:**  You can also check the status of the task you assigned in the previous activity. Maybe Copilot is done by now?

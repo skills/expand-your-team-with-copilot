@@ -11,7 +11,7 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 <details>
 <summary>📸 Website screenshot</summary><br/>
 
-<img width="600" alt="screenshot of Mergington High School WebApp" src="https://github.com/user-attachments/assets/6f5c59ab-398b-4fb0-8efd-0aa7b72fef97" />
+<img width="600" alt="screenshot of Mergington High School WebApp" src="../images/mergington-webapp-screenshot.png" />
 
 </details>
 
@@ -123,15 +123,15 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 1. Validate the **GitHub Copilot** and **Python** extensions are installed and enabled.
 
-   <img width="300" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" /><br/>
-   <img width="300" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
+   <img width="300" alt="copilot extension for VS Code" src="../images/copilot-vscode-extension.png" /><br/>
+   <img width="300" alt="python extension for VS Code" src="../images/python-vscode-extension.png" />
 
 1. Try running the the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
 
    <details>
    <summary>📸 Show screenshot</summary><br/>
 
-   <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
+   <img width="300" alt="run and debug" src="../images/run-and-debug.png" />
 
    </details>
 
@@ -140,7 +140,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
    If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
 
-   <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
+   <img width="300" alt="empty run and debug panel" src="../images/empty-run-and-debug-panel.png" />
 
    </details>
 
@@ -149,7 +149,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
    <details>
    <summary>📸 Show screenshot</summary><br/>
 
-   <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
+   <img width="350" alt="ports tab" src="../images/ports-tab.png" />
 
    </details>
 
@@ -161,19 +161,19 @@ Before we can start delegating requests from the teachers to Copilot, we need to
 
 1. In the top right, click your **user icon** and select **Settings**.
 
-   <img width="300" src="https://github.com/user-attachments/assets/7f8c3602-6de2-4c75-8047-8f4853495f46"><br/>
-   <img width="300" src="https://github.com/user-attachments/assets/2aedfd6e-8b9f-40bb-bdf9-c9fd597f94a4">
+   <img width="300" src="../images/user-icon-menu.png"><br/>
+   <img width="300" src="../images/settings-copilot-menu.png">
 
 1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
 
-   <img width="300" src="https://github.com/user-attachments/assets/79800990-6d5c-4055-acc9-b15734fe8b80">
+   <img width="300" src="../images/copilot-cloud-agent-settings.png">
 
 1. Check that the **Repository access** field is set to `All repositories`.
 
    Alternatively, if you prefer to enable it only for this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
 
 
-   <img width="300" src="https://github.com/user-attachments/assets/4bec16dc-7b52-4e95-b554-47252b622adb">
+   <img width="300" src="../images/copilot-repository-access.png">
 
 ## ⌨️ Activity: Assign Copilot an issue
 
@@ -205,7 +205,7 @@ There are several important issues to get done before we leave, but let's do a t
 
 1. In the top right, click on the **Assignees** area and select **Copilot**.
 
-   <img width="350" src="https://github.com/user-attachments/assets/444f9432-17c3-4466-bb8e-aa4e44238130" />
+   <img width="350" src="../images/issue-assignees-copilot.png" />
 
 1. As you assign the issue to Copilot - after a moment, you will notice:
 
@@ -213,7 +213,7 @@ There are several important issues to get done before we leave, but let's do a t
    - The activity log shows you assigned the issue to Copilot.
    - The issue log includes a linked pull request.
 
-   <img width="350" src="https://github.com/user-attachments/assets/40245540-e717-43b3-b2be-90f25cc494d0" />
+   <img width="350" src="../images/issue-copilot-assigned.png" />
 
 1. With the issue assigned, Mona should be busy checking your work. Give her a moment to share the next steps.
 
