@@ -9,6 +9,10 @@ permissions:
   actions: write
   issues: write
 
+concurrency:
+  group: "1-step"
+  cancel-in-progress: true
+
 env:
   STEP_2_FILE: ".github/steps/2-collaborate.md"
 
