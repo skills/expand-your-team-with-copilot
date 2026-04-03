@@ -180,7 +180,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
    <img width="300" alt="copilot extension for VS Code" src="../images/copilot-vscode-extension.png" /><br/>
    <img width="300" alt="python extension for VS Code" src="../images/python-vscode-extension.png" />
 
-1. Try running the the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
+1. Try running the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
 
    <details>
    <summary>📸 Show screenshot</summary><br/>

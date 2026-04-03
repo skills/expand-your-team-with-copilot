@@ -73,7 +73,7 @@ You still have some issues opened on the repository, let's see how Copilot can h
 
 1. In the top navigation, select the **Issues** tab.
 
-1. Find the the following 2 issues and open each in a new tab.
+1. Find the following 2 issues and open each in a new tab.
    - `Difficulty Tracks`
    - `Dark Mode`
 
