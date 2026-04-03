@@ -48,7 +48,7 @@ Let's get you familiarized with the Agents panel!
    users can easily share activities with their friends
    ```
 
-   > 💡 **Tip:** Since no pull request is created, this is a great way to experiment and be creative, without adding noise to your project history. If you don't like the results, just delete the branch!
+   > 💡 **Tip:** Since no pull request is created, this is a great way to experiment and be creative, without adding noise to your pull request history. If you don't like the results, just delete the branch! Alternately, if you know you want a pull request, you can ask for that too!
 
 1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
 
