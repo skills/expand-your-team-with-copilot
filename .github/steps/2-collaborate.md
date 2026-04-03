@@ -10,8 +10,7 @@ Copilot provides transparency into its work through multiple channels on the pul
 
 #### 📝 Pull request description
 
-The description will be continuously updated as Copilot progresses through its work. You can watch the description updates in real time!
-
+The description will be continuously updated as Copilot progresses through its work. You can watch the description update in real time!
 
 #### 🤖 Cloud Agent Sessions
 
@@ -37,7 +36,7 @@ Once Copilot completes its work, you can collaborate with it just like any team 
 
 Copilot will only act on comments or pull request reviews when they include a `@copilot` mention.
 
-This means you can also leave regular comments for your other, human team members and Copilot won't start unnecessary sessions!
+This means you can also leave regular comments for your other (human) team members and Copilot won't start unnecessary sessions!
 
 ```mermaid
 flowchart LR
@@ -80,7 +79,7 @@ flowchart LR
 
    <img width="500" src="../images/pr-view-session-button.png" />
 
-1. The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
+1. The new page shows a journal of Copilot's work. On the left side, you can see a list of sessions.
 
    <img width="800" alt="screenshot of copilot cloud agent session logs" src="../images/copilot-session-logs.png" />
 
@@ -89,7 +88,7 @@ flowchart LR
 1. When Copilot completes its work and requests you as a reviewer of the pull request, you can proceed to the next activity!
 
 > [!TIP]
-> You can use the **edited** dropdown to view the pull request description change history.
+> In the Pull Request description, you can use the **edited** dropdown to view the description history.
 >
 > <details>
 > <summary>Show image</summary>
@@ -115,7 +114,7 @@ Now that Copilot has finished its working session, let's review its work and pro
    It needs more personality to attract students.
    ```
 
-1. At the top of the changes list, click the **Finish your review** button and select **Submit Review**.
+1. Above the changes list, click the **Submit review** button to open the review panel. At the bottom of the panel, select **Submit Review**.
 
 1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
 
@@ -123,7 +122,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
 
-   <img width="800"  alt="Copilot session journal with multiple sessions" src="../images/copilot-session-journal-multiple.png" />
+   <img width="600"  alt="Copilot session journal with multiple sessions" src="../images/copilot-session-journal-multiple.png" />
 
 1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
 
@@ -132,7 +131,7 @@ Now that Copilot has finished its working session, let's review its work and pro
    Using the bottom chat panel, right below the session logs - provide this new information that just came up!
 
    ```md
-   There is a slight change of plans - we got a bigger classroom assignment for this class
+   There is a slight change of plans. We have a higher enrollment for this class.
 
    Let's move the schedule to 5PM tuesday and change the maximum allowed participants to 25.
    ```
@@ -143,7 +142,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. Once Copilot is finished, you will get requested as a reviewer again.
 
-1. Activate the pull requests by clicking the **Ready to Review** button then click the **Merge** button.
+1. Return to the Pull Request **Conversation** tab. At the bottom, click the **Ready to Review** button, then the **Merge pull request** button, and confirm.
 
 1. With the pull request merged, Mona should be checking our work. Give her a moment to respond with the next lesson.
 
