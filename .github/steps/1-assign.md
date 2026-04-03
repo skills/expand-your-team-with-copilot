@@ -260,6 +260,10 @@ There are several important issues to get done before we leave, but let's do a t
 
    <img width="350" src="../images/issue-assignees-copilot.png" />
 
+1. A dialog **might** appear describing that Copilot will begin work. Click the **Assign** button, ignoring the option to provide additional details.
+
+   <img width="350" src="../images/assign-copilot-window.png" />
+
 1. After you assign the issue to Copilot, in a moment, you will notice:
    - The issue will have an `👀` reaction to show Copilot is reading the issue.
    - The activity log shows you assigned the issue to Copilot.
