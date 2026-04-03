@@ -211,27 +211,26 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 ## ⌨️ Activity: Enable Copilot cloud agent on your repository
 
-Before we can start delegating requests from the teachers to Copilot, we need to grant access to our repository.
+Before we can start giving requests from teachers to Copilot, we need to grant access to our repository.
 
 1. In the top right, click your **user icon** and select **Settings**.
 
-   <img width="300" src="../images/user-icon-menu.png"><br/>
-   <img width="300" src="../images/settings-copilot-menu.png">
+   <img width="200" src="../images/user-icon-menu.png"><br/>
+   <img width="200" src="../images/settings-copilot-menu.png">
 
 1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
 
-   <img width="300" src="../images/copilot-cloud-agent-settings.png">
+   <img width="200" src="../images/copilot-cloud-agent-settings.png">
 
 1. Check that the **Repository access** field is set to `All repositories`.
 
-   Alternatively, if you prefer to enable it only for this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
-
+   Alternatively, if you prefer to enable it for only this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
 
    <img width="300" src="../images/copilot-repository-access.png">
 
 ## ⌨️ Activity: Assign Copilot an issue
 
-There are several important issues to get done before we leave, but let's do a test run on one of the simple options first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
+There are several important issues to get done before we leave, but let's do a test run of something simple first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
 
 > [!TIP]
 > Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
@@ -261,13 +260,12 @@ There are several important issues to get done before we leave, but let's do a t
 
    <img width="350" src="../images/issue-assignees-copilot.png" />
 
-1. As you assign the issue to Copilot - after a moment, you will notice:
-
+1. After you assign the issue to Copilot, in a moment, you will notice:
    - The issue will have an `👀` reaction to show Copilot is reading the issue.
    - The activity log shows you assigned the issue to Copilot.
    - The issue log includes a linked pull request.
 
-   <img width="350" src="../images/issue-copilot-assigned.png" />
+   <img width="400" src="../images/issue-copilot-assigned.png" />
 
 1. With the issue assigned, Mona should be busy checking your work. Give her a moment to share the next steps.
 
