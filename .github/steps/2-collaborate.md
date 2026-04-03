@@ -120,7 +120,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. After a moment, Copilot will start working on your requested changes in a new agent session. Click the new **View session** button that will appear in the pull request timeline.
 
-    <img width="800" alt="copilot-working-on-review" src="../images/copilot-working-on-review.png" />
+   <img width="600" alt="copilot-working-on-review" src="../images/copilot-working-on-review.png" />
 
 1. As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
 
