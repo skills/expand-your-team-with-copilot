@@ -34,7 +34,7 @@ In previous exercises, we used Copilot **chat** in the editor with **Plan** and 
 
 While Copilot cloud agent can be activated in many ways, let's look at 2 common flows you might use
 
-#### Repository Chat
+#### Agents Panel
 
 Every repository has a dedicated area for managing tasks assigned to Agents (the **Agents** tab). This area provides a more direct approach to assigning work, that allows you to get started working immediately. A common flow might look like this:
 
