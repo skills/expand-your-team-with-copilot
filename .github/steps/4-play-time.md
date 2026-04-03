@@ -12,9 +12,9 @@ Let's see how that's done! 👀
 
 The agents panel is your mission control center for agentic workflows on GitHub.
 
-It’s a lightweight overlay that allows you to hand new tasks to Copilot and track existing tasks without navigating away from your current work.
+It’s a lightweight overlay that allows you to give new tasks to Copilot and track existing tasks without navigating away from your current work.
 
-<!-- image source: https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/ -->
+   <!-- image source: https://github.blog/news-insights/product-news/agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github/ -->
 
    <img width="400" alt="Agents Panel view" src="https://github.blog/wp-content/uploads/2025/08/Agents-panel-with-callout-2.png" />
 
@@ -35,10 +35,11 @@ Let's get you familiarized with the Agents panel!
 
 1. In a new tab, open the **Copilot Agents** panel from the top navigation bar
 
-   <img width="600" alt="Agents panel view" src="../images/agents-panel-view.png" />
+   <img width="400" alt="Agents panel view" src="../images/agents-panel-view.png" />
 
 1. Make sure the `{{ full_repo_name }}` repository is selected in the panel and the branch is set to `main`.
-1. Assign Copilot to work on the following task:
+
+1. Insert the following task description and submit it and Copilot will begin working.
 
    > ![Static Badge](https://img.shields.io/badge/-Task%201-text?style=social&logo=github%20copilot)
    >
@@ -47,11 +48,11 @@ Let's get you familiarized with the Agents panel!
    > users can easily share activities with their friends
    > ```
 
-   > ✨ **Bonus:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
+   In this simplified flow, no pull request is created. So feel free to experiment. **Optional:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
 
 1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
 
-   <img width="400" alt="Agents Panel task in progress view" src="../images/agents-panel-task-progress.png" />
+   <img width="350" alt="Agents Panel task in progress view" src="../images/agents-panel-task-progress.png" />
 
 1. Click on the task to jump straight into the session logs in a new tab and track how Copilot is working on it in real time.
 
@@ -59,7 +60,7 @@ Let's get you familiarized with the Agents panel!
 
    <img width="600" alt="Copilot session logs with copilot setup steps" src="../images/copilot-session-setup-steps.png" />
 
-1. Let's leave Copilot to work its magic for now, you can come back to review the results later ✨
+1. Let's leave Copilot to work its magic for now, you can come back to review the results later and optionally create a pull request. ✨
 
 > [!TIP]
 > You can also access the Agents Panel in full screen mode at https://github.com/copilot/agents
@@ -71,9 +72,7 @@ You still have some issues opened on the repository, let's see how Copilot can h
 1. In the top navigation, select the **Issues** tab.
 
 1. Find the the following 2 issues and open each in a new tab.
-
    - `Difficulty Tracks`
-
    - `Dark Mode`
 
 1. With both tabs open, assign both to Copilot simultaneously.
@@ -82,8 +81,9 @@ You still have some issues opened on the repository, let's see how Copilot can h
 
    <img width="300"  alt="Copilot Agents Panel with three tasks running in parallel" src="../images/agents-panel-parallel-tasks.png" />
 
-1. For both tasks, monitor the progress in separate browser tabs. Remember you can click the **View Pull Request** button in the top right to navigate to the pull request for each task.
-   > 💡 **Tip:**  You can also check the status of the task you assigned in the previous activity. Maybe Copilot is done by now?
+1. For both tasks, monitor the progress in separate browser tabs. Remember, since these were created from issues, you can also track them from the **Pull Requests** tab.
+
+   > 💡 **Tip:** You can also check the status of the task you assigned in the previous activity. Maybe Copilot is done by now?
 
 1. When Copilot is finished on any of the tasks, review the PR description, the changes made and merge the pull request!
 
