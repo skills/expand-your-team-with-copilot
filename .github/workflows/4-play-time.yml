@@ -12,6 +12,10 @@ permissions:
   actions: write
   issues: write
 
+concurrency:
+  group: "4-step"
+  cancel-in-progress: true
+
 env:
   REVIEW_FILE: ".github/steps/x-review.md"
 
