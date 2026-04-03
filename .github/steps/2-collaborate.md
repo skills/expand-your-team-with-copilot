@@ -85,6 +85,8 @@ flowchart LR
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
+   > 🪧 **Note:** Sometimes this can take a while. You will see in the step 3 how to help Copilot with common setup issues.
+
 1. When Copilot completes its work and requests you as a reviewer of the pull request, you can proceed to the next activity!
 
 > [!TIP]
