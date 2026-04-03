@@ -39,16 +39,17 @@ Let's get you familiarized with the Agents panel!
 
 1. Make sure the `{{ full_repo_name }}` repository is selected in the panel and the branch is set to `main`.
 
-1. Insert the following task description and submit it and Copilot will begin working.
+1. Insert the following task description and submit it. Copilot will start a branch and begin working, without creating a pull request.
 
-   > ![Static Badge](https://img.shields.io/badge/-Task%201-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > Integrate social sharing buttons so
-   > users can easily share activities with their friends
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 
-   In this simplified flow, no pull request is created. So feel free to experiment. **Optional:** Think of something you would want improved on the website and assign it to Copilot. You can use your creativity here!
+   ```prompt
+   Integrate social sharing buttons so
+   users can easily share activities with their friends
+   ```
+
+   > [!TIP]
+   > Since no pull request is created, this is a great way to experiment and be creative, without adding noise to your project history. If you don't like the results, just delete the branch!
 
 1. After a moment, you will notice that the task appears in the panel with its current status. You can check back here for a high level overview of all your assigned tasks.
 
