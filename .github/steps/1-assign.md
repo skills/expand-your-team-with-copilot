@@ -17,78 +17,28 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 
 ### 📖 Theory: Copilot is now your cloud agent
 
-In previous exercises, we used Copilot **chat** in the editor with **Plan** and **Agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+In previous exercises, we used Copilot chat in our local the editor with **Plan** and **Agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
-| Feature                 | Copilot in the editor | Copilot cloud agent                     |
-| ----------------------- | --------------------- | --------------------------------------- |
-| **Interface**           | Your code editor      | Issues, Pull Requests, and Agents Panel |
-| **Work Scope**          | Local files           | Repository                              |
-| **Custom Instructions** | ✅                    | ✅                                      |
-| **Custom Agents**       | ✅                    | ✅                                      |
-| **Skills**              | ✅                    | ✅                                      |
-| **Hooks**               | ✅                    | ✅                                      |
-| **MCP Support**         | ✅                    | ✅                                      |
-| **Vibe Coding**         | 😎                    | 😎                                      |
+| Feature                 | Copilot in the editor | Copilot cloud agent                             |
+| ----------------------- | --------------------- | ----------------------------------------------- |
+| **Interface**           | Your code editor      | Issues, Pull Requests, Agents Tab, Agents Panel |
+| **Work Scope**          | Local files           | Repository                                      |
+| **Custom Instructions** | ✅                    | ✅                                              |
+| **Custom Agents**       | ✅                    | ✅                                              |
+| **Skills**              | ✅                    | ✅                                              |
+| **Hooks**               | ✅                    | ✅                                              |
+| **MCP Support**         | ✅                    | ✅                                              |
+| **Vibe Coding**         | 😎                    | 😎                                              |
 
 ### How does it work?
 
-While Copilot cloud agent can be activated in many ways, let's look at 2 common flows you might use
+While Copilot cloud agent can be activated in many ways and you can easily flow between them, let's get started with a typical task-tracking approach.
 
-#### Agents Panel
+From the contributor perspective, the flow is very similar to an issue + pull request style workflow.
 
-Every repository has a dedicated area for managing tasks assigned to Agents (the **Agents** tab). This area provides a more direct approach to assigning work, that allows you to get started working immediately. A common flow might look like this:
-
-1. A contributor with **write access** navigates to the Agents tab on the repository.
-2. The contributor describes a task, optionally asking Copilot to make a plan (it might be complex).
-3. Copilot reviews the task and collects feedback as needed.
-4. Copilot works on a branch in an Actions workflow and provides updates via the session page's conversation interface.
-5. When Copilot finishes the task, the contributor has the option to continue prompting for more changes, building on the same branch.
-6. The contributor decides how to handle the resulting branch, for example deleting it or creating a pull request.
-
-```mermaid
-flowchart LR
-
-   contributor((Contributor))
-   copilot((Copilot))
-   branch@{ shape: subproc, label: "Branch" }
-   start-over@{ shape: subproc, label: "Delete branch" }
-   continue-working@{ shape: subproc, label: "Continue working" }
-
-   %% Ask Copilot to do work and create branch
-   contributor gl1@-->|Describes task| copilot
-   copilot pl1@-->|Asks clarifying questions| contributor
-   contributor gl2@-->|Provides feedback| copilot
-   copilot pl2@-->|Shares progress updates| contributor
-   copilot pl3@-->|Creates| branch
-   copilot pl4@-->|Implements feedback| branch
-
-   %% Delete branch
-   branch --> acceptable-results@{ shape: diamond, label: "Acceptable\nresults?" }
-   acceptable-results gl3@-->|No| start-over
-   acceptable-results gl4@-->|Yes| continue-working
-
-   %% Styling
-   classDef users fill:#08872B,stroke:#5FED83,color:#fff
-   classDef agent fill:#501DAF,stroke:#C06EFF,color:#fff
-   classDef user-work fill:#08872B,stroke:#5FED83,color:#fff
-
-   classDef green-line stroke:#08872B, stroke-width:4px;
-   classDef purple-line stroke:#501DAF, stroke-width:4px;
-
-   class contributor,acceptable-results,start-over,continue-working users
-   class copilot agent
-
-   class gl1,gl2,gl3,gl4 green-line
-   class pl1,pl2,pl3,pl4,pl5 purple-line
-```
-
-#### Assigning Issues
-
-From the contributor perspective, the flow is very similar to a task-tracking style workflow.
-
-1. A contributor with **write access** selects an issue and assigns it to Copilot (instead of themselves).
-2. Copilot creates a branch and works on the changes. When assigned via an issue, Copilot also creates a pull request.
-3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
+1. A contributor with **write access** selects an issue and assigns it to Copilot (which also assigns it to themselves).
+2. Copilot creates a branch, starts a pull request, and works on the changes.
+3. Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab and session logs.
 4. When Copilot finishes the issue, the assigner is requested to review.
 5. Assigner submits a review, adds comments, or approves.
 6. If feedback is provided, Copilot continues working to implement it.
@@ -230,7 +180,7 @@ Before we can start giving requests from teachers to Copilot, we need to grant a
 
 ## ⌨️ Activity: Assign Copilot an issue
 
-There are several important issues to get done before we leave, but let's do a test run of something simple first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
+The teachers have already created several important issues, but let's do a test run of something simple first. This will let us see how task management with Copilot might work, so we can make guidelines for the other teachers. Most don't know how to use a traditional coding editor!
 
 > [!TIP]
 > Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
