@@ -2,7 +2,7 @@
 
 Let's provide Copilot some additional information about the school and typical tasks the teachers request.
 
-To ensure future development is both smooth and reliable for everyone, Copilot should also start its sessions with all the tools and dependencies already installed. :rocket:
+To ensure future development is both smooth and reliable for everyone, Copilot should also start its sessions with all the tools and dependencies already installed. 🚀
 
 ### 📖 Theory: Customizing Copilot's development environment
 
@@ -18,7 +18,7 @@ The Copilot instructions file should provide repository‑specific guidance, pre
 
 ⚙️ **Copilot Setup Steps**
 
-Pre‑configure the coding agent session with all required tools and dependency versions to ensure fast, consistent, and reproducible help. This typically means:
+Pre‑configure the cloud agent session with all required tools and dependency versions to ensure fast, consistent, and reproducible help. This typically means:
 
 - Configuring required tools like Python, Node with desired versions
 - Pre-installing project dependencies, libraries and running setup scripts
@@ -26,9 +26,12 @@ Pre‑configure the coding agent session with all required tools and dependency 
 This greatly helps in avoiding delays or errors from Copilot attempting ad‑hoc installs
 
 > [!NOTE]
-> You can also [enable a Model Context Protocal (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
+> You can also [enable a Model Context Protocol (MCP) server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp#adding-an-mcp-configuration-to-your-repository) for Copilot to provide even more functionality!
 >
-> > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default :rocket:
+> > [GitHub](https://github.com/github/github-mcp-server) and [Playwright](https://github.com/microsoft/playwright-mcp) MCP servers are already enabled by default! 🚀
+
+> [!TIP]
+> You can further customize Copilot cloud agent with [custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents) for specialized tasks and [hooks](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks) for validation and automation.
 
 ### ⌨️ Activity: Create instructions to guide Copilot
 
@@ -42,7 +45,7 @@ Let's write Copilot instructions that include details about the school, the role
    prepare-environment
    ```
 
-   <img width="250" alt="image" src="https://github.com/user-attachments/assets/c48deded-4214-4edd-9a50-d1368bfb12e8" />
+   <img width="250" alt="image" src="../images/create-branch.png" />
 
 1. Navigate to and open the `.github/copilot-instructions.md` file for editing.
 
@@ -77,7 +80,7 @@ Let's write Copilot instructions that include details about the school, the role
 
 1. When finished, **commit your changes** to the `prepare-environment` branch.
 
-### ⌨️ Activity: Prepare the coding environment for copilot
+### ⌨️ Activity: Prepare the environment for Copilot cloud agent
 
 Customizing Copilot's development environment and adjusting [permissions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) is done with a unique [GitHub Actions](https://github.com/features/actions) workflow called `copilot-setup-steps.yml`.
 
@@ -89,7 +92,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
 
 1. In the top right, click the **Add file** button and select **Create new file**.
 
-   <img width="250" alt="image" src="https://github.com/user-attachments/assets/c135dd3f-72bd-4d2b-b21f-9c4968a06f5f" />
+   <img width="250" alt="image" src="../images/add-file-button.png" />
 
 1. Set the file name to:
 
@@ -97,7 +100,7 @@ For this project, we will pre-install the Python backend dependencies and ensure
    copilot-setup-steps.yml
    ```
 
-   <img width="650" alt="image" src="https://github.com/user-attachments/assets/ac615290-1045-45a5-8201-637721ef6fd2" />
+   <img width="650" alt="image" src="../images/new-file-name.png" />
 
 1. Paste the following workflow configuration, which will pre-install the dependencies for the website's Python backend and setup a MongoDB service.
 
@@ -109,13 +112,13 @@ For this project, we will pre-install the Python backend dependencies and ensure
      # This is the required job name. If different, Copilot will ignore it.
      copilot-setup-steps:
        runs-on: ubuntu-latest
-    
-     # Starts a MongoDB service for Copilot to use during its session.
+
+       # Starts a MongoDB service for Copilot to use during its session.
        services:
-        mongo:
-          image: mongo:7
-          ports:
-            - 27017:27017
+         mongo:
+           image: mongo:7
+           ports:
+             - 27017:27017
 
        # Grant Copilot early access to read the repository content.
        permissions:
