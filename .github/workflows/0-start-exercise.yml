@@ -18,7 +18,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
+    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.9.1
     with:
       exercise-title: "Expand your team with Copilot cloud agent"
       intro-message: "In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to delegate tasks to Copilot cloud agent directly in GitHub! 💻✨"
@@ -42,7 +42,7 @@ jobs:
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.7.0
+          ref: v0.9.1
 
       - name: Create comment - add step content
         uses: GrantBirki/comment@v2.1.1
