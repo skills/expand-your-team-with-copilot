@@ -1,6 +1,13 @@
 name: "Copilot Setup Steps"
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
 jobs:
   # This is the required job name. If different, Copilot will ignore it.
   copilot-setup-steps:
