@@ -12,21 +12,21 @@ Copilot provides transparency into its work through multiple channels on the pul
 
 The description will be continuously updated as Copilot progresses through its work. You can watch the description update in real time!
 
-#### 🤖 Cloud Agent Sessions
+#### 🤖 Copilot Sessions
 
-Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Cloud Agent gets assigned.
+Copilot does all work inside **sessions**. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Copilot is assigned.
 
 In the pull request timeline, you will be able to see progress indicators showing when Copilot starts and completes work
 
 You can access the session logs in two ways:
 
-- **🔴 Live**: Watch the logs in real-time to see all the steps and logic Copilot cloud agent session is taking to solve the task
+- **🔴 Live**: Watch the logs in real-time to see all the steps and logic the Copilot session is taking to solve the task
 - **📋 Review**: View the session logs after Copilot has completed its work to review the decisions made
 
 <details>
 <summary>📸 Copilot Session Logs </summary><br/>
 
-<img width="800" alt="screenshot of copilot cloud agent session logs" src="../images/copilot-session-logs.png" />
+<img width="800" alt="screenshot of Copilot session logs" src="../images/copilot-session-logs.png" />
 
 </details>
 
@@ -41,7 +41,7 @@ This means you can also leave regular comments for your other (human) team membe
 ```mermaid
 flowchart LR
     A[Leave PR Comment/Review] --> B{Contains @copilot?}
-    B -->|Yes| C[🤖 New Cloud Agent Session]
+    B -->|Yes| C[🤖 New Copilot Session]
     B -->|No| D[💬 Regular Comment Only]
 ```
 
@@ -81,7 +81,7 @@ flowchart LR
 
 1. The new page shows a journal of Copilot's work. On the left side, you can see a list of sessions.
 
-   <img width="800" alt="screenshot of copilot cloud agent session logs" src="../images/copilot-session-logs.png" />
+   <img width="800" alt="screenshot of Copilot session logs" src="../images/copilot-session-logs.png" />
 
 1. If the Copilot session is still ongoing, monitor the session journal.
 
@@ -130,7 +130,7 @@ Now that Copilot has finished its working session, let's review its work and pro
 
 1. You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
 
-   > 🪧 **Note:** This step is optional - if the cloud agent session for the requested changes is already finished, don't worry - you can skip this step!
+   > 🪧 **Note:** This step is optional - if the Copilot session for the requested changes is already finished, don't worry - you can skip this step!
 
    Using the bottom chat panel, right below the session logs - provide this new information that just came up!
 

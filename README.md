@@ -1,6 +1,6 @@
-# Expand your team with Copilot cloud agent
+# Expand your team with Copilot
 
-_Let Copilot cloud agent tackle your issues directly on GitHub. No coding environment needed._
+_Let Copilot tackle your issues directly on GitHub. No coding environment needed._
 
 ## Welcome
 
@@ -9,7 +9,7 @@ _Let Copilot cloud agent tackle your issues directly on GitHub. No coding enviro
 - **What you'll build**: You will provide GitHub Copilot access to the repository for the Mergington High School Extracurricular Activities website, enabling your fellow teachers to make changes without needing to code directly.
 - **Prerequisites**:
 
-  - GitHub Copilot subscription (Pro or higher) is required to use Copilot cloud agent.  
+  - GitHub Copilot subscription (Pro or higher) is required to use Copilot.  
   - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
   - Skills exercise: [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot)
 
@@ -17,7 +17,7 @@ _Let Copilot cloud agent tackle your issues directly on GitHub. No coding enviro
 
 In this exercise, you will:
 
-1. Learn how to enable Copilot cloud agent on your repository.
+1. Learn how to enable Copilot on your repository.
 1. Assign an issue and understand your agent's progress.
 1. Collaborate with your agent on code changes.
 1. Customize and optimize your agent's workspace.
@@ -27,7 +27,7 @@ In this exercise, you will:
 
 Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=expand-your-team-with-copilot&owner=%40me&name=skills-expand-your-team-with-copilot&description=Exercise:+Expand+your+team+with+GitHub+Copilot+cloud+agent&visibility=public)
+[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=expand-your-team-with-copilot&owner=%40me&name=skills-expand-your-team-with-copilot&description=Exercise:+Expand+your+team+with+GitHub+Copilot&visibility=public)
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

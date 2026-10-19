@@ -1,4 +1,4 @@
-## Step 1: Enable Copilot cloud agent
+## Step 1: Enable Copilot
 
 In the [Getting Started with GitHub Copilot](/skills/getting-started-with-github-copilot) exercise, we learned how to use Copilot in our code editor to make major upgrades to the Mergington Extracurricular Activities site. 🎻 ⚽️ ♟️
 
@@ -15,11 +15,11 @@ Let's set our teachers up for success by enrolling Copilot (in our school) to ha
 
 </details>
 
-### 📖 Theory: Copilot is now your cloud agent
+### 📖 Theory: Copilot works directly on GitHub
 
-In previous exercises, we used Copilot chat in our local the editor with **Plan** and **Agent** mode. While those were super helpful, **Copilot cloud agent** takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+In previous exercises, we used Copilot chat in our local the editor with **Plan** and **Agent** mode. While those were super helpful, Copilot takes this to the next level by operating entirely on GitHub. No code editor required! 😎
 
-| Feature                 | Copilot in the editor | Copilot cloud agent                             |
+| Feature                 | Copilot in the editor | Copilot on GitHub                               |
 | ----------------------- | --------------------- | ----------------------------------------------- |
 | **Interface**           | Your code editor      | Issues, Pull Requests, Agents Tab, Agents Panel |
 | **Work Scope**          | Local files           | Repository                                      |
@@ -32,7 +32,7 @@ In previous exercises, we used Copilot chat in our local the editor with **Plan*
 
 ### How does it work?
 
-While Copilot cloud agent can be activated in many ways and you can easily flow between them, let's get started with a typical task-tracking approach.
+Copilot can be activated in many ways and you can easily flow between them, let's get started with a typical task-tracking approach.
 
 From the contributor perspective, the flow is very similar to an issue + pull request style workflow.
 
@@ -107,7 +107,7 @@ Several security precautions have been implemented to help reduce concerns. Here
 - Hidden content in issues (like commented code) is ignored.
 
 > [!IMPORTANT]
-> The full list of mitigations and configuration settings can be found in the [Responsible use of Copilot cloud agent](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-copilot-coding-agent-on-githubcom) documentation.
+> The full list of mitigations and configuration settings can be found in the [Responsible use of Copilot](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-copilot-coding-agent-on-githubcom) documentation.
 
 ## ⌨️ Activity: (optional) Get to know our extracurricular activities site
 
@@ -159,7 +159,7 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 </details>
 
-## ⌨️ Activity: Enable Copilot cloud agent on your repository
+## ⌨️ Activity: Enable Copilot on your repository
 
 Before we can start giving requests from teachers to Copilot, we need to grant access to our repository.
 
@@ -168,9 +168,9 @@ Before we can start giving requests from teachers to Copilot, we need to grant a
    <img width="200" src="../images/user-icon-menu.png"><br/>
    <img width="200" src="../images/settings-copilot-menu.png">
 
-1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
+1. In the left navigation, expand the **Copilot** section and select **Copilot**.
 
-   <img width="200" src="../images/copilot-cloud-agent-settings.png">
+   <img width="200" src="../images/copilot-settings.png">
 
 1. Check that the **Repository access** field is set to `All repositories`.
 
