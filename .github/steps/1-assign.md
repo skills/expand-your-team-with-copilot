@@ -168,7 +168,7 @@ Before we can start giving requests from teachers to Copilot, we need to grant a
    <img width="200" src="../images/user-icon-menu.png"><br/>
    <img width="200" src="../images/settings-copilot-menu.png">
 
-1. In the left navigation, expand the **Copilot** section and select **Copilot**.
+1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
 
    <img width="200" src="../images/copilot-settings.png">
 
