@@ -18,9 +18,9 @@ _Let Copilot tackle your issues directly on GitHub. No coding environment needed
 In this exercise, you will:
 
 1. Learn how to enable Copilot on your repository.
-1. Assign an issue and understand your agent's progress.
-1. Collaborate with your agent on code changes.
-1. Customize and optimize your agent's workspace.
+1. Assign an issue and understand Copilot's progress.
+1. Collaborate with Copilot on code changes.
+1. Customize and optimize Copilot's workspace.
 1. Delegate and track multiple tasks in parallel.
 
 ### How to start this exercise

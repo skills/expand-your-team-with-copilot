@@ -28,4 +28,4 @@ Check out these resources to learn more about GitHub Copilot:
 - Read practices for [responsible use of Copilot](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-copilot-coding-agent-on-githubcom)
 - Learn about [custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents) for creating specialized versions of Copilot for different tasks
 - Check out different ways to [assign work to Copilot in VS Code](https://code.visualstudio.com/docs/copilot/copilot-coding-agent#_assign-work-to-copilot-coding-agent-in-vs-code)
-- Start and track Agent tasks in [GitHub Mobile](https://github.blog/changelog/2025-09-24-start-and-track-copilot-coding-agent-tasks-in-github-mobile/)
+- Start and track Copilot tasks in [GitHub Mobile](https://github.blog/changelog/2025-09-24-start-and-track-copilot-coding-agent-tasks-in-github-mobile/)

@@ -32,7 +32,7 @@ In previous exercises, we used Copilot chat in our local the editor with **Plan*
 
 ### How does it work?
 
-Copilot can be activated in many ways and you can easily flow between them, let's get started with a typical task-tracking approach.
+Copilot can be activated in many ways, and you can easily switch between them. Let's get started with a typical task-tracking approach.
 
 From the contributor perspective, the flow is very similar to an issue + pull request style workflow.
 
