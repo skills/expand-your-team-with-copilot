@@ -159,25 +159,6 @@ In other exercises, we have been developing the Extracurricular Activities websi
 
 </details>
 
-## ⌨️ Activity: Enable Copilot on your repository
-
-Before we can start giving requests from teachers to Copilot, we need to grant access to our repository.
-
-1. In the top right, click your **user icon** and select **Settings**.
-
-   <img width="200" src="../images/user-icon-menu.png"><br/>
-   <img width="200" src="../images/settings-copilot-menu.png">
-
-1. In the left navigation, expand the **Copilot** section and select **Cloud agent**.
-
-   <img width="200" src="../images/copilot-settings.png">
-
-1. Check that the **Repository access** field is set to `All repositories`.
-
-   Alternatively, if you prefer to enable it for only this exercise, select `Only selected repositories` and select this exercise repository (`{{ full_repo_name }}`).
-
-   <img width="300" src="../images/copilot-repository-access.png">
-
 ## ⌨️ Activity: Assign Copilot an issue
 
 The teachers have already created several important issues, but let's do a test run of something simple first. This will let us see how task management with Copilot might work, so we can make guidelines for the other teachers. Most don't know how to use a traditional coding editor!
